@@ -1,5 +1,6 @@
 dj-database-url==0.4.1
 Django==1.10.4
+django-nested-inline==0.3.6
 gunicorn==19.6.0
 psycopg2==2.6.2
 python-env==1.0.0
