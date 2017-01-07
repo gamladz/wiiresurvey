@@ -9,8 +9,10 @@ https://docs.djangoproject.com/en/1.10/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
-
 import os
+
+from django.contrib.admin import AdminSite
+
 import dotenv
 dotenv.load()
 
@@ -40,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'nested_inline',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +125,7 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+# Admin Customization settings
+AdminSite.site_header = 'Wiire Admin'
+AdminSite.index_title = 'Platform administration'
