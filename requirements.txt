@@ -1,8 +1,13 @@
 dj-database-url==0.4.1
 Django==1.10.4
 django-nested-inline==0.3.6
+djangorestframework==3.5.3
 gunicorn==19.6.0
+olefile==0.44
+Pillow==2.9.0
 psycopg2==2.6.2
 python-env==1.0.0
+qrcode==5.1
+six==1.10.0
 wheel==0.24.0
 whitenoise==3.2.2
