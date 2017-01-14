@@ -36,6 +36,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'surveys.apps.SurveysConfig',
+    'restapis.apps.RestapisConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'nested_inline',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +131,7 @@ STATICFILES_DIRS = (
 # Admin Customization settings
 AdminSite.site_header = 'Wiire Admin'
 AdminSite.index_title = 'Platform administration'
+
+REST_FRAMEWORK = {
+    'PAGE_SIZE': 10
+}
