@@ -1,12 +1,204 @@
 {% load staticfiles %}
 
 <html>
-<head>
-    <title>Surveys</title>
-    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
-</head>
-<body>
-    {% block content %}
-    {% endblock content %}
-</body>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- ========== VIEWPORT META ========== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+        <!-- ========== PAGE TITLE ========== -->
+        <title>Wiire | Improve Student Satisfaction with Machine Learning</title>
+
+        <!-- ========== META TAGS ========== -->
+        <meta name="description" content="HTML template for Software, Mobile App & SaaS applications.">
+        <meta name="keywords" content="Module Evaluation, Student Feedbak, saas">
+        <meta name="author" content="Houndly Ltd">
+
+        <!-- ========== FAVICON & APPLE ICONS ========== -->
+        <link rel="shortcut icon" href=" {% static 'images/favicon.png' %}">
+        <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}" >
+
+        <!-- ========== MINIFIED VENDOR CSS ========== -->
+        <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+        <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+        <!-- ========== MODERNIZR ========== -->
+        <script src="{% static 'js/vendor/modernizr.js' %}"></script>
+    </head>
+
+    <body>
+
+            <!-- ========== NAVIGATION ========== -->
+        <nav class="navbar yamm navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> <!-- end navbar-toggle -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="{% static 'images/light-logo.svg" alt="SoftEase Logo" class="light-logo' %}">
+                        <img src="{% static 'images/dark-logo.svg' %}" alt="SoftEase Logo" class="dark-logo">
+                    </a> <!-- end navbar-brand -->
+                </div> <!-- end navbar-header -->
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-right">
+
+                        <li class="">
+                            <a href="feature-details.html" class="" >Feature Details </a>
+                        </li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li class="dropdown dd-left">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li>
+                                    <div class="yamm-content">
+                                        <div class="nav-col">
+                                            <ul>
+                                                <li><a href="features.html">Features</a></li>
+                                                <li><a href="feature-details.html">Feature Details</a></li>
+                                                <li><a href="login.html">Login</a></li>
+                                                <li><a href="sign-up.html">Sign Up</a></li>
+                                                <li><a href="faqs.html">FAQs</a></li>
+                                                <li><a href="contact-us.html">Contact Us</a></li>
+                                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                            </ul>
+                                        </div> <!-- end nav-col -->
+                                    </div> <!-- end yamm-content -->
+                                </li>
+                            </ul>
+                        </li> <!-- end dropdown.dd-left (pages) -->
+
+                        <li class="dropdown dd-left">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <b class="caret"></b></a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li>
+                                    <div class="yamm-content">
+                                        <div class="nav-col">
+                                            <ul>
+                                                <li><h5>Default</h5></li>
+                                                <li><a href="blog.html">Default Layout</a></li>
+                                                <li><a href="blog-2.html">Layout 2</a></li>
+                                                <li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
+                                                <li><a href="blog-2-left-sidebar.html">Left Sidebar 2</a></li>
+                                            </ul>
+                                        </div> <!-- end nav-col -->
+                                        <div class="nav-col">
+                                            <ul>
+                                                <li><h5>Single Post</h5></li>
+                                                <li><a href="blog-single-post.html">Default</a></li>
+                                                <li><a href="blog-single-left-sidebar.html">Left Sidebar</a></li>
+                                                <li><a href="blog-single-post-full.html">Full Width</a></li>
+                                            </ul>
+                                        </div> <!-- end nav-col -->
+                                        <div class="nav-col dark-bg text-center">
+                                            <h4>Stay Updated!</h4>
+                                            <p class="light-text">Subscribe to our newsletter. </p>
+                                            <a href="sign-up.html" class="btn se-btn btn-rounded">SUBSCRIBE</a>
+                                        </div> <!-- end nav-col -->
+                                    </div> <!-- end yamm-content -->
+                                </li>
+                            </ul> <!-- end dropdown-menu -->
+                        </li> <!-- end dropdown (blog) -->
+                        <li class="nav-btn-wrap">
+                            <span class="nav-btn"><a href="sign-up.html" class="btn se-btn-black btn-rounded">Sign Up</a></span>
+                        </li>
+                    </ul> <!-- end navbar-nav -->
+
+                </div> <!--end nav-collapse -->
+            </div> <!-- end container -->
+        </nav>
+        {% block content %}
+        {% endblock content %}
+        <script src="{% static 'js/aos.js' %}"></script>
+           <script>
+             AOS.init({
+               easing: 'ease-in-out-sine',
+               duration: '500',
+             });
+           </script>
+    </body>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section class="se-section primary-bg">
+        <div class="container">
+            <div class="row text-center">
+                <h3>Create Your Account Now!</h3>
+                <p>Get 30 days trial. No credit card required.</p>
+                <a href="#" class="btn se-btn-black btn-rounded">SIGN UP</a>
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="light-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-3 col-xs-6">
+                    <img src="{% static 'images/dark-logo.svg' %}" alt="" class="footer-logo">
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-xs-6">
+                    <h6 class="mtn">HOME</h6>
+                    <ul>
+                        <li><a href="#">Parallax Background</a></li>
+                        <li><a href="#">Animated Background</a></li>
+                        <li><a href="#">Solid Color</a></li>
+                        <li><a href="#">Gradient Background</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-xs-6">
+                    <h6 class="mtn">PAGES</h6>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Features</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-xs-6">
+                    <h6 class="mtn">OTHER</h6>
+                    <ul>
+                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-sm-8 col-sm-offset-2 col-md-offset-0">
+                    <h6 class="mtn">SUBSCRIBE</h6>
+                    <div class="input-group">
+                        <input type="email" class="form-control inp-rounded" placeholder="Enter your email id">
+                        <span class="input-group-btn">
+                            <button class="btn se-btn btn-rounded" type="button">Subscribe!</button>
+                        </span> <!-- end input-group-btn -->
+                    </div><!-- end input-group -->
+                    <p class="text-center text-muted">We don't spam!</p>
+                </div>
+            </div> <!-- end row -->
+
+            <div class="row footer-bottom">
+                <div class="col-md-6">
+                    <p>Copyright &copy; Houndly ltd. 2017. All Rights Reserved.</p>
+                </div>
+
+                <div class="col-md-6 text-right">
+                    <h6><a href="http://www.facebook.com/houndly">FACEBOOK</a></h6>
+                    <h6><a href="http://www.twitter.com/houndly">TWITTER</a></h6>
+                </div>
+            </div> <!-- end footer-bottom -->
+        </div> <!-- end container -->
+    </footer>
 </html>
