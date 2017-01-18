@@ -1,0 +1,17 @@
+.teacher{
+    background: #F5F6FA;
+    border: 1px solid #F5F6FA;
+    border-radius: 20px 20px 20px 1px;
+    padding: 5px;
+    float:left;
+    margin: 10px;
+
+}
+.student{
+    background: #00abef;
+    border-radius: 20px 20px 1px 20px;
+    color: white;
+    padding: 5px;
+    float: right;
+    margin: 10px;
+}
