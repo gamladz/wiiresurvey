@@ -1,4 +1,11 @@
+import qrcode
+import StringIO
+
+import os.path
 from django.db import models
+from django.core.urlresolvers import reverse
+from django.core.files.uploadedfile import InMemoryUploadedFile, SimpleUploadedFile
+from surveys.views import survey
 
 
 class Survey(models.Model):
@@ -7,6 +14,58 @@ class Survey(models.Model):
     description = models.TextField(null=True, blank=True)
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
+
+    QRcode = models.ImageField(upload_to='QRcode', blank=True, null=True)
+
+
+    def get_absolute_url(self):
+        return reverse('surveys:survey', args=[str(self.id)])
+
+
+    def save(self):
+        self.generate_qrcode()
+
+        force_update = False
+
+        # If the instance already has been saved, it has an id and we set
+        # force_update to True
+        if self.id:
+            force_update = True
+
+        # Force an UPDATE SQL query if we're editing the image to avoid integrity exception
+        super(Survey, self).save(force_update=force_update)
+
+
+    def generate_qrcode(self):
+
+        qr = qrcode.QRCode(
+            version=1,
+            error_correction=qrcode.constants.ERROR_CORRECT_L,
+            box_size=6,
+            border=0,
+        )
+
+        qr.add_data(self.get_absolute_url())
+        qr.make(fit=True)
+
+        image = qr.make_image()
+
+        temp_handle = StringIO.StringIO()
+        image.save(temp_handle, 'png')
+        temp_handle.seek(0)
+
+
+        # Save image to a SimpleUploadedFile which can be saved into
+        # ImageField
+        suf = SimpleUploadedFile(os.path.split(self.QRcode.name)[-1],
+                temp_handle.read(), content_type='image/png')
+
+        # Save SimpleUploadedFile into QR code field field
+        self.QRcode.save(
+            '%s_QRcode.%s' % (os.path.splitext(suf.name)[0], 'png'),
+            suf,
+            save=False
+        )
 
     def __str__(self):
         return self.name
