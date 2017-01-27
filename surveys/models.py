@@ -15,6 +15,8 @@ class Survey(models.Model):
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
 
+    """
+
     QRcode = models.ImageField(upload_to='QRcode', blank=True, null=True)
 
 
@@ -66,6 +68,7 @@ class Survey(models.Model):
             suf,
             save=False
         )
+    """
 
     def __str__(self):
         return self.name

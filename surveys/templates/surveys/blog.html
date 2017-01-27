@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+       <!-- ========== PAGE TITLE ========== -->
+        <header class="header page-title" >
+            <div class="container">
+                <!-- For centering the content vertically -->
+                <div class="outer">
+                    <div class="inner text-center">
+
+                        <h1 class="">Blog</h1>
+                        <h5 class="">Stay connected with latest information.</h5>
+                        <a href="#" class="btn se-btn-black btn-rounded mt20">Subscribe Now</a>
+
+                    </div> <!-- end inner -->
+                </div> <!-- end outer -->
+            </div> <!-- end container -->
+        </header>
+
+        <!-- ========== FEATURE DETAILS ========== -->
+        <section class="se-section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <!-- ========== TWITTER FEEDS ========== -->
+                        <a class="twitter-timeline" data-height="600" href="https://twitter.com/houndly">Tweets by Wiire</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                        <h5 class="underline mt30">Archives</h5>
+                        <ul class="list-group mb60">
+                            <li class="list-group-item"><a href="#">Apr 2016</a></li>
+                            <li class="list-group-item"><a href="#">Mar 2016</a></li>
+                            <li class="list-group-item"><a href="#">Feb 2016</a></li>
+                            <li class="list-group-item"><a href="#">Jan 2016</a></li>
+                            <li class="list-group-item"><a href="#">Dec 2015</a></li>
+                            <li class="list-group-item"><a href="#">Nov 2015</a></li>
+                            <li class="list-group-item"><a href="#">Oct 2015</a></li>
+                        </ul>
+
+                    </div> <!-- end col-md-3 -->
+
+                    <div class="col-md-9" id="posts">
+
+                        <div class="col-md-6 entry">
+                            <div class="entry-image">
+                                <img src="images/blog-3-min.jpg" alt="Blog 1" class="img-responsive">
+                            </div>
+                            <div class="entry-title">
+                                <h4 class="underline"><a href="#">How to create website quickly</a></h4>
+                            </div>
+                            <div class="entry-meta">
+                                <p><small class="text-muted">01 Apr 2016 | <a href="#">12 Comments</a> | <a href="#">admin</a> | <a href="#">Technology</a></small></p>
+                            </div>
+
+                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div> <!-- end entry -->
+
+                        <div class="col-md-6 entry">
+                            <div class="entry-image">
+                                <img src="images/blog-1-min.jpg" alt="Blog 1" class="img-responsive">
+                            </div>
+                            <div class="entry-title">
+                                <h4 class="underline"><a href="#">Why you should buy SoftEase!</a></h4>
+                            </div>
+                            <div class="entry-meta">
+                                <p><small class="text-muted">01 Apr 2016 | <a href="#">12 Comments</a> | <a href="#">admin</a> | <a href="#">Technology</a></small></p>
+                            </div>
+
+                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div> <!-- end entry -->
+
+                        <div class="col-md-6 entry">
+                            <div class="entry-image">
+                                <img src="images/blog-4-min.jpg" alt="Blog 1" class="img-responsive">
+                            </div>
+                            <div class="entry-title">
+                                <h4 class="underline"><a href="#">How to increase conversion rate by 300%?</a></h4>
+                            </div>
+                            <div class="entry-meta">
+                                <p><small class="text-muted">01 Apr 2016 | <a href="#">12 Comments</a> | <a href="#">admin</a> | <a href="#">Technology</a></small></p>
+                            </div>
+
+                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div> <!-- end entry -->
+
+                        <div class="col-md-6 entry">
+                            <div class="entry-image">
+                                <img src="images/blog-2-min.jpg" alt="Blog 1" class="img-responsive">
+                            </div>
+                            <div class="entry-title">
+                                <h4 class="underline"><a href="#">How to increase conversion rate by 300%?</a></h4>
+                            </div>
+                            <div class="entry-meta">
+                                <p><small class="text-muted">01 Apr 2016 | <a href="#">12 Comments</a> | <a href="#">admin</a> | <a href="#">Technology</a></small></p>
+                            </div>
+
+                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div> <!-- end entry -->
+
+                        <div class="row">
+                            <a href="#" class="btn se-btn-black btn-rounded">&larr; Older</a>
+                            <a href="#" class="btn se-btn-black btn-rounded pull-right">Newer &rarr;</a>
+                        </div>
+
+                    </div> <!-- end col-md-9 -->
+
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>
+
+        <!-- ========== COUNTERS SECTION ========== -->
+        <section class="se-section counters-section gray-section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 counter-box">
+                        <span class="count-icon ion-thumbsup"></span>
+                        <div class="count-info">
+                            <h4><span class="counter">1760</span>+</h4>
+                            <p>projects completed.</p>
+                        </div> <!-- end count-info -->
+                    </div> <!-- end counter-box -->
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 counter-box">
+                        <span class="count-icon ion-happy-outline"></span>
+                        <div class="count-info">
+                            <h4><span class="counter">11000</span>+</h4>
+                            <p>customers handled.</p>
+                        </div> <!-- end count-info -->
+                    </div> <!-- end counter-box -->
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 counter-box">
+                        <span class="count-icon ion-coffee"></span>
+                        <div class="count-info">
+                            <h4><span class="counter">2200</span>+</h4>
+                            <p>cups of tea.</p>
+                        </div> <!-- end count-info -->
+                    </div> <!-- end counter-box -->
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 counter-box">
+                        <span class="count-icon ion-ios-flame-outline"></span>
+                        <div class="count-info">
+                            <h4><span class="counter">128</span>+</h4>
+                            <p>human resources.</p>
+                        </div> <!-- end count-info -->
+                    </div> <!-- end counter-box -->
+
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>
+
+{% endblock content %}
