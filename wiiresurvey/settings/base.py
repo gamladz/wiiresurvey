@@ -27,6 +27,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = dotenv.get('SECRET_KEY')
 
+# SECURITY WARNING: keep the host password used in production secret!
+HOST_PW = dotenv.get('HOST_PW')
+
+# SECURITY WARNING: keep the Host user in production secret!
+HOST_USER = dotenv.get('HOST_USER')
+
 # SECURITY WARNING: don't run with debug turned on in production!
 
 ALLOWED_HOSTS = []
@@ -135,3 +141,25 @@ AdminSite.index_title = 'Platform administration'
 REST_FRAMEWORK = {
     'PAGE_SIZE': 10
 }
+
+# Python Django settings for email
+
+
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_PORT=587
+EMAIL_HOST_USER=HOST_USER
+EMAIL_HOST_PASSWORD= HOST_PW
+EMAIL_USE_TLS=True
+
+
+"""
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'testing@example.com'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+EMAIL_PORT = 1025
+
+"""
