@@ -95,7 +95,16 @@ h5.small{
 .primary-bg{
     background: #21469C;
 }
-
+.option{
+    margin: 0px 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 20px 20px 20px 20px;
+    border-width: 2px;
+    border-color: #F5F6FA;
+    background-color: transparent;
+    color: #00abef;
+}
 .navbar{
     background-color:#21469C;
     padding-bottom: 0px;
