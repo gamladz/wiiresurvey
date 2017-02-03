@@ -20,6 +20,9 @@ def signup(request):
 def privacypolicy(request):
     return render(request, 'surveys/privacypolicy.html', {})
 
+def pricing(request):
+    return render(request, 'surveys/pricing.html', {})
+
 def survey(request, survey_id):
     return render(request, 'surveys/survey.html', {})
 

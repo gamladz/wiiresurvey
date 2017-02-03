@@ -10,6 +10,7 @@ urlpatterns = [
     url(r'^blog/$',  views.blog, name='blog'),
     url(r'^sign-up/$',  views.get_signup, name='signup'),
     url(r'^privacy-policy/$',  views.privacypolicy, name='privacypolicy'),
+    url(r'^pricing/$',  views.pricing, name='pricing'),
     # url(r'^contact/$',  views.contact, name='contact'),
     # ex: /survey/5/
     url(r'^survey/(?P<survey_id>[0-9]+)/$', views.survey, name='survey'),
