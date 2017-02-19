@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
         <!-- ========== PAGE TITLE ========== -->
-        <title>Improve Student Satisfaction with Machine Learning</title>
+        <title>Boost Response Rates</title>
 
         <!-- ========== META TAGS ========== -->
         <meta name="description" content="Use Module Evaluation to boost student satisfaction.">
@@ -28,9 +28,41 @@
         <link rel="stylesheet" href="{% static 'css/devices.min.css' %}">
         <link rel="stylesheet" href="{% static 'css/custom.css' %}">
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" ></script>
+
 
         <!-- ========== MODERNIZR ========== -->
         <script src="{% static 'js/vendor/modernizr.js' %}"></script>
+        <script src="{% static 'js/typed.min.js' %}"></script>
+        <script>
+  $(function(){
+      $(".subject").typed({
+        strings: ["Fluid Mechanics."],
+        startDelay: 6500,
+        typeSpeed: 0,
+        showCursor: false,
+      });
+  });
+  $(function(){
+      $(".name").typed({
+        strings: ["Peter^8000","Mira^5000","James^5000", "Lizzie^5000", "Ola^5000", "Holly^5000", "Carlos^5000"],
+        startDelay: 4000,
+        typeSpeed: 0,
+        showCursor: false,
+        loop: false,
+        // highlight instead of erasing each character (backspace effect)
+        highlight: false,
+      });
+  });
+    $(function(){
+      $(".response").typed({
+        strings: ["an improvement to the VLE"],
+        startDelay: 9000,
+        typeSpeed: 0,
+        showCursor: false,
+      });
+  });
+</script>
     </head>
 
     <body>
@@ -72,23 +104,17 @@
                duration: '500',
              });
            </script>
-        <script src="{% static 'scripts/plugins.js' %}" ></script>
+        <script src="{% static 'js/plugins.js' %}" ></script>
 
-        <script src="{% static 'scripts/main.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
 
-        <script src="{% static 'scripts/init-animation-cirle.js' %}" ></script>
+         <script src="{% static 'js/init-animation.js' %}" ></script>
+
+        <script src="{% static 'js/init-animation-circle.js' %}" ></script>
+
     </body>
 
-    <!-- ========== CTA SECTION ========== -->
-    <section class="se-section primary-bg">
-        <div class="container">
-            <div class="row text-center">
-                <h3>Add me to the waiting list!</h3>
-                <p>Join our mission to improve Student Satisfaction</p>
-                <a href="/pricing" class="btn se-btn-black btn-rounded">Start Free Trial</a>
-            </div> <!-- end row -->
-        </div> <!-- end container -->
-    </section>
+
 
     <!-- ========== FOOTER ========== -->
     <footer class="light-footer">

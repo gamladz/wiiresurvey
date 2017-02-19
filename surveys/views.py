@@ -14,9 +14,6 @@ def about(request):
 def blog(request):
     return render(request, 'surveys/blog.html', {})
 
-def signup(request):
-    return render(request, 'surveys/signup.html', {})
-
 def privacypolicy(request):
     return render(request, 'surveys/privacypolicy.html', {})
 
@@ -26,31 +23,29 @@ def pricing(request):
 def survey(request, survey_id):
     return render(request, 'surveys/survey.html', {})
 
-def send_email(request):
-    subject = request.POST.get('subject', '')
-    message = request.POST.get('message', '')
-    from_email = request.POST.get('from_email', '')
-    if subject and message and from_email:
-        try:
-            send_mail(subject, message, from_email, ['gameli.ladzekpo@gmail.com'])
-        except BadHeaderError:
-            return HttpResponse('Invalid header found.')
-        return HttpResponseRedirect('/contact/thanks/')
-    else:
-        # In reality we'd use a form class
-        # to get proper validation errors.
-        return HttpResponse('Make sure all fields are entered and valid.')
+def success(request):
+    return render(request, 'surveys/success.html', {})
+
+def signup(request):
+    return render(request, 'surveys/signup.html', {})
+
+def thanks(request):
+    return render(request, 'surveys/thanks.html', {})
 
 
-def get_signup(request):
+def success(request):
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
+
         # create a form instance and populate it with data from the request:
         form = ContactForm(request.POST)
         # check whether it's valid:
         if form.is_valid():
-            subject = form.cleaned_data['subject']
-            message = form.cleaned_data['message']
+            organisation = form.cleaned_data['organisation']
+            name = form.cleaned_data['name']
+            subject = 'Hey ' + name + ', Get Started with Wiire'
+            message = 'Hi ' + name + ', thanks for stopping by. I personally reach out to everyone who visits our website. I\'ll send you an email to get started in the next day or so to get Wiire up and running with ' + organisation + '. Thanks for your interest!\n\nBe in touch soon,\n\nGam'
+
             from_email = form.cleaned_data['from_email']
 
             recipients = ['gameli.ladzekpo@gmail.com']
