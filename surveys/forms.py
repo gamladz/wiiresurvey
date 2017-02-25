@@ -1,4 +1,5 @@
 from django import forms
+from surveys.models import Survey, Question, Choice, Response, Answer
 
 class ContactForm(forms.Form):
     organisation = forms.CharField(label='', max_length=100)
