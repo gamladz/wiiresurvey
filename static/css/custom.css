@@ -46,6 +46,10 @@
     color: #fff;
 }
 
+.main-header.container{
+    height: 650px;
+}
+
 .marvel-device.iphone6plus.gold {
     margin: 30px;
 }
@@ -69,9 +73,10 @@
 }
 
 .main-header .primary-trans-bg {
-    background: #23499a; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #23499a , #1D3D80); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #23499a , #1D3D80); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #56CCF2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #56CCF2 , #2F80ED); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #56CCF2 , #2F80ED); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 }
 
@@ -110,11 +115,10 @@ h5.small{
     color: #00abef;
 }
 .navbar{
-    background: #23499a; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #23499a , #1D3D80); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #23499a , #1D3D80); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #fff; /* fallback for old browsers */
     padding-bottom: 0px;
     margin-bottom: 0px;
+    box-shadow: 0 1px 3px 0 rgba(27,36,50,.15);
 }
 
 .se-plan .plan-features li{
@@ -133,13 +137,20 @@ h5.small{
 }
 
 .btn.btn-rounded {
-    border-radius: 30px;
-    border: 1px solid white;
+    border-radius: 5px;
+    border: 2px solid #F46F93;
+    text-transform: none;
+    padding: 0 15px;
 }
 
 .btn.se-btn-black {
-    background: transparent;
-    color: #fff;
+    background: #F46F93;
+    color: #FFF;
+
+}
+
+.btn.se-btn-white{
+  color: #F46F93 ;
 }
 
 
@@ -359,6 +370,26 @@ h3 {
   left: 2px;
   width: 100%;
   margin-bottom: 15px;
+}
+
+.code-sample{
+  background-color: #101010;
+  color: white;
+  border-radius: 6px 6px 6px 6px;
+  font-size: 20px ;
+  white-space: pre-wrap;
+}
+
+.tag{
+  color: #FC1F70;
+}
+
+.class-tag{
+  color: #A4EF02;
+}
+
+.label-tag{
+  color: #E6DC6D;
 }
 
 
