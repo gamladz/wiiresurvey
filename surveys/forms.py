@@ -1,5 +1,4 @@
 from django import forms
-from django.forms import ModelForm
 from surveys.models import Survey, Question, Choice, Response, Answer
 
 
@@ -38,7 +37,8 @@ class SurveyForm(forms.Form):
                                                        choices=choices,
                                                        widget=forms.CheckboxSelectMultiple)
             elif question.type == question.INTEGER:
-                field_type = forms.IntegerField(label=question.text, required=question.required)
+                field_type = forms.IntegerField(label=question.text,
+                    required=question.required)
 
             self.fields.update({field_name: field_type})
 
@@ -66,8 +66,3 @@ class SurveyForm(forms.Form):
                 response=response
             )
 
-
-
-# Create each question as a seperate form
-# crate a formset of question forms
-# Create an inline formset and initialise with values.

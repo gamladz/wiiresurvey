@@ -51,6 +51,10 @@ class SurveyView(View):
     def get(self, request,  *args, **kwargs):
         survey_pk = kwargs.get('survey_pk')
         survey = get_object_or_404(Survey, pk=survey_pk)
+        session_id = request.session.session_key
+
+        if survey.responses.all().filter(responder_id=session_id):
+            return HttpResponse("You have filled this form before")
 
         survey_form = SurveyForm(survey=survey)
 
@@ -59,6 +63,7 @@ class SurveyView(View):
             'survey': survey
         }
         return render(request, 'surveys/survey.html', context)
+
 
     def post(self, request, *args, **kwargs):
 

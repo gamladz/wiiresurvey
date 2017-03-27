@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1498px" height="915px" viewBox="0 0 1498 915" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Dashboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1536.12008" height="853"></rect>
+        <rect id="path-3" x="251.331577" y="98" width="305.701265" height="205.092896" rx="10"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="-3" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.152965925   0 0 0 0 0.168802346   0 0 0 0 0.181999362  0 0 0 0.16052423 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="-3" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.152941176   0 0 0 0 0.168627451   0 0 0 0 0.180392157  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-6" x="4.54747351e-13" y="0" width="551.903625" height="358.912568" rx="10"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="-3" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.152941176   0 0 0 0 0.168627451   0 0 0 0 0.180392157  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-8" x="0" y="0" width="1498" height="62" rx="5"></rect>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="1498" height="62" fill="white">
+            <use xlink:href="#path-8"></use>
+        </mask>
+    </defs>
+    <g id="MockupGraphics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard">
+            <g id="Dashboard-window" transform="translate(0.000000, 60.000000)">
+                <g id="project" transform="translate(0.286281, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#EEF4F9" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-3" fill="#FFFFFF" mask="url(#mask-2)" x="228.763027" y="2.04371585" width="1309.40874" height="77.1967213"></rect>
+                    <g id="Group-2" mask="url(#mask-2)">
+                        <g transform="translate(253.202555, 28.000000)">
+                            <text id="Module-Evaluation" font-family="AvenirNext-Regular, Avenir Next" font-size="18" font-weight="normal">
+                                <tspan x="-5.68434189e-14" y="18.9322404" fill="#697B8C">Module Evaluation</tspan>
+                            </text>
+                            <image id="ic_arrow_drop_down_black_24dp_2x" opacity="0.58" x="160.031535" y="0" width="24.6202361" height="22.3737705" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAA1teXP8meAAAAI5JREFUaAXt0NEKgCAUg2EffW9e20U3QpQVeIx/IESlnn2tEQQQQAABBBBAAAEEEEAAAQQQGBWQN2wfrZw1JfKtb0vkjKmRb39aIntLRJ5itET2lIo8zd0S+bdk5KmuSuSf0pGnOyuRb0tEnrIvkXdLRZ72KJHnJSNPnUUQQAABBBBAAAEEEEAAAQR+J7ADxzFjp6ImZ3gAAAAASUVORK5CYII="></image>
+                        </g>
+                    </g>
+                    <g id="Rectangle-25" mask="url(#mask-2)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <text id="Report-Overview" mask="url(#mask-2)" font-family="AvenirNext-Medium, Avenir Next" font-size="21" font-weight="400" fill="#697B8C">
+                        <tspan x="284.158558" y="139">Report Overview</tspan>
+                    </text>
+                    <text id="Number-of-Responses" mask="url(#mask-2)" font-family="AvenirNext-Regular, Avenir Next" font-size="21" font-weight="normal" fill="#8CA0B3">
+                        <tspan x="284.158558" y="188.803279">Number of Responses</tspan>
+                    </text>
+                    <text id="37" mask="url(#mask-2)" font-family="AvenirNext-Regular, Avenir Next" font-size="38" font-weight="normal" fill="#6C6C6C">
+                        <tspan x="476.022487" y="244.957377">37</tspan>
+                        <tspan x="520.102487" y="244.957377" font-family=".HelveticaNeueDeskInterface-Regular, .Helvetica Neue DeskInterface"> </tspan>
+                    </text>
+                </g>
+                <text id="Report-Card" font-family="AvenirNext-Medium, Avenir Next" font-size="21" font-weight="400" fill="#697B8C">
+                    <tspan x="256.747073" y="364.996721">Report Card</tspan>
+                </text>
+                <g id="FreeTextReport" filter="url(#filter-5)" transform="translate(256.747073, 387.812022)">
+                    <rect id="Rectangle-77" fill="#FFFFFF" x="5.68434189e-14" y="0" width="551.903625" height="245.179235" rx="10"></rect>
+                    <text id="Question-1:-How-was" font-family="AvenirNext-Regular, Avenir Next" font-size="21" font-weight="normal" line-spacing="29" fill="#455262">
+                        <tspan x="22.5685497" y="46.1704918">Question 1: How was the course overall?</tspan>
+                    </text>
+                    <text id="Common-Themes" font-family="AvenirNext-Regular, Avenir Next" font-size="18" font-weight="normal" line-spacing="15" fill="#455262">
+                        <tspan x="22.5685497" y="165.293989">Common Themes</tspan>
+                    </text>
+                    <g id="Group" transform="translate(23.594393, 175.261202)">
+                        <rect id="Rectangle" fill="#62DA73" x="0" y="0" width="44.1112563" height="23.3060109" rx="8"></rect>
+                        <text id="Labs" font-family="ProximaNova-Regular, Proxima Nova" font-size="11" font-weight="normal" line-spacing="15" fill="#FFFFFF">
+                            <tspan x="8.20674536" y="14.7289617">Labs</tspan>
+                        </text>
+                    </g>
+                    <g id="Group" transform="translate(57.447218, 86.698361)" fill="#62DA73">
+                        <rect id="Rectangle" x="0" y="0" width="309.804637" height="23.3060109" rx="8"></rect>
+                    </g>
+                    <g id="Group" transform="translate(73.860708, 175.261202)">
+                        <rect id="Rectangle" fill="#62DA73" x="0" y="0" width="83.0932968" height="23.3060109" rx="8"></rect>
+                        <text id="Experiments" font-family="ProximaNova-Regular, Proxima Nova" font-size="11" font-weight="normal" line-spacing="15" fill="#FFFFFF">
+                            <tspan x="8.98305911" y="14.7289617">Experiments</tspan>
+                        </text>
+                    </g>
+                    <g id="Group" transform="translate(164.134907, 175.261202)">
+                        <rect id="Rectangle" fill="#62DA73" x="0" y="0" width="91.3000421" height="23.3060109" rx="8"></rect>
+                        <text id="Participation" font-family="ProximaNova-Regular, Proxima Nova" font-size="11" font-weight="normal" line-spacing="15" fill="#FFFFFF">
+                            <tspan x="17.4393339" y="14.7289617">Participation</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-Copy" transform="translate(367.251855, 172.464481)">
+                        <rect id="Rectangle" fill="#F16866" x="0" y="0" width="63.6022765" height="23.3060109" rx="8"></rect>
+                        <text id="Reports" font-family="ProximaNova-Regular, Proxima Nova" font-size="11" font-weight="normal" line-spacing="15" fill="#FFFFFF">
+                            <tspan x="14.5993003" y="14.7289617">Reports</tspan>
+                        </text>
+                    </g>
+                    <g id="Group" transform="translate(441.112563, 172.464481)">
+                        <rect id="Rectangle" fill="#F16866" x="0" y="0" width="68.7314924" height="23.3060109" rx="8"></rect>
+                        <text id="Feedback" font-family="ProximaNova-Regular, Proxima Nova" font-size="11" font-weight="normal" line-spacing="15" fill="#FFFFFF">
+                            <tspan x="8.20674536" y="14.7289617">Feedback</tspan>
+                        </text>
+                    </g>
+                    <g id="Group" transform="translate(353.915894, 86.698361)" fill="#F16866">
+                        <path d="M3.40587175e-13,3.2317236e-15 L116.125981,7.97008552e-14 C120.544835,8.26106772e-14 124.127024,3.59048842 124.127024,8.00430005 L124.127024,15.3017109 C124.127024,19.7223637 120.546008,23.3060109 116.125981,23.3060109 L3.42067079e-13,23.3060109 L3.40587175e-13,3.2317236e-15 Z" id="Rectangle"></path>
+                    </g>
+                    <text id="72%-positive" font-family="AvenirNext-Medium, Avenir Next" font-size="11" font-weight="400" line-spacing="24" fill="#FFFFFF">
+                        <tspan x="84.0546519" y="97.6983607">72%  positive</tspan>
+                    </text>
+                    <text id="28%-Negative" font-family="AvenirNext-Medium, Avenir Next" font-size="11" font-weight="400" line-spacing="24" fill="#FFFFFF">
+                        <tspan x="374.909909" y="98">28%  Negative</tspan>
+                    </text>
+                    <image id="Screen-Shot-2016-12-14-at-00.18.49" x="18.4651771" y="83.9016393" width="30.7752951" height="26.1027322" xlink:href="data:image/png;base64,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"></image>
+                    <image id="Emojione_1F614.svg" x="489.327192" y="83.9016393" width="30.7752951" height="27.9672131" xlink:href="data:image/png;base64,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"></image>
+                </g>
+                <g id="Sidebar">
+                    <rect id="Rectangle-2" fill="#21469C" x="0" y="0" width="229.020561" height="853"></rect>
+                    <text id="Reports" font-family="Avenir-Book, Avenir" font-size="16" font-weight="normal" line-spacing="40">
+                        <tspan x="43.2783711" y="134" fill="#FFFFFF">Reports</tspan>
+                        <tspan x="98.3663711" y="134" font-family=".HelveticaNeueDeskInterface-Regular, .Helvetica Neue DeskInterface" fill="#FFFFFF"></tspan>
+                        <tspan x="43.2783711" y="174" font-family=".HelveticaNeueDeskInterface-Regular, .Helvetica Neue DeskInterface" fill="#A8B7C6"></tspan>
+                    </text>
+                    <text id="Send-Resolution" opacity="0.7" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" line-spacing="40" fill="#FFFFFF">
+                        <tspan x="43.2783711" y="214">Send Resolution</tspan>
+                    </text>
+                    <text id="Manage-Surveys" opacity="0.7" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" line-spacing="40" fill="#FFFFFF">
+                        <tspan x="43.2783711" y="174">Manage Surveys</tspan>
+                    </text>
+                </g>
+                <g id="MultipleChoiceReport" transform="translate(847.632739, 385.015301)">
+                    <g id="Rectangle-9">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                    </g>
+                    <text id="100-80-60-40-20" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" line-spacing="35" fill-opacity="0.543846241" fill="#000000">
+                        <tspan x="76.9044187" y="142.71694">100</tspan>
+                        <tspan x="76.9044187" y="177.71694">80</tspan>
+                        <tspan x="76.9044187" y="212.71694">60</tspan>
+                        <tspan x="76.9044187" y="247.71694">40</tspan>
+                        <tspan x="76.9044187" y="282.71694">20</tspan>
+                    </text>
+                    <g id="Group-7" transform="translate(123.101180, 306.774863)" font-weight="normal" font-family="AvenirNext-Regular, Avenir Next" line-spacing="30" fill="#000000" font-size="12" fill-opacity="0.543846241">
+                        <text id="All">
+                            <tspan x="18.6458967" y="12.2501003">All </tspan>
+                        </text>
+                    </g>
+                    <text id="no-of-Responses" font-family="AvenirNext-Regular, Avenir Next" font-size="10" font-weight="normal" line-spacing="32" fill-opacity="0.87" fill="#455262">
+                        <tspan x="53.3438448" y="116.27541">no of Responses</tspan>
+                    </text>
+                    <text id="Question-2:-What-pro" font-family="AvenirNext-Regular, Avenir Next" font-size="21" font-weight="normal" line-spacing="32" fill-opacity="0.87" fill="#455262">
+                        <tspan x="30.7752951" y="42.4415301">Question 2: What proportion of Lectures did </tspan>
+                        <tspan x="30.7752951" y="74.4415301">you attend?</tspan>
+                    </text>
+                    <g id="Group-4-Copy" transform="translate(131.307926, 205.092896)" fill="#00E0E1">
+                        <rect id="Rectangle-2" x="0.181574889" y="0" width="32.9516982" height="82.8192923" rx="8"></rect>
+                    </g>
+                    <g id="Group-7" transform="translate(165.160750, 305.842623)" font-weight="normal" font-family="AvenirNext-Regular, Avenir Next" line-spacing="30" fill="#000000" font-size="12" fill-opacity="0.543846241">
+                        <text id="80%">
+                            <tspan x="29.7637536" y="12.2501003">80%</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4-Copy" transform="translate(184.651771, 145.429508)" fill="#0BDEA3">
+                        <rect id="Rectangle-2" x="0.181393495" y="0" width="32.9187794" height="143.65075" rx="8"></rect>
+                    </g>
+                    <g id="Group-7" transform="translate(218.504595, 305.842623)" font-weight="normal" font-family="AvenirNext-Regular, Avenir Next" line-spacing="30" fill="#000000" font-size="12" fill-opacity="0.543846241">
+                        <text id="60%">
+                            <tspan x="29.7637536" y="12.2501003">60%</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4-Copy" transform="translate(237.995615, 205.092896)" fill="#F9584A">
+                        <rect id="Rectangle-2" x="0.181574889" y="0" width="32.9516982" height="82.8192923" rx="8"></rect>
+                    </g>
+                    <g id="Group-7" transform="translate(285.110194, 306.000000)" font-weight="normal" font-family="AvenirNext-Regular, Avenir Next" line-spacing="30" fill="#000000" font-size="12" fill-opacity="0.543846241">
+                        <text id="40%">
+                            <tspan x="14.3245734" y="12">40%</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4-Copy" transform="translate(292.365303, 175.261202)" fill="#FC6400">
+                        <rect id="Rectangle-2" x="0.176072619" y="0" width="31.9531619" height="112.597015" rx="8"></rect>
+                    </g>
+                    <g id="Group-7" transform="translate(324.166442, 307.707104)" font-weight="normal" font-family="AvenirNext-Regular, Avenir Next" line-spacing="30" fill="#000000" font-size="12" fill-opacity="0.543846241">
+                        <text id="none">
+                            <tspan x="25.5397536" y="12.2501003">none</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4-Copy" transform="translate(344.683305, 230.263388)" fill="#83B5EA">
+                        <rect id="Rectangle-2" x="0.181393495" y="0" width="32.9187794" height="59.5554461" rx="8"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-2" transform="translate(44.000000, 90.000000)">
+                <polygon id="Shape" fill="#2798D8" points="17.6598174 4.65 0.207762557 9.17432432 0.207762557 26.3081081 17.7013699 21.7418919 17.7013699 21.7418919 17.7013699 4.65"></polygon>
+                <polygon id="Shape" fill="#FFFFFF" points="23.3109589 26.3081081 17.7013699 26.3081081 17.7013699 30.8743243 12.0917808 26.3081081 0.207762557 26.3081081 2.74246575 9.21621622 23.3109589 9.21621622"></polygon>
+                <polygon id="Shape" fill="#2798D8" points="17.6598174 4.65 0.207762557 9.17432432 0.207762557 26.3081081 17.7013699 21.7418919"></polygon>
+                <polygon id="Shape" fill="#4FD7ED" points="12.0917808 0.0837837838 0.207762557 9.17432432 0.207762557 26.3081081 12.0917808 17.2175676"></polygon>
+                <polygon id="Shape" fill="#FFFFFF" points="39.3502283 26.3918919 34.530137 9.21621622 37.4803653 9.21621622 41.0538813 22.6216216 44.9182648 9.21621622 47.4945205 9.21621622 51.3173516 22.6216216 54.8908676 9.21621622 57.8410959 9.21621622 53.0210046 26.3918919 49.7799087 26.3918919 46.1648402 13.8662162 42.5497717 26.3918919"></polygon>
+                <path d="M60.0018265,11.7716216 C59.3369863,11.1013514 59.3369863,10.0540541 60.0018265,9.38378378 C60.6666667,8.71351351 61.747032,8.71351351 62.3703196,9.38378378 C63.0351598,10.0540541 63.0351598,11.0594595 62.3287671,11.7716216 C61.6639269,12.4418919 60.6666667,12.4418919 60.0018265,11.7716216 L60.0018265,11.7716216 Z M59.8771689,26.3918919 L59.8771689,14.1175676 L62.4949772,14.1175676 L62.4949772,26.3918919 L59.8771689,26.3918919 L59.8771689,26.3918919 Z" id="Shape" fill="#FFFFFF"></path>
+                <path d="M65.6114155,11.7716216 C64.9465753,11.1013514 64.9465753,10.0540541 65.6114155,9.38378378 C66.2762557,8.71351351 67.356621,8.71351351 67.9799087,9.38378378 C68.6447489,10.0540541 68.6447489,11.0594595 67.9383562,11.7716216 C67.3150685,12.4418919 66.2762557,12.4418919 65.6114155,11.7716216 L65.6114155,11.7716216 Z M65.486758,26.3918919 L65.486758,14.1175676 L68.1045662,14.1175676 L68.1045662,26.3918919 L65.486758,26.3918919 L65.486758,26.3918919 Z" id="Shape" fill="#FFFFFF"></path>
+                <path d="M73.3817352,16.1702703 C74.0465753,14.6621622 75.2931507,13.9081081 77.1214612,13.9081081 L77.1214612,16.7986486 C76.1242009,16.7148649 75.2515982,16.9662162 74.503653,17.5527027 C73.7557078,18.0972973 73.3817352,19.0189189 73.3817352,20.2337838 L73.3817352,26.3918919 L70.7639269,26.3918919 L70.7639269,14.1175676 L73.3817352,14.1175676 L73.3817352,16.1702703 L73.3817352,16.1702703 Z" id="Shape" fill="#FFFFFF"></path>
+                <path d="M81.1105023,21.3648649 C81.4844749,23.25 82.9803653,24.2554054 85.0164384,24.2554054 C86.3876712,24.2554054 87.4680365,23.7527027 88.1744292,22.7472973 L90.3351598,24.0040541 C89.130137,25.8054054 87.3849315,26.6851351 85.0164384,26.6851351 C83.0634703,26.6851351 81.4429224,26.0567568 80.2378995,24.8837838 C79.0328767,23.6689189 78.409589,22.1189189 78.409589,20.2337838 C78.409589,18.3905405 79.0328767,16.8824324 80.196347,15.6675676 C81.4013699,14.4108108 82.9388128,13.8243243 84.8086758,13.8243243 C86.5954338,13.8243243 88.0497717,14.4527027 89.1716895,15.7094595 C90.3351598,16.9662162 90.916895,18.5162162 90.916895,20.2756757 C90.916895,20.527027 90.8753425,20.9040541 90.83379,21.3648649 L81.1105023,21.3648649 L81.1105023,21.3648649 Z M88.2575342,19.2283784 C87.8835616,17.2594595 86.5123288,16.2121622 84.7671233,16.2121622 C82.8141553,16.2121622 81.4429224,17.3851351 81.1105023,19.2283784 L88.2575342,19.2283784 L88.2575342,19.2283784 Z" id="Shape" fill="#FFFFFF"></path>
+            </g>
+            <use id="Rectangle-8" stroke="#E4E7E9" mask="url(#mask-9)" stroke-width="2" fill="#F1F4F7" xlink:href="#path-8"></use>
+            <circle id="Oval-3" fill="#F45F5F" transform="translate(41.500000, 28.500000) scale(1, -1) translate(-41.500000, -28.500000) " cx="41.5" cy="28.5" r="10.5"></circle>
+            <circle id="Oval-3" fill="#FFCC2B" transform="translate(79.500000, 28.500000) scale(1, -1) translate(-79.500000, -28.500000) " cx="79.5" cy="28.5" r="10.5"></circle>
+            <circle id="Oval-3" fill="#7ED321" transform="translate(118.500000, 28.500000) scale(1, -1) translate(-118.500000, -28.500000) " cx="118.5" cy="28.5" r="10.5"></circle>
+        </g>
+    </g>
+</svg>
