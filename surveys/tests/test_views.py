@@ -22,7 +22,8 @@ class SurveyViewTest(TestCase):
     # def test_survey_view_with_correct_context(self):
 
     #
-    #     If the survey has not been completed, we should be able to get
+    #     If the survey has not been completed (session.id) already
+    # exists in database, we should be able to get
     #     sthe survey with the right context.
 
     #     self.assertContains(response,
