@@ -70,9 +70,6 @@ class SurveyView(View):
         survey_pk = kwargs.get('survey_pk')
         survey = get_object_or_404(Survey, pk=survey_pk)
         survey_form = SurveyForm(request.POST, survey=survey)
-
-        # get the nickname if any was passed in
-
         responder_id = request.session.session_key
 
         if responder_id is None:
