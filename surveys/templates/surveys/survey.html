@@ -1,1 +1,63 @@
-<img src="{{ survey.qrcode.url }}" alt="Event QR code"
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<script type="text/javascript" src="https://conversational-form-0iznjsw.stackpathdns.com/conversational-form.min.js" crossorigin></script>
+
+<style>
+
+    .user.show>thumb{
+        background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAANmAAAAJGM1YTE3NzgzLTc0MWQtNGY3My1hNWVlLTliNTQyZDNjZDhjNQ.jpg)
+            !important;
+        width:50px;
+        height:50px;
+        display: none;
+    }
+    .robot.show>thumb{
+        background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAANmAAAAJGM1YTE3NzgzLTc0MWQtNGY3My1hNWVlLTliNTQyZDNjZDhjNQ.jpg) !important;
+        width:50px;
+        height:50px;
+    }
+    .robot.show>text{
+        margin-left: 20px;
+        !important;
+    }
+    .robot.peak-thumb>thumb{
+        background-image: url(http://developer.affectiva.com/images/emoji/smiley.png) !important
+    }
+    .navbar{
+        display:none;
+    }
+    footer{
+        display:none;
+    }
+
+
+}
+</style>
+
+
+    <ol class="breadcrumb">
+        <li><a href="{% url "surveys:home" %}">Home</a></li>
+        <li class="active"><a href="{%  url "surveys:survey" survey.id %}">Survey</a></li>
+    </ol>
+    <h2>{{ survey.name }}</h2>
+    <h5>{{ survey.description }}</h5>
+    <form action="{%  url "surveys:survey" survey.id %}" method="POST" cf-form>
+        {% csrf_token %}
+        {% for field in survey_form %}
+            <div class="form-group">
+                <label for="{{ field.id_for_label }}">{{ field.html_name }}. {{ field.label }}{% if field.field.required %} *{% endif %}</label>
+                {{ field }}
+            </div>
+        {% endfor %}
+        <div class="form-group">
+            <label for="responder_id">{{ survey.questions.count|add:"1" }}. What's your Nickname?</label>
+            <input type="text" id="responder_id" name="responder_id" placeholder="Nickname">
+        </div>
+        <input type="submit" class="btn btn-info" value="Submit Button">
+    </form>
+
+
+{% endblock content %}
+

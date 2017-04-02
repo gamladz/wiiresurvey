@@ -18,6 +18,7 @@ class QuestionInline(NestedStackedInline):
 
 @admin.register(Survey)
 class SurveyAdmin(NestedModelAdmin):
+    readonly_fields = ('slug',)
     inlines = [QuestionInline]
 
 class AnswerInline(admin.TabularInline):

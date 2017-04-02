@@ -1,46 +1,113 @@
-from django.shortcuts import render
-from django.http import HttpResponseRedirect
+import uuid
+from django.views.generic import TemplateView
+from django.views import View
+from django.views.generic.edit import FormView
+from django.shortcuts import render, get_object_or_404
+from django.http import HttpResponseRedirect, HttpResponse
 from django.core.mail import send_mail
-from .forms import ContactForm
+from django.urls import reverse
+from django.db import IntegrityError
+from .forms import ContactForm, SurveyForm
+from .models import Survey
+
+
 
 # Create your views here.
 
-def home(request):
-    return render(request, 'surveys/home.html', {})
+class HomeView(TemplateView):
+    template_name = "surveys/home.html"
 
-def about(request):
-    return render(request, 'surveys/about.html', {})
 
-def blog(request):
-    return render(request, 'surveys/blog.html', {})
+class BlogView(TemplateView):
+    template_name = "surveys/blog.html"
 
-def privacypolicy(request):
-    return render(request, 'surveys/privacypolicy.html', {})
 
-def pricing(request):
-    return render(request, 'surveys/pricing.html', {})
+class PricingView(TemplateView):
+    template_name = "surveys/pricing.html"
+
+
+class AboutView(TemplateView):
+    template_name = "surveys/about.html"
+
+
+class PrivacyView(TemplateView):
+    template_name = "surveys/privacypolicy.html"
+
+
+class SuccessView(TemplateView):
+    template_name = "surveys/success.html"
+
+
+class ThanksView(TemplateView):
+    template_name = "surveys/thanks.html"
+
 
 def survey(request, survey_id):
-    return render(request, 'surveys/survey.html', {})
-
-def success(request):
-    return render(request, 'surveys/success.html', {})
-
-def signup(request):
     return render(request, 'surveys/signup.html', {})
 
-def thanks(request):
-    return render(request, 'surveys/thanks.html', {})
+
+class SurveyView(View):
+
+    def get(self, request,  *args, **kwargs):
+        survey_pk = kwargs.get('survey_pk')
+        survey = get_object_or_404(Survey, pk=survey_pk)
+        session_id = request.session.session_key
+
+        if survey.responses.all().filter(responder_id=session_id):
+            return HttpResponse("You have filled this form before")
+
+        survey_form = SurveyForm(survey=survey)
+
+        context = {
+            'survey_form': survey_form,
+            'survey': survey
+        }
+        return render(request, 'surveys/survey.html', context)
 
 
-def success(request):
-    # if this is a POST request we need to process the form data
-    if request.method == 'POST':
+    def post(self, request, *args, **kwargs):
 
-        # create a form instance and populate it with data from the request:
-        form = ContactForm(request.POST)
-        # check whether it's valid:
+        survey_pk = kwargs.get('survey_pk')
+        survey = get_object_or_404(Survey, pk=survey_pk)
+        survey_form = SurveyForm(request.POST, survey=survey)
+        responder_id = request.session.session_key
+
+        if responder_id is None:
+            responder_id = uuid.uuid4()
+
+        if survey_form.is_valid():
+            try:
+                survey_form.save(survey, responder_id)
+                # redirect to the response page
+                return HttpResponseRedirect(reverse('surveys:success'))
+            except IntegrityError:
+                return HttpResponse("You have filled this form before")
+
+        else:
+            # re-render form with errors
+            context = {
+                'survey_form': survey_form,
+                'survey': survey
+            }
+            return render(request, 'surveys/survey.html', context)
+
+
+class SignupView(FormView):
+    form_class = ContactForm
+    initial = {'key': 'value'}
+    template_name = "surveys/signup.html"
+
+
+    def get(self, request, *args, **kwargs):
+        form = self.form_class(initial=self.initial)
+        return render(request, self.template_name, {'form': form})
+
+    def post(self, request, *args, **kwargs):
+        form = self.form_class(request.POST)
         if form.is_valid():
+            # <process form cleaned data>
+
+
             organisation = form.cleaned_data['organisation']
             name = form.cleaned_data['name']
             subject = 'Hey ' + name + ', Get Started with Wiire'
@@ -52,10 +119,13 @@ def success(request):
             recipients.append(from_email)
 
             send_mail(subject, message, from_email, recipients)
-            return HttpResponseRedirect('/thanks/')
 
-    # if a GET (or any other method) we'll create a blank form
-    else:
-        form = ContactForm()
 
-    return render(request, 'surveys/signup.html', {'form': form})
+            return HttpResponseRedirect(reverse('success'))
+
+        return render(request, self.template_name, {'form': form})
+
+  # For reportView pass in Report model and use chartjs
+
+
+
