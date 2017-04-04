@@ -56,44 +56,41 @@ class HomeViewTest(TestCase):
         self.assertTemplateUsed(response, 'surveys/home.html')
 
 
+class PricingViewTest(TestCase):
 
+    def setUp(self):
+        self.client = Client()
 
-    # def test_responder_id_is_generated_if_no_session_key(self):
-    #     session = self.client.session
-    #     import pdb; pdb.set_trace()
-    #     del session.session_key
-    #     session.save()
-    #     data = {'survey_pk': self.survey1.id}
-    #     response = self.client.post(reverse('surveys:survey', kwargs=data))
-    #     import pdb; pdb.set_trace()
-    #     pass
+    def test_pricing_view_route_loads_successfully(self):
+        response = self.client.get(reverse('surveys:pricing'))
+        self.assertEqual(response.status_code, 200)
 
+    def test_pricing_view_loads_with_correct_template(self):
+        response = self.client.get(reverse('surveys:pricing'))
+        self.assertTemplateUsed(response, 'surveys/pricing.html')
 
+class AboutViewTest(TestCase):
 
+    def setUp(self):
+        self.client = Client()
 
+    def test_pricing_view_route_loads_successfully(self):
+        response = self.client.get(reverse('surveys:about'))
+        self.assertEqual(response.status_code, 200)
 
+    def test_pricing_view_loads_with_correct_template(self):
+        response = self.client.get(reverse('surveys:about'))
+        self.assertTemplateUsed(response, 'surveys/about.html')
 
+class SuccessViewTest(TestCase):
 
+    def setUp(self):
+        self.client = Client()
 
-    #
-    #     If the survey has not been completed (session.id) already
-    # exists in database, we should be able to get
-    #     sthe survey with the right context.
+    def test_pricing_view_route_loads_successfully(self):
+        response = self.client.get(reverse('surveys:success'))
+        self.assertEqual(response.status_code, 200)
 
-    #     self.assertContains(response,
-    #         "You have filled this form before.")
-    #
-
-    # def test_survey_view_with_completed_response(self):
-
-    #     If the survey has already been completed, we should expect
-    #     an appropriate message to be displayed
-
-    #     self.assertContains(response,
-    #         "You have filled this form before.")
-
-
-
-
-
-
+    def test_pricing_view_loads_with_correct_template(self):
+        response = self.client.get(reverse('surveys:success'))
+        self.assertTemplateUsed(response, 'surveys/success.html')
