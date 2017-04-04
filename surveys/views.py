@@ -11,7 +11,6 @@ from .forms import ContactForm, SurveyForm
 from .models import Survey
 
 
-
 # Create your views here.
 
 class HomeView(TemplateView):
@@ -38,6 +37,7 @@ class SuccessView(TemplateView):
     template_name = "surveys/success.html"
 
 
+
 class ThanksView(TemplateView):
     template_name = "surveys/thanks.html"
 
@@ -48,7 +48,7 @@ def survey(request, survey_id):
 
 class SurveyView(View):
 
-    def get(self, request,  *args, **kwargs):
+    def get(self, request, *args, **kwargs):
         survey_pk = kwargs.get('survey_pk')
         survey = get_object_or_404(Survey, pk=survey_pk)
         session_id = request.session.session_key
@@ -64,9 +64,7 @@ class SurveyView(View):
         }
         return render(request, 'surveys/survey.html', context)
 
-
     def post(self, request, *args, **kwargs):
-
         survey_pk = kwargs.get('survey_pk')
         survey = get_object_or_404(Survey, pk=survey_pk)
         survey_form = SurveyForm(request.POST, survey=survey)
@@ -97,7 +95,6 @@ class SignupView(FormView):
     initial = {'key': 'value'}
     template_name = "surveys/signup.html"
 
-
     def get(self, request, *args, **kwargs):
         form = self.form_class(initial=self.initial)
         return render(request, self.template_name, {'form': form})
@@ -105,13 +102,11 @@ class SignupView(FormView):
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
         if form.is_valid():
-            # <process form cleaned data>
-
 
             organisation = form.cleaned_data['organisation']
             name = form.cleaned_data['name']
             subject = 'Hey ' + name + ', Get Started with Wiire'
-            message = 'Hi ' + name + ', thanks for stopping by. I personally reach out to everyone who visits our website. I\'ll send you an email to get started in the next day or so to get Wiire up and running with ' + organisation + '. Thanks for your interest!\n\nBe in touch soon,\n\nGam'
+            message = 'Hi ' + name + ', thanks for stopping by. I  personally reach out to everyone who visits our website. I\'ll send you an email to get started in the next day or so to get Wiire up and running with ' + organisation + '. Thanks for your interest!\n\nBe in touch soon,\n\nGam'
 
             from_email = form.cleaned_data['from_email']
 
@@ -120,12 +115,6 @@ class SignupView(FormView):
 
             send_mail(subject, message, from_email, recipients)
 
-
-            return HttpResponseRedirect(reverse('success'))
+            return HttpResponseRedirect(reverse('surveys:success'))
 
         return render(request, self.template_name, {'form': form})
-
-  # For reportView pass in Report model and use chartjs
-
-
-
