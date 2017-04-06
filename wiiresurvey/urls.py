@@ -19,7 +19,7 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^jet/', include('jet.urls', 'jet')),  # Django JET URLS
     url(r'^jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),  # Django JET dashboard URLS
-    url(r'^admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls,  name='admin'),
     url(r'^', include('surveys.urls')),
     url(r'^api/', include('restapis.urls')),
 ]

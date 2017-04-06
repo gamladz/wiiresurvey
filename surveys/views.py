@@ -2,13 +2,15 @@ import uuid
 from django.views.generic import TemplateView
 from django.views import View
 from django.views.generic.edit import FormView
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.mail import send_mail
 from django.urls import reverse
 from django.db import IntegrityError
 from .forms import ContactForm, SurveyForm
 from .models import Survey
+from django.contrib.auth import login, authenticate
+from django.contrib.auth.forms import UserCreationForm
 
 
 # Create your views here.
@@ -35,7 +37,6 @@ class PrivacyView(TemplateView):
 
 class SuccessView(TemplateView):
     template_name = "surveys/success.html"
-
 
 
 class ThanksView(TemplateView):
@@ -90,10 +91,10 @@ class SurveyView(View):
             return render(request, 'surveys/survey.html', context)
 
 
-class SignupView(FormView):
+class DemochatView(FormView):
     form_class = ContactForm
     initial = {'key': 'value'}
-    template_name = "surveys/signup.html"
+    template_name = "surveys/demochat.html"
 
     def get(self, request, *args, **kwargs):
         form = self.form_class(initial=self.initial)
@@ -118,3 +119,17 @@ class SignupView(FormView):
             return HttpResponseRedirect(reverse('surveys:success'))
 
         return render(request, self.template_name, {'form': form})
+
+def signup(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=raw_password)
+            login(request, user)
+            return HttpResponseRedirect(reverse('surveys:admin'))
+    else:
+        form = UserCreationForm()
+    return render(request, 'surveys/signup.html', {'form': form})
