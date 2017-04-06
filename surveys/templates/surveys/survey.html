@@ -7,14 +7,14 @@
 <style>
 
     .user.show>thumb{
-        background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAANmAAAAJGM1YTE3NzgzLTc0MWQtNGY3My1hNWVlLTliNTQyZDNjZDhjNQ.jpg)
+        background-image: url(http://www.cdu.edu.au/sites/default/files/newsroom/images/Fran_Rosamond-3%20300x250.jpg)
             !important;
         width:50px;
         height:50px;
         display: none;
     }
     .robot.show>thumb{
-        background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAANmAAAAJGM1YTE3NzgzLTc0MWQtNGY3My1hNWVlLTliNTQyZDNjZDhjNQ.jpg) !important;
+        background-image: url(http://www.cdu.edu.au/sites/default/files/newsroom/images/Fran_Rosamond-3%20300x250.jpg) !important;
         width:50px;
         height:50px;
     }
@@ -45,16 +45,24 @@
     <h5>{{ survey.description }}</h5>
     <form action="{%  url "surveys:survey" survey.id %}" method="POST" cf-form>
         {% csrf_token %}
+        <!--<label for="{{ form.name.id_for_label }}">Hi, I'm Jenny!, one of the staff at the hospital. I'll be helping you today! What's your name?</label>-->
+        <input type="text" cf-questions="Hey, I'm Jenny!, one of the Mental Health Staff. I'll be helping you today! What's your name?">
+        <select class="selectpicker" cf-questions="Hi {previous-answer}, I need to you answer a few questions, try and answer honestly, okay?">
+            <option>Okay, Start Questions</option>
+        </select>
+
+
+
         {% for field in survey_form %}
             <div class="form-group">
-                <label for="{{ field.id_for_label }}">{{ field.html_name }}. {{ field.label }}{% if field.field.required %} *{% endif %}</label>
+                <label for="{{ field.id_for_label }}">{# {{ field.html_name }} #}. {{ field.label }}{# {% if field.field.required %} *{% endif %} #}</label>
                 {{ field }}
             </div>
         {% endfor %}
-        <div class="form-group">
+        <!--<div class="form-group">
             <label for="responder_id">{{ survey.questions.count|add:"1" }}. What's your Nickname?</label>
             <input type="text" id="responder_id" name="responder_id" placeholder="Nickname">
-        </div>
+        </div>-->
         <input type="submit" class="btn btn-info" value="Submit Button">
     </form>
 
