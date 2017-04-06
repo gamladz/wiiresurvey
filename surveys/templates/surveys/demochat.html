@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<script type="text/javascript" src="https://conversational-form-0iznjsw.stackpathdns.com/conversational-form.min.js" crossorigin></script>
+
+<style>
+
+    .user.show>thumb{
+        background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAANmAAAAJGM1YTE3NzgzLTc0MWQtNGY3My1hNWVlLTliNTQyZDNjZDhjNQ.jpg)
+            !important;
+        width:50px;
+        height:50px;
+        display: none;
+    }
+    .robot.show>thumb{
+        background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAANmAAAAJGM1YTE3NzgzLTc0MWQtNGY3My1hNWVlLTliNTQyZDNjZDhjNQ.jpg) !important;
+        width:50px;
+        height:50px;
+    }
+    .robot.show>text{
+        margin-left: 20px;
+        !important;
+    }
+    .robot.peak-thumb>thumb{
+        background-image: url(http://developer.affectiva.com/images/emoji/smiley.png) !important
+    }
+    .navbar{
+        display:none;
+    }
+    footer{
+        display:none;
+    }
+
+
+}
+</style>
+
+<!--<form action="/success/" method="post" id="my-form-element" cf-form>
+    {% csrf_token %}
+    {{ form}}
+
+   <input type="submit" value="Submit" />
+
+</form>-->
+
+<form action="/sign-up/" method="post" id="my-form-element" cf-form>
+{% csrf_token %}
+{{ form.non_field_errors }}
+
+    {{ form.name.errors }}
+    <label for="{{ form.name.id_for_label }}">Howdy!, What's your name?</label>
+    {{ form.name }}
+
+
+    <select class="selectpicker" cf-questions="{previous-answer}, Wouldn't it be cool if your student surveys looked this fun?">
+        <option>Yes</option>
+        <option>Definitely!</option>
+    </select>
+
+
+    {{ form.subject.errors }}
+    <label for="{{ form.organisation.id_for_label }}">What is the name of your organisation?</label>
+    {{ form.organisation }}
+
+
+
+
+<div class="fieldWrapper">
+    {{ form.from_email.errors }}
+    <label for="{{ form.from_email.id_for_label }}">I'll send you some instructions to get started. What's your email address?</label>
+    {{ form.from_email }}
+
+    <input type="text" cf-questions="Got it, I'll send an email to {previous-answer}, have a good day!">
+</div>
+<input type="submit" value="Submit" />
+
+</form>
+
+
+{% endblock content %}
+
