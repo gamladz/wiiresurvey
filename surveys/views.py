@@ -38,13 +38,12 @@ class PrivacyView(TemplateView):
 class SuccessView(TemplateView):
     template_name = "surveys/success.html"
 
-
 class ThanksView(TemplateView):
     template_name = "surveys/thanks.html"
 
 
-def survey(request, survey_id):
-    return render(request, 'surveys/signup.html', {})
+# def survey(request, survey_id):
+#     return render(request, 'surveys/signup.html', {})
 
 
 class SurveyView(View):

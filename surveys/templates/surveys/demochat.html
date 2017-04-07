@@ -7,14 +7,14 @@
 <style>
 
     .user.show>thumb{
-        background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAANmAAAAJGM1YTE3NzgzLTc0MWQtNGY3My1hNWVlLTliNTQyZDNjZDhjNQ.jpg)
+        background-image: url(http://www.cdu.edu.au/sites/default/files/newsroom/images/Fran_Rosamond-3%20300x250.jpg)
             !important;
         width:50px;
         height:50px;
         display: none;
     }
     .robot.show>thumb{
-        background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAANmAAAAJGM1YTE3NzgzLTc0MWQtNGY3My1hNWVlLTliNTQyZDNjZDhjNQ.jpg) !important;
+        background-image: url(http://www.cdu.edu.au/sites/default/files/newsroom/images/Fran_Rosamond-3%20300x250.jpg) !important;
         width:50px;
         height:50px;
     }
@@ -36,44 +36,119 @@
 }
 </style>
 
-<!--<form action="/success/" method="post" id="my-form-element" cf-form>
-    {% csrf_token %}
-    {{ form}}
-
-   <input type="submit" value="Submit" />
-
-</form>-->
-
-<form action="/sign-up/" method="post" id="my-form-element" cf-form>
+<form action="/success/" id="my-form-element" cf-form>
 {% csrf_token %}
-{{ form.non_field_errors }}
+{ <input type="text" cf-questions="Hey, I'm Jenny!, one of the Mental Health Staff. I'll be helping you today! What's your name?">
+        <select class="selectpicker" cf-questions="Hi {previous-answer}, I need to you answer a few questions, try and answer honestly, okay?">
+            <option>Okay, Start Questions</option>
+        </select>
 
-    {{ form.name.errors }}
-    <label for="{{ form.name.id_for_label }}">Howdy!, What's your name?</label>
-    {{ form.name }}
+    <fieldset>
+        <div class="radio">
+            <label><input cf-questions="Over the last 2 weeks, how often have you been bothered
+by any of the following problems: 1. Feeling Anxious?" type="radio" name="occupation" id="occupation-1" cf-label="Not at all"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="occupation" id="occupation-1" cf-label="Several days"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="occupation" id="occupation-1" cf-label="More than half the days"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="occupation" id="occupation-1" cf-label="Nearly every day"></label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="radio">
+            <label><input cf-questions="2. Have you been unable to stop or control worrying?" type="radio" name="question2" id="question-2" cf-label="Not at all"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question2" id="question-2" cf-label="Several days"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question2" id="question-2" cf-label="More than half the days"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question2" id="question-2" cf-label="Nearly every day"></label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="radio">
+            <label><input cf-questions="3. Have you been Worrying too much about different things?" type="radio" name="question3" id="question-3" cf-label="Not at all"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question3" id="question-3" cf-label="Several days"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question3" id="question-3" cf-label="More than half the days"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question3" id="question-3" cf-label="Nearly every day"></label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="radio">
+            <label><input cf-questions="4. Have you Trouble relaxing??" type="radio" name="question4" id="question-4" cf-label="Not at all"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question4" id="question-4" cf-label="Several days"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question4" id="question-4" cf-label="More than half the days"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question4" id="question-4" cf-label="Nearly every day"></label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="radio">
+            <label><input cf-questions="5. Being so restless that it is hard to sit still?" type="radio" name="question5" id="question-5" cf-label="Not at all"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question5" id="question-5" cf-label="Several days"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question5" id="question-5" cf-label="More than half the days"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question5" id="question-5" cf-label="Nearly every day"></label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="radio">
+            <label><input cf-questions="6. Being so restless that it is hard to sit still?" type="radio" name="question6" id="question-6" cf-label="Not at all"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question6" id="question-6" cf-label="Several days"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question6" id="question-6" cf-label="More than half the days"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question6" id="question-6" cf-label="Nearly every day"></label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="radio">
+            <label><input cf-questions="7. Feeling afraid as if something awful might happen?" type="radio" name="question7" id="question-7" cf-label="Not at all"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question7" id="question-7" cf-label="Several days"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question7" id="question-7" cf-label="More than half the days"></label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="question7" id="question-7" cf-label="Nearly every day"></label>
+        </div>
+    </fieldset>
 
 
-    <select class="selectpicker" cf-questions="{previous-answer}, Wouldn't it be cool if your student surveys looked this fun?">
-        <option>Yes</option>
-        <option>Definitely!</option>
-    </select>
-
-
-    {{ form.subject.errors }}
-    <label for="{{ form.organisation.id_for_label }}">What is the name of your organisation?</label>
-    {{ form.organisation }}
 
 
 
 
-<div class="fieldWrapper">
-    {{ form.from_email.errors }}
-    <label for="{{ form.from_email.id_for_label }}">I'll send you some instructions to get started. What's your email address?</label>
-    {{ form.from_email }}
-
-    <input type="text" cf-questions="Got it, I'll send an email to {previous-answer}, have a good day!">
-</div>
-<input type="submit" value="Submit" />
+  <input type="submit" value="Submit"/>
 
 </form>
 
