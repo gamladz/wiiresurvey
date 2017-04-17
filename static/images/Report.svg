@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="142px" height="132px" viewBox="0 0 142 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Report</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Report">
+            <rect id="Rectangle-2-Copy" fill="#FFFFFF" x="0" y="0" width="142" height="132"></rect>
+            <g id="Group-4" transform="translate(5.000000, 44.560187)">
+                <rect id="Rectangle" fill="#ECF0F1" x="0.681725276" y="0.370630682" width="123.270485" height="60.2351111" rx="8"></rect>
+                <path d="M41.0468942,16.433327 C41.0468942,16.433327 57.9874926,54.5909453 45.0837253,60.6057418 C43.4124032,61.3847904 39.8370606,60.6057418 37.4488477,60.6057418 C23.5557291,60.6057418 6.84398708,60.6057418 6.84398708,60.6057418 L41.0468942,16.433327 Z" id="Triangle" fill-opacity="0.15" fill="#D8D8D8"></path>
+            </g>
+            <rect id="Rectangle" fill="#E67E22" x="12.2592074" y="36.8994692" width="124.297433" height="60.2351111" rx="8"></rect>
+            <path d="M136.359708,40.0090894 C136.359708,40.0090894 136.387033,54.2044542 136.359708,68.7845575 C136.358928,69.20027 136.360582,78.7227013 136.359708,79.1186002 C136.352689,82.2979214 137.98686,92.0832667 131.959904,94.6089235 C125.932947,97.1345803 18.8366896,97.1345803 18.8366896,97.1345803 L136.359708,40.0090894 Z" id="Triangle-Copy" fill-opacity="0.15" fill="#D8D8D8"></path>
+            <text id="AGE" font-family="BigJohn, Big John" font-size="7" font-weight="normal" fill="#FFFFFF">
+                <tspan x="24.8726557" y="56.3868326">AGE</tspan>
+            </text>
+            <text id="NAME" font-family="BigJohn, Big John" font-size="7" font-weight="normal" fill="#FFFFFF">
+                <tspan x="55.8655911" y="56.3868326">NAME</tspan>
+            </text>
+            <text id="ANXIETY" font-family="BigJohn, Big John" font-size="7" font-weight="normal" fill="#FFFFFF">
+                <tspan x="94.8202287" y="56.3868326">ANXIETY</tspan>
+            </text>
+            <text id="22" font-family="AvenirNext-Regular, Avenir Next" font-size="20" font-weight="normal" fill="#FFFFFF">
+                <tspan x="22.0107935" y="82.0060596">22</tspan>
+            </text>
+            <text id="Joe-Bloggs" font-family="AvenirNext-Regular, Avenir Next" font-size="10" font-weight="normal" fill="#FFFFFF">
+                <tspan x="58.7300209" y="69.7305109">Joe </tspan>
+                <tspan x="51.0700209" y="83.7305109">Bloggs</tspan>
+            </text>
+            <text id="Mild" font-family="AvenirNext-Regular, Avenir Next" font-size="12" font-weight="normal" fill="#FFFFFF">
+                <tspan x="98.0424411" y="75.523092">Mild</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

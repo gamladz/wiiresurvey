@@ -28,7 +28,7 @@
                             <div class="row">
                                  <div class="col-md-12">
                                     <h1 class="white-color">Faster Mental Health Triage</h1>
-                                    <h5 class="">Questionnaire platform to help mental health professionals digitally triage patients</h5>
+                                    <h5 class="">Automated chat platform to help mental health professionals digitally triage patients</h5>
                                     <a href="/signup" class="btn se-btn-black btn-rounded">Get Started</a>
 
                                 </div>
@@ -61,7 +61,7 @@
 
                                   </div>
                                   <div class="content">
-                                  <iframe id="survey-frame" src="/demochat#end" width="100%" height="90%" frameborder="0" overflow:hidden;></iframe>
+                                  <iframe scrolling="no" id="survey-frame" src="/demochat#end" width="100%" height="90%" frameborder="0" overflow:hidden;></iframe>
 
                                     <!--<p class="label">To</p> All 4th Year Students<br><br>
                                     <p class="label">From</p> Prof.Smith@uni.ac.uk
@@ -123,10 +123,144 @@
           </div>
         </div>
 
+        <!-- ========== SINGLE FEATURE SECTION ========== -->
+
+        <section class="se-section single-feature">
+
+                <div class="col-md-6 col-md-offset-3 zero-padding feature-info">
+                    <h2 class="heading">How it works?</h2>
+                    <p class="subheading">Helps Therapists, Psychologists and Practioners triage more patients</p>
+                </div>
+                <div class="col-md-4 feature-info">
+                    <img src="{% static 'images/MentalHealthProfessional.svg' %}" alt="" class="img-responsive" width="100%">
+                    <p class="subheading col-md-12"><span class="number-list">1</span></p>
+                        <p class="subheading col-md-12">Create a profile with your name and profile photo. We'll use it to make your avatar</p>
+                </div>
+                <div class="col-md-4 feature-info">
+                    <img src="{% static 'images/QuestionnaireList.svg' %}" alt="" class="img-responsive" width="100%">
+                    <p class="subheading col-md-12"><span class="number-list">2</span></p>
+                        <p class="subheading col-md-12">Select a Questionnaire, we'll turn it into a conversation. Then send your link to patients or text them</p>
+                </div>
+                <div class="col-md-4 feature-info">
+                    <img src="{% static 'images/ReportCard.svg' %}" alt="" class="img-responsive" width="100%">
+                    <p class="subheading col-md-12"><span class="number-list">3</span></p>
+                        <p class="subheading col-md-12">Collect and analyse results. Quickly make decisions on appropriate care pathways</p>
+                </div>
+
+
+            <div class="container feature-desc">
+                <div class="row">
+                    <div class="col-md-5 col-md-push-7 feature-info">
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- ========== SINGLE FEATURE SECTION ========== -->
 
         <section class="se-section single-feature">
+
+                <div class="col-md-6 col-md-offset-3 zero-padding feature-info">
+                    <h2 class="heading">Send your patients a text</h2>
+                    <p class="subheading">Everyone has a mobile. Wiire can automatically text your patients and take them through the triage process</p>
+                </div>
+             <div class="col-md-12">
+
+             <!-- aos convo-->
+                                <div class="col-md-6 col-md-offset-3">
+                                <div class="marvel-device iphone6plus gold">
+                                    <div class="top-bar"></div>
+                                    <div class="sleep"></div>
+                                    <div class="volume"></div>
+                                    <div class="camera"></div>
+                                    <div class="sensor"></div>
+                                    <div class="speaker"></div>
+                                    <div class="screen">
+                                        <!-- Content goes here -->
+                                        <!-- aos convo-->
+                                    <div data-aos="zoom-in-right" class="col-md-12 col-md-offset-0">
+                                      <div id="transcroller-body" class="aos-all">
+                                        <div class="row">
+                                            <div class="col-xs-2 col-md-2 profile-pic-container">
+                                            <img src="{% static 'images/TherapistAvatar.svg' %}" class="img-responsive img-rounded profile-pic" style="width:100%">
+                                            </div>
+                                              <div class="aos-item col-xs-10 col-md-10 col-md-offset-0" data-aos="zoom-in-right" >
+                                                <div class="aos-item__inner teacher"><p class="teacher"> Hey! I’m Jenny, I work at the health centre. what's your name?</p></div>
+                                              </div>
+                                          </div>
+
+                                          <div class="row">
+                                              <div class="aos-item student" data-aos="zoom-in-left" >
+                                                <div class="aos-item__inner"><p class="student">Joe
+                                                </p></div>
+                                              </div>
+                                           </div>
+
+
+
+                                          <div class="row aos-item" data-aos="zoom-in-right">
+                                              <div class="col-xs-2 col-md-2 profile-pic-container" data-aos="zoom-in-right">
+                                            <img src="{% static 'images/TherapistAvatar.svg' %}" class="img-responsive img-rounded profile-pic" style="width:100%">
+                                            </div>
+                                                <div class="aos-item col-xs-10 col-md-10 col-md-offset-0"  >
+                                                  <div class="aos-item__inner teacher"><p class="teacher">Hey Joe, can I ask you a few qustions to find out how your feeling?</p></div>
+                                                </div>
+                                            </div>
+
+                                          <div class="row">
+                                              <div class="aos-item student" data-aos="zoom-in-left" >
+                                                <div class="aos-item__inner"><p class="student">Sure
+                                                </p></div>
+                                              </div>
+                                           </div>
+
+                                          <div class="row aos-item" data-aos="zoom-in-right">
+                                              <div class="col-xs-2 col-md-2 profile-pic-container" data-aos="zoom-in-right">
+                                            <img src="{% static 'images/TherapistAvatar.svg' %}" class="img-responsive img-rounded profile-pic" style="width:100%">
+                                            </div>
+                                                <div class="aos-item col-xs-10 col-md-10 col-md-offset-0"  >
+                                                  <div class="aos-item__inner teacher"><p class="teacher">In the last two weeks how often have you been feeling anxious?</p></div>
+
+
+                                                  <p>
+                                                    <span class="teacher option">Not at all</span><span class="teacher option">Several days</span><span class="teacher option">Nearly every days</span>
+
+                                                </div>
+                                                </div>
+                                            </div>
+
+                                          <div class="row">
+                                              <div class="aos-item student" data-aos="zoom-in-left" >
+
+                                                    <div class="aos-item__inner"><p class="student">Several days
+                                                    </p>
+                                                  </div>
+                                              </div>
+                                           </div>
+                                      </div>
+                                    </div>
+                                    </div>
+                                    <div class="home"></div>
+                                    <div class="bottom-bar"></div>
+                                </div>
+                            </div>
+
+
+            <div class="container feature-desc">
+                <div class="row">
+                    <div class="col-md-5 col-md-push-7 feature-info">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- ========== SINGLE FEATURE SECTION ========== -->
+
+        <!--<section class="se-section single-feature">
 
                 <div class="col-md-6 col-md-offset-3 zero-padding feature-info">
                     <h2 class="heading">Beautiful, Intelligent Reports</h2>
@@ -143,29 +277,8 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
 
-
-<!-- ========== SINGLE FEATURE SECTION ========== -->
-
-       <!-- <section class="se-section single-feature">
-
-                <div class="col-md-6 col-md-offset-3 zero-padding feature-info">
-                    <h2 class="heading">Intelligent Reporting</h2>
-                    <p class="subheading">Visualise data to quickly spot trends. Evidence your decisions. Use Machine Learning techniques to remove guesswork from free text analyses</p>
-                </div>
-                <div class="col-md-8 col-md-offset-2 feature-info">
-                    <img src="{% static 'images/ReportDashboard.png' %}" alt="" class="img-responsive">
-                </div>
-
-
-            <div class="container feature-desc">
-                <div class="row">
-                    <div class="col-md-5 col-md-push-7 feature-info">
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
 
 
@@ -201,7 +314,7 @@
             <div class="container">
                 <div class="row text-center">
                     <h3>Get Started</h3>
-                    <p>Join our mission to improve Student Satisfaction</p>
+                    <p>Join our mission to improve Mental Health</p>
                     <a href="/signup" class="btn se-btn-black btn-rounded">Start Free Trial</a>
                 </div> <!-- end row -->
             </div> <!-- end container -->
