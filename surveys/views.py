@@ -11,6 +11,7 @@ from .forms import ContactForm, SurveyForm
 from .models import Survey
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
+from surveys.forms import SignUpForm
 
 
 # Create your views here.
@@ -121,14 +122,28 @@ class DemochatView(FormView):
 
 def signup(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = SignUpForm(request.POST)
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
             login(request, user)
-            return HttpResponseRedirect(reverse('surveys:admin'))
+            return redirect('surveys:admin')
     else:
-        form = UserCreationForm()
+        form = SignUpForm()
     return render(request, 'surveys/signup.html', {'form': form})
+
+# def signup(request):
+#     if request.method == 'POST':
+#         form = UserCreationForm(request.POST)
+#         if form.is_valid():
+#             form.save()
+#             username = form.cleaned_data.get('username')
+#             raw_password = form.cleaned_data.get('password1')
+#             user = authenticate(username=username, password=raw_password)
+#             login(request, user)
+#             return HttpResponseRedirect(reverse('surveys:admin'))
+#     else:
+#         form = UserCreationForm()
+#     return render(request, 'surveys/signup.html', {'form': form})

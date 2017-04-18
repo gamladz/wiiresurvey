@@ -4,11 +4,13 @@ from django.contrib.auth.models import User
 from surveys.models import Survey, Question, Choice, Response, Answer
 
 class SignUpForm(UserCreationForm):
-    birth_date = forms.DateField(help_text='Required. Format: YYYY-MM-DD')
+    first_name = forms.CharField(max_length=30, required=True)
+    last_name = forms.CharField(max_length=30, required=True)
+    email = forms.EmailField(max_length=254)
 
     class Meta:
         model = User
-        fields = ('username', 'birth_date', 'password1', 'password2', )
+        fields = ('username', 'first_name', 'last_name', 'email', 'password1', 'password2', )
 
 
 class ContactForm(forms.Form):
