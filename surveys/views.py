@@ -2,6 +2,7 @@ import uuid
 from django.views.generic import TemplateView
 from django.views import View
 from django.views.generic.edit import FormView
+from django.views.generic.list import ListView
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.mail import send_mail
@@ -41,6 +42,10 @@ class SuccessView(TemplateView):
 
 class ThanksView(TemplateView):
     template_name = "surveys/thanks.html"
+
+
+class SurveyListView(ListView):
+    model = Survey
 
 
 # def survey(request, survey_id):
@@ -129,7 +134,7 @@ def signup(request):
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
             login(request, user)
-            return redirect('surveys:admin')
+            return redirect('surveys:home')
     else:
         form = SignUpForm()
     return render(request, 'surveys/signup.html', {'form': form})

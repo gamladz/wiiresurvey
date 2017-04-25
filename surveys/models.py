@@ -39,6 +39,12 @@ class Survey(models.Model):
         self.clean()
         return super(Survey, self).save(*args, **kwargs)
 
+    def get_absolute_url(self):
+        """
+        Returns the url to access a particular instance of the model.
+        """
+        return reverse('surveys:survey', args=[str(self.id)])
+
 
 
 
