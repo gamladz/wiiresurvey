@@ -1,0 +1,73 @@
+{% load staticfiles %}
+
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- ========== VIEWPORT META ========== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+        <!-- ========== PAGE TITLE ========== -->
+        <title>Faster Mental Health Triage</title>
+
+        <!-- ========== META TAGS ========== -->
+        <meta name="description" content="chat bot platform to help health professionals digitally triage patients.">
+        <meta name="keywords" content="Mental health, Young People, Bots">
+        <meta name="author" content="Wiire">
+
+        <!-- ========== FAVICON & APPLE ICONS ========== -->
+        <link rel="shortcut icon" href=" {% static 'images/favicon.png' %}">
+        <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}" >
+
+        <!-- ========== MINIFIED VENDOR CSS ========== -->
+        <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+        <link rel="stylesheet" href="{% static 'css/devices.min.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" />
+        <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+
+
+
+        <!-- ========== MODERNIZR ========== -->
+        <script src="{% static 'js/vendor/modernizr.js' %}"></script>
+        <script src="{% static 'js/typed.min.js' %}"></script>
+
+    </head>
+
+    <body>
+        <div class="ui grid">
+             <div class="ui three wide column">
+                <div class="ui left fixed inverted vertical menu">
+                  <div class="item">
+                    <img class="ui image" src="{% static 'images/light-logo.svg' %}" style="width:35%">
+                  </div>
+                  <a class="active item">Surveys</a>
+                  <a class="item">Responses</a>
+                  <a class="item">Sign-out</a>
+                </div>
+            </div>
+
+            <div class="ui thirteen wide column">
+
+            {% block content %}
+            {% endblock content %}
+            </div>
+        </div>
+
+        <script src="{% static 'js/plugins.js' %}" ></script>
+
+        <script src="{% static 'js/main.js' %}"></script>
+
+         <script src="{% static 'js/init-animation.js' %}" ></script>
+
+        <script src="{% static 'js/init-animation-circle.js' %}" ></script>
+
+    </body>
+
+</html>

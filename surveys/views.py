@@ -3,6 +3,7 @@ from django.views.generic import TemplateView
 from django.views import View
 from django.views.generic.edit import FormView
 from django.views.generic.list import ListView
+from django.views.generic.detail import DetailView
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.mail import send_mail
@@ -38,15 +39,15 @@ class PrivacyView(TemplateView):
 
 
 class SuccessView(TemplateView):
-    template_name = "surveys/success.html"
+    template_name = "surveys/survey_list.html"
+
 
 class ThanksView(TemplateView):
     template_name = "surveys/thanks.html"
 
 
-class SurveyListView(ListView):
+class SurveyDetailView(DetailView):
     model = Survey
-
 
 # def survey(request, survey_id):
 #     return render(request, 'surveys/signup.html', {})
@@ -92,8 +93,26 @@ class SurveyView(View):
             context = {
                 'survey_form': survey_form,
                 'survey': survey
-            }
+               }
             return render(request, 'surveys/survey.html', context)
+
+class SurveyListView(ListView):
+
+    model = Survey
+
+
+    def get_context_data(self, **kwargs):
+        context = super(SurveyListView, self).get_context_data(**kwargs)
+        return context
+
+class SurveyDetailView(DetailView):
+
+    model = Survey
+    pk_url_kwarg = 'survey_pk'
+
+    def get_context_data(self, **kwargs):
+        context = super(SurveyDetailView, self).get_context_data(**kwargs)
+        return context
 
 
 class DemochatView(FormView):
@@ -139,16 +158,4 @@ def signup(request):
         form = SignUpForm()
     return render(request, 'surveys/signup.html', {'form': form})
 
-# def signup(request):
-#     if request.method == 'POST':
-#         form = UserCreationForm(request.POST)
-#         if form.is_valid():
-#             form.save()
-#             username = form.cleaned_data.get('username')
-#             raw_password = form.cleaned_data.get('password1')
-#             user = authenticate(username=username, password=raw_password)
-#             login(request, user)
-#             return HttpResponseRedirect(reverse('surveys:admin'))
-#     else:
-#         form = UserCreationForm()
-#     return render(request, 'surveys/signup.html', {'form': form})
+

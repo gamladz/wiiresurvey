@@ -1,18 +1,31 @@
-{% extends "base.html" %}
-
+{% extends 'base_admin.html' %}
 {% block content %}
-    <h1>Survey List</h1>
 
     {% if survey_list %}
-    <ul>
+    <div class="ui cards">
 
-      {% for survey in survey_list %}
-      <li>
-        <a href="{{ survey.get_absolute_url }}">{{ survey.name }}</a> - {{survey.description}}
-      </li>
+      {% for survey in object_list %}
+
+        <!--<a href="{{ survey.get_absolute_url }}">{{ survey.name }}</a>-->
+
+
+        <div class="card">
+        <div class="content">
+          <div class="header">
+            {{ survey.name }}
+          </div>
+          <div class="meta">
+            {{ survey.slug}}
+          </div>
+          <div class="description">
+            {{survey.description}}
+          </div>
+        </div>
+        <a href="{{ object.get_absolute_url }}"><div class="ui bottom attached button" tabindex="0">View Questionnaire</div></a>
+      </div>
       {% endfor %}
 
-    </ul>
+    </div>
     {% else %}
       <p>There are no surveys available to load.</p>
     {% endif %}

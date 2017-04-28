@@ -94,3 +94,18 @@ class SuccessViewTest(TestCase):
     def test_pricing_view_loads_with_correct_template(self):
         response = self.client.get(reverse('surveys:success'))
         self.assertTemplateUsed(response, 'surveys/success.html')
+
+class SurveyListViewTest(TestCase):
+
+    def setUp(self):
+        self.client = Client()
+
+    def test_pricing_view_route_loads_successfully(self):
+        response = self.client.get(reverse('surveys:survey-list'))
+        self.assertEqual(response.status_code, 200)
+
+    def test_pricing_view_loads_with_correct_template(self):
+        response = self.client.get(reverse('surveys:survey-list'))
+        self.assertTemplateUsed(response, 'surveys/survey_list.html')
+
+

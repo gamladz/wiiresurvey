@@ -43,7 +43,7 @@ class Survey(models.Model):
         """
         Returns the url to access a particular instance of the model.
         """
-        return reverse('surveys:survey', args=[str(self.id)])
+        return reverse('surveys:survey-detail', args=[str(self.id)])
 
 
 

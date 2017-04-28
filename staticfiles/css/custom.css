@@ -1,4 +1,12 @@
+body { padding-top: 20px; }
 
+h1.white-color{
+  margin-top: 7%;
+}
+
+.ui.inverted.menu {
+  background-color:#21469C
+}
 .teacher{
     background: #F5F6FA;
     border: 1px solid #F5F6FA;
@@ -173,12 +181,16 @@ span.mac {
   vertical-align: 50%;
 }
 
+input{
+  border-radius: 5px;
+}
+
 .window {
   background: #fff;
   width: 100%;
   height: 75vh;
   margin: auto;
-  margin-top: 12.5vh;
+  margin-top: 30px;
   border: 1px solid #acacac;
   border-radius: 6px;
   box-shadow: 0px 0px 20px #acacac;
@@ -197,7 +209,7 @@ span.mac {
   line-height: 20px;
   text-align: center;
   width: 100%;
-  height: 20px;
+  height: 40px;
   border-top: 1px solid #f3f1f3;
   border-bottom: 1px solid #b1aeb1;
   border-top-left-radius: 6px;
@@ -217,42 +229,45 @@ span.mac {
   line-height: 0px;
 }
 
-.buttons:hover a {
+/*.buttons:hover a {
   visibility: visible;
-}
+}*/
 
-.close {
+.clos {
   background: #ff5c5c;
   font-size: 9pt;
-  width: 11px;
-  height: 11px;
+  line-height: 11px;
+  margin-left: 4px;
+  width: 22px;
+  height: 22px;
   border: 1px solid #e33e41;
   border-radius: 50%;
   display: inline-block;
 }
 
-.close:active {
+.clos:active {
   background: #c14645;
   border: 1px solid #b03537;
 }
 
-.close:active .closebutton {
+.clos:active .closebutton {
   color: #4e0002;
 }
 
-.closebutton {
+.closbutton {
   color: #820005;
   visibility: hidden;
   cursor: default;
 }
+
 
 .minimize {
   background: #ffbd4c;
   font-size: 9pt;
   line-height: 11px;
   margin-left: 4px;
-  width: 11px;
-  height: 11px;
+  width: 22px;
+  height: 22px;
   border: 1px solid #e09e3e;
   border-radius: 50%;
   display: inline-block;
@@ -277,9 +292,9 @@ span.mac {
   background: #00ca56;
   font-size: 9pt;
   line-height: 11px;
-  margin-left: 6px;
-  width: 11px;
-  height: 11px;
+  margin-left: 4px;
+  width: 22px;
+  height: 22px;
   border: 1px solid #14ae46;
   border-radius: 50%;
   display: inline-block;
@@ -391,6 +406,27 @@ h3 {
 .label-tag{
   color: #E6DC6D;
 }
+
+.number-list{
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+
+    -moz-border-radius: 30px; /* or 50% */
+    border-radius: 30px; /* or 50% */
+
+    border-style: solid;
+    border-width: 2px;
+    color: #F46F93 ;
+    border-color:#F46F93;
+    text-align: center;
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+}
+
 
 
 
