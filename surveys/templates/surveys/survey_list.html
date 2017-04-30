@@ -6,9 +6,6 @@
 
       {% for survey in object_list %}
 
-        <!--<a href="{{ survey.get_absolute_url }}">{{ survey.name }}</a>-->
-
-
         <div class="card">
         <div class="content">
           <div class="header">
@@ -21,7 +18,7 @@
             {{survey.description}}
           </div>
         </div>
-        <a href="{{ object.get_absolute_url }}"><div class="ui bottom attached button" tabindex="0">View Questionnaire</div></a>
+        <a href="{{ survey.get_absolute_url }}"><div class="ui bottom attached button" tabindex="0">View Questionnaire</div></a>
       </div>
       {% endfor %}
 

@@ -17,7 +17,6 @@ urlpatterns = [
     url(r'^thanks/$',  views.ThanksView.as_view()),
     url(r'^survey/(?P<survey_pk>[0-9]+)/$', views.SurveyView.as_view(), name='survey'),
     url(r'^surveylist/$', views.SurveyListView.as_view(), name='survey-list'),
-    # url(r'^survey-details/(?P<survey_pk>[0-9]+)/$', views.SurveyDetailsView.as_view(), name='survey-details'),
     url(r'^survey-detail/(?P<survey_pk>[0-9]+)/$', views.SurveyDetailView.as_view(), name='survey-detail'),
     url(r'^login/$', auth_views.login, name='login'),
     url(r'^logout/$', auth_views.logout, name='logout'),

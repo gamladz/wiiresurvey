@@ -6,8 +6,14 @@
 <div class="ui grid">
   <div class="ui rail seven wide column" style="border-right: 1px solid rgba(34,36,38,.15)">
 
-    <h3>General Anxiety And Depression (GAD-7)</h3>
-     <p>Generalized Anxiety Disorder 7 (GAD-7) is a self-reported questionnaire for screening and severity measuring of generalized anxiety disorder (GAD). GAD-7 has seven items, which measure severity of various signs of GAD according to reported response categories with assigned point</p>
+    <div class="ui tiny breadcrumb" style="padding-left: 0px;">
+        <a class="section" href="{% url "surveys:survey-list" %}">Questionnaire List</a>
+        <div class="divider"> / </div>
+        <div class="active section" href="{%  url "surveys:survey" survey.id %}">Questionnaire: {{survey.name}}</div>
+    </div>
+
+    <h3>{{survey.name}}</h3>
+     <p>{{survey.description}}</p>
 
      <div class="ui divider"></div>
     <h4 class="ui horizontal header">
@@ -25,7 +31,7 @@
             Send Assesment via Link
      </h4>
      <div class="field">
-         <label>Just send this link to patients</label>
+         <label>link: <a href="https://wiireapp.com/survey/{{survey.id}}">www.wiireapp.com/survey/{{survey.id}}#end</a></label>
      </div>
 
     <div class="ui divider"></div>
@@ -33,53 +39,23 @@
          <i class="code outline icon"></i>
             Embed code
      </h4>
-     <div class="ui card">
+
        <div class="content">
-        <div class="meta">
-           <span>Embed this into your website</span>
+         <div>
+           <pre class="code-sample"><span class="tag">&lt;iframe&gt;</span> <span class="class-tag">id</span>=<span class="label-tag">"survey-frame"</span> <span class="class-tag">src</span>=<span class="label-tag">"www.wiireapp.com/survey/{{survey.id}}#end" </span><span class="class-tag">width</span>=<span class="label-tag">"100%" </span><span class="class-tag">height</span>=<span class="label-tag">"90%"</span><span class="class-tag"> frameborder</span>=<span class="label-tag">"0"</span> <span class="class-tag">overflow:visible;<span><span class="tag">&lt;/iframe&gt;</span></pre>
          </div>
-         <div class="header">Cute Dog</div>
          <p></p>
        </div>
-     </div>
+
   </div>
 
 
   <div class="nine wide column" style="height:100vh">
-        <iframe scrolling="no" id="survey-frame" src="/demochat#end" width="100%" height="90%" frameborder="0" overflow:hidden;></iframe>
+        <iframe scrolling="no" id="survey-frame" src="/survey/{{survey.id}}#end" width="100%" height="90%" frameborder="0" overflow:hidden;></iframe>
   </div>
 </div>
 
 
-    {% if survey_list %}
-    <div class="ui cards">
-
-      {% for survey in survey_list %}
-
-        <a href="{{ survey.get_absolute_url }}">{{ survey.name }}</a>
-
-
-        <div class="card">
-        <div class="content">
-          <div class="header">
-            {{ survey.name }}
-          </div>
-          <div class="meta">
-            {{ survey.slug}}
-          </div>
-          <div class="description">
-            {{survey.description}}
-            <a href="{{ survey.get_absolute_url }}">{{ survey.name }}</a>
-
-          </div>
-        </div>
-        <a href="{{ survey.get_absolute_url }}"><div class="ui bottom attached button" tabindex="0">View Questionnaire</div></a>
-      </div>
-      {% endfor %}
-
-    </div>
-    {% else %}
-    {% endif %}
 {% endblock %}
 
 
