@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls,  name='admin'),
     url(r'^', include('surveys.urls')),
     url(r'^api/', include('restapis.urls')),
+
 ]

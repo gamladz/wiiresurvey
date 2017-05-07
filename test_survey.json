@@ -1,0 +1,26 @@
+{
+  "questions": [
+    {
+      "text": "What type of bear is best?",
+      "type": "text"
+    },
+    {
+      "text": "In a scale of 1 to 10, how cute do you find koalas?",
+      "type": "numeric"
+    },
+    {
+      "text": "Do you think bears beat beets?",
+      "type": "yes-no"
+    },
+    {
+      "text": "What's the relationship between Battlestar Galactica and bears?",
+      "type": "text"
+    },
+    {
+      "text": "Do sloths qualify as bears?",
+      "type": "text"
+    }
+
+  ],
+  "name": "About bears 3"
+}

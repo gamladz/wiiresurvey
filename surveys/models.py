@@ -23,6 +23,16 @@ class Survey(models.Model):
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
 
+    @property
+    def responses(self):
+        return Answer.objects.filter(question__survey__id=self.id)
+
+    @property
+    def first_question(self):
+        return Question.objects.filter(survey__id=self.id
+                                       ).order_by('id').first()
+
+
     def clean(self):
         self.slug = slugify(self.name)
 
@@ -113,6 +123,19 @@ class Question(models.Model):
         default=TEXT,
     )
 
+    @classmethod
+    def validate_kind(cls, type):
+        if type not in [cls.SELECT_ONE, cls.INTEGER, cls.TEXT]:
+            raise ValidationError("Invalid question type")
+
+    def next(self):
+        survey = Survey.objects.get(id=self.survey_id)
+
+        next_questions = \
+            survey.question_set.order_by('id').filter(id__gt=self.id)
+
+        return next_questions[0] if next_questions else None
+
     def __str__(self):
         return self.text
 
@@ -164,11 +187,23 @@ class Answer(models.Model):
     body = models.TextField(blank=True, null=True)
     question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name="answers")
     response = models.ForeignKey(Response, on_delete=models.CASCADE, null=True,  related_name="answers")
+    call_sid = models.CharField(max_length=255, null=True)
+    phone_number = models.CharField(max_length=255, null=True)
+
     # Some answers has a sentiment rating, dependent on the body text assuming the associated question is of type free text, can be nullable
     # counter =
 
 
     def __str__(self):
         return self.body
+
+    def as_dict(self):
+        return {
+                'text': self.question.body,
+                'type': self.question.kind,
+                'response': self.response,
+                'call_sid': self.call_sid,
+                'phone_number': self.phone_number,
+                }
 
 
