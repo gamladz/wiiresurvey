@@ -128,11 +128,13 @@ class Question(models.Model):
         if type not in [cls.SELECT_ONE, cls.INTEGER, cls.TEXT]:
             raise ValidationError("Invalid question type")
 
+
     def next(self):
         survey = Survey.objects.get(id=self.survey_id)
 
+
         next_questions = \
-            survey.question_set.order_by('id').filter(id__gt=self.id)
+            survey.questions.order_by('id').filter(id__gt=self.id)
 
         return next_questions[0] if next_questions else None
 

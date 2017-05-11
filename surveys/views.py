@@ -19,7 +19,7 @@ from twilio.twiml.messaging_response import MessagingResponse
 
 from surveys.forms import SignUpForm
 from .forms import ContactForm, SurveyForm
-from .models import Survey, Question
+from .models import Survey, Question, Answer
 
 
 # Create your views here.
@@ -273,8 +273,7 @@ def next_question_redirect(question_id, survey_id):
 
 def goodbye(request):
     goodbye_messages = ['That was the last question',
-                        'Thank you for taking this survey',
-                        'Good-bye']
+                        'your answers will be used to provide you with the best care']
     if request.is_sms:
         response = MessagingResponse()
         [response.message(message) for message in goodbye_messages]
@@ -297,7 +296,7 @@ def save_response_from_request(request, question):
     if not answer:
         Answer(call_sid=session_id,
                          phone_number=phone_number,
-                         response=request_body,
+                         body=request_body,
                          question=question).save()
     else:
         answer.body = request_body

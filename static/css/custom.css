@@ -1,5 +1,9 @@
 body { padding-top: 20px; }
 
+p{
+  opacity:0.8;
+}
+
 h1.white-color{
   margin-top: 7%;
   font-size: 3.25em;
