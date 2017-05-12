@@ -176,9 +176,13 @@ class Response(models.Model):
     from a particular user for a particular survey.
     """
     responder_id = models.CharField(max_length=150, unique=True)
-    survey = models.ForeignKey(Survey, on_delete=models.CASCADE, related_name="responses")
+    survey = models.ForeignKey(Survey, null=True, on_delete=models.CASCADE, related_name="responses")
+    Age = models.IntegerField(null=True)
+    Occupation = models.CharField(max_length=150, null=True)
+    Gender = models.CharField(max_length=150, null=True)
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
+
 
     def __str__(self):
         return self.responder_id

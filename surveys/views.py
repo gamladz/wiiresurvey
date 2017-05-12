@@ -19,7 +19,7 @@ from twilio.twiml.messaging_response import MessagingResponse
 
 from surveys.forms import SignUpForm
 from .forms import ContactForm, SurveyForm
-from .models import Survey, Question, Answer
+from .models import Survey, Question, Answer, Response
 
 
 # Create your views here.
@@ -118,6 +118,15 @@ class SurveyDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super(SurveyDetailView, self).get_context_data(**kwargs)
+        return context
+
+class ResponseListView(ListView):
+
+    model = Response
+
+
+    def get_context_data(self, **kwargs):
+        context = super(ResponseListView, self).get_context_data(**kwargs)
         return context
 
 

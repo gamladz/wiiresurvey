@@ -1,0 +1,33 @@
+{% extends 'base_admin.html' %}
+{% block content %}
+
+<h1>Patient Responses</h1>
+
+
+    {% if response_list %}
+    <div class="ui cards">
+
+      {% for response in object_list %}
+
+        <div class="card">
+        <div class="content">
+          <div class="header">
+            Gameli Ladzekpo
+          </div>
+          <div class="meta">
+            Device ID: {{ response.responder_id }}
+          </div>
+
+          <div class="description">
+            Male | {{response.Age}} years old | {{response.Occupation}}
+          </div>
+        </div>
+        <a href="{{survey.get_absolute_url }}"><div class="ui bottom attached button" tabindex="0">View Questionnaire</div></a>
+      </div>
+      {% endfor %}
+
+    </div>
+    {% else %}
+      <p>There are no surveys available to load.</p>
+    {% endif %}
+{% endblock %}

@@ -1,25 +1,22 @@
 {% extends 'base_admin.html' %}
 {% block content %}
 
+<h1>Clincal Questionnaires</h1>
+   <div class="ui two cards">
     {% if survey_list %}
-    <div class="ui cards">
-
       {% for survey in object_list %}
 
-        <div class="card">
-        <div class="content">
-          <div class="header">
-            {{ survey.name }}
+        <a class="ui raised link card" href="{{survey.get_absolute_url }}">
+
+          <div class="header header-background">
+            <h3 class="ui top attached header">{{ survey.name }}</h3>
           </div>
-          <div class="meta">
-            {{ survey.slug}}
-          </div>
-          <div class="description">
-            {{survey.description}}
-          </div>
-        </div>
-        <a href="{{survey.get_absolute_url }}"><div class="ui bottom attached button" tabindex="0">View Questionnaire</div></a>
-      </div>
+            <div class="content">
+              <div class="description">
+                {{survey.description}}
+              </div>
+            </div>
+      </a>
       {% endfor %}
 
     </div>

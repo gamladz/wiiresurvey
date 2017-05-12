@@ -46,8 +46,13 @@
     <form action="{%  url "surveys:survey" survey.id %}" method="POST" cf-form>
         {% csrf_token %}
         <!--<label for="{{ form.name.id_for_label }}">Hi, I'm Jenny!, one of the staff at the hospital. I'll be helping you today! What's your name?</label>-->
-        <input type="text" cf-questions="Hey, I'm Jenny!, one of the Mental Health Staff. I'll be helping you today! What's your name?">
-        <select class="selectpicker" cf-questions="Hi {previous-answer}, I need to you answer a few questions, try and answer honestly, okay?">
+        <input type="text" cf-questions="Hey, I'm Jenny :) one of the Mental Health Staff. I'll be helping you today! What's your name?">
+        <input type="text" cf-questions="and how old are you {previous-answer}?">
+        <input type="text" cf-questions="Good Age, and what do you do for a living?">
+
+
+
+        <select class="selectpicker" cf-questions="Cool, okay Gam I need to you answer a few questions, try and answer honestly, okay?">
             <option>Okay, Start Questions</option>
         </select>
 

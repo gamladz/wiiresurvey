@@ -1,4 +1,6 @@
-body { padding-top: 20px; }
+body {
+  padding-top: 20px;
+}
 
 p{
   opacity:0.8;
@@ -119,7 +121,7 @@ h5.small{
 }
 
 .primary-bg{
-    background: #21469C;
+    background: linear-gradient(to left, #56CCF2 , #2F80ED);
 }
 .option{
     margin: 0px 5px;
@@ -434,8 +436,9 @@ h3 {
     margin-right: 10px;
 }
 
+.header-background{
+  background: linear-gradient(to left, #56CCF2 , #2F80ED); ;
 }
-
 
 
 
