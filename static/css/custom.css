@@ -1,14 +1,23 @@
-body {
-  padding-top: 20px;
-}
 
 p{
   opacity:0.8;
 }
 
 h1.white-color{
-  margin-top: 7%;
-  font-size: 3.25em;
+  margin-top: 35%;
+  font-size: 2.15em;
+  text-align:left;
+
+}
+
+h5{
+  opacity:0.8;
+  text-align: left;
+
+}
+
+.small{
+  color:white;
 }
 
 .icon{
@@ -202,10 +211,14 @@ input{
   height: 75vh;
   margin: auto;
   margin-top: 30px;
-  border: 1px solid #acacac;
   border-radius: 6px;
-  box-shadow: 0px 0px 20px #acacac;
   margin-bottom: 25px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.window:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .titlebar {
