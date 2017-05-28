@@ -235,7 +235,7 @@ def sms_question(question):
 SMS_INSTRUCTIONS = {
     Question.TEXT: 'Please type your answer',
     Question.SELECT_ONE: 'type \'Not at all\', \'Several days\', More than half the days or \'Nearly every day',
-    Question.INTEGER: 'Please type a number between 1 and 10'
+    Question.INTEGER: '1 - Not at all\n2 - Several days\n3- More than half the days\n4 - Nearly every day'
 }
 
 def voice_question(question):
