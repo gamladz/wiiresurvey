@@ -12,5 +12,5 @@ client = Client(account_sid, auth_token)
 client.messages.create(
     to=dotenv.get('MY_PHONE_NUMBER'),
     from_="+441938880001",
-    body="Always believe in the heart of the cards"
+    body="Hello Finn"
 )

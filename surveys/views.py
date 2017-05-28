@@ -234,7 +234,7 @@ def sms_question(question):
 
 SMS_INSTRUCTIONS = {
     Question.TEXT: 'Please type your answer',
-    Question.SELECT_ONE: 'Please type 1 for yes and 0 for no',
+    Question.SELECT_ONE: 'type \'Not at all\', \'Several days\', More than half the days or \'Nearly every day',
     Question.INTEGER: 'Please type a number between 1 and 10'
 }
 
