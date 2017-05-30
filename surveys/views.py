@@ -120,6 +120,15 @@ class SurveyDetailView(DetailView):
         context = super(SurveyDetailView, self).get_context_data(**kwargs)
         return context
 
+class ResponseDetailView(DetailView):
+
+    model = Response
+    pk_url_kwarg = 'response_pk'
+
+    def get_context_data(self, **kwargs):
+        context = super(ResponseDetailView, self).get_context_data(**kwargs)
+        return context
+
 class ResponseListView(ListView):
 
     model = Response

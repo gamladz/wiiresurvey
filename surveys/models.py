@@ -187,6 +187,12 @@ class Response(models.Model):
     def __str__(self):
         return self.responder_id
 
+    def get_absolute_url(self):
+        """
+        Returns the url to access a particular instance of the model.
+        """
+        return reverse('surveys:response-detail', args=[str(self.id)])
+
 
 class Answer(models.Model):
 

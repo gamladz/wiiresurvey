@@ -12,17 +12,17 @@
         <div class="card">
         <div class="content">
           <div class="header">
-            Gameli Ladzekpo
+            Jessie
           </div>
           <div class="meta">
-            Device ID: {{ response.responder_id }}
+            Filled in Online
           </div>
 
           <div class="description">
             Male | {{response.Age}} years old | {{response.Occupation}}
           </div>
         </div>
-        <a href="{{survey.get_absolute_url }}"><div class="ui bottom attached button" tabindex="0">View Questionnaire</div></a>
+        <a href="{{response.get_absolute_url }}"><div class="ui bottom attached button" tabindex="0">View Response</div></a>
       </div>
       {% endfor %}
 

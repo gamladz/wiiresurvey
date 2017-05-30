@@ -415,8 +415,14 @@ h3 {
   background-color: #101010;
   color: white;
   border-radius: 6px 6px 6px 6px;
-  font-size: 20px ;
+  font-size: 10px ;
+}
+.featured-content{
   white-space: pre-wrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .tag{
@@ -504,6 +510,12 @@ h3 {
   -ms-user-select: none;
   -o-user-select: none;
   cursor: default;
+}
+
+.featured-image{
+  height:420px;
+  position: relative;
+
 }
 
 
