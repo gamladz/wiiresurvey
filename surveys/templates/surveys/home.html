@@ -9,7 +9,16 @@
     $contents.scrollTop($contents.height());
 });
 </script>
-
+<script type="text/javascript">
+    function myFunction() {
+    var x = document.getElementById('myDIV');
+    if (x.style.opacity === '0') {
+        x.style.opacity = '1';
+    } else {
+        x.style.opacity = '0';
+    }
+}
+</script>
 
 
 
@@ -34,7 +43,7 @@
                                     <br>
                                     <p class="subheading" style="text-align:left">Clinical Questionnaire platform for Mental health professionals connect with
  hard to reach demographics via SMS or Online chat<br><br><br><span class="small" style="color:white">* inline with NICE guidance for increasing access to services (recommendation 1.1.1.9)</span></p>
-                                    <!--<a href="/signup" class="btn se-btn-black btn-rounded">Try it --></a>
+ </a>
 
                                 </div>
 
@@ -63,23 +72,6 @@
                                   <div class="content">
                                   <iframe scrolling="no" id="survey-frame" src="/demochat#end" width="100%" height="90%" frameborder="0" overflow:hidden;></iframe>
 
-                                    <!--<p class="label">To</p> All 4th Year Students<br><br>
-                                    <p class="label">From</p> Prof.Smith@uni.ac.uk
-
-                                    <hr>
-                                    <p class="emailheading">Subject: Teaching Feedback Survey </p>
-                                    <hr>
-                                    <p>Hey <span class="name"><strong>[Name]</strong></span>,<br><br> I know your about to finish your module in
-                                    <span class="subject"><strong>[Subject]</strong></span> Last year we implemented <span class="response"><strong>[Insert Past Resolution]</strong></span> based on student feedback</p>
-
-                                    <p>Your feedback matters, click
-                                    <a href="#" data-toggle="modal" data-target="#convoModal">here</a> to do your survey</p>
-
-
-
-                                    <p>Kind Regards, <br> Prof Smith</p>-->
-
-
 
                                   </div>
                                 </div>
@@ -95,30 +87,85 @@
         </header>
 
         <!-- ========== OFFER SECTION ========== -->
-        <!--<section class="se-section offer-section gray-section">
-            <div class="container">
+
+
+        <div id="myDIV" class="launcher-chat" style="position:fixed;display: block;bottom: 20%;right: 5%">
+        <div class="titlebar-chat"></div>
+            <iframe scrolling="no" id="survey-frame" src="/survey/1#end" width="550px" height="350px" frameborder="0" overflow:hidden;></iframe>
+
+        </div>
+
+
+
+
+        <!-- ========== SINGLE FEATURE SECTION ========== -->
+
+        <section class="se-section single-feature">
+
+
+
+                <div class="col-md-4  feature-info">
+                        <div class="aos-item" data-aos="zoom-in" data-aos-once="true" style="position:fixed;display: block;top: 85%;left: 90%">
+                                <div onclick="myFunction()"="wiire-launcher">
+                                    <div class="aos-item__inner">
+                                    <a class="btn stoo"><img src="{% static 'images/light-icon.svg' %}" alt="" class="img-responsive" style="width:25px;margin:auto;margin-top:5px">
+                                    </a>
+
+                                    </div>
+                                </div>
+                        </div>
+
+
+
+                </div>
+
+
+            <div class="container feature-desc">
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p><span class="badge">Public Beta &#x2665;</span>This product is in a beta testing phase. Let us know how to improve it!<a href="/pricing" class="learn-more">Give feedback</a></p>
+                    <div class="col-md-5 col-md-push-7 feature-info">
                     </div>
                 </div>
             </div>
-        </section>-->
+        </section>
+
+        <!-- ========== SINGLE FEATURE SECTION ========== -->
+
+        <section class="se-section single-feature">
+
+                <div class="col-md-6 col-md-offset-3 zero-padding feature-info">
+                    <h2 class="heading">Quick + Easy to get started</h2>
+                    <p class="subheading">Helps Therapists, Psychologists and Practioners triage more patients</p>
+                </div>
+                <div class="col-md-4 feature-info">
+                    <img src="{% static 'images/MentalHealthProfessional.svg' %}" alt="" class="img-responsive" width="100%">
+                    <p class="subheading col-md-12"><span class="number-list">1</span></p>
+                        <p class="subheading col-md-12">Create a profile with your name and profile photo. We'll use it to make your avatar</p>
+                </div>
+                <div class="col-md-4 feature-info">
+                    <pre class="code-sample"><span class="tag">&lt;iframe&gt;</span> <span class="class-tag">id</span>=<span class="label-tag">"survey-frame"</span> <span class="class-tag">src</span>=<span class="label-tag">"/sign-up#end" </span><span class="class-tag">width</span>=<span class="label-tag">"100%" </span><span class="class-tag">height</span>=<span class="label-tag">"90%"</span><span class="class-tag"> frameborder</span>=<span class="label-tag">"0"</span> <span class="class-tag">overflow:visible;<span><span class="tag">&lt;/iframe&gt;</span></pre>
+
+                    <p class="subheading col-md-12"><span class="number-list">2</span></p>
+                        <p class="subheading col-md-12">Once your set up will create you a custom snippet of code to embed Wiire into your website</p>
+                </div>
+                <div class="col-md-4 feature-info">
+                     <a href="/signup" class="btn stoo"><img src="{% static 'images/light-icon.svg' %}" alt="" class="img-responsive" style="width:25px;margin:auto;margin-top:5px">
+                                    </a>
+                    <p class="subheading col-md-12"><span class="number-list">3</span></p>
+                        <p class="subheading col-md-12">Collect and analyse results. Quickly make decisions on appropriate care pathways</p>
+                </div>
 
 
-        <!-- Modal -->
-        <div id="convoModal" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-body">
-                <iframe scrolling="no" id="survey-frame" src="/demochat#end" width="100%" height="500" scrolling="no" frameborder="0" overflow:hidden ;></iframe>
-              </div>
+            <div class="container feature-desc">
+                <div class="row">
+                    <div class="col-md-5 col-md-push-7 feature-info">
+                    </div>
+                </div>
             </div>
+        </section>
 
-          </div>
-        </div>
+                <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
 
         <!-- ========== SINGLE FEATURE SECTION ========== -->
 
@@ -156,15 +203,13 @@
 
         <!-- ========== SINGLE FEATURE SECTION ========== -->
 
-        <section class="se-section single-feature">
+        <!-- <section class="se-section single-feature">
 
                 <div class="col-md-6 col-md-offset-3 zero-padding feature-info">
                     <h2 class="heading">Send your patients a text</h2>
                     <p class="subheading">Everyone has a mobile. Wiire can automatically text your patients and take them through the triage process</p>
                 </div>
              <div class="col-md-12">
-
-             <!-- aos convo-->
                                 <div class="col-md-6 col-md-offset-3">
                                 <div class="marvel-device iphone6plus gold">
                                     <div class="top-bar"></div>
@@ -174,8 +219,6 @@
                                     <div class="sensor"></div>
                                     <div class="speaker"></div>
                                     <div class="screen">
-                                        <!-- Content goes here -->
-                                        <!-- aos convo-->
                                     <div data-aos="zoom-in-right" class="col-md-12 col-md-offset-0">
                                       <div id="transcroller-body" class="aos-all">
                                         <div class="row">
@@ -250,7 +293,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
 
 
 
@@ -276,33 +319,6 @@
             </div>
         </section>-->
 
-
-
-
-        <!-- ========== SINGLE FEATURE SECTION ========== -->
-
-
-        <section class="se-section single-feature">
-
-                <div class="col-md-6 col-md-offset-3 zero-padding feature-info">
-                    <h2 class="heading">Easily embed into your site</h2>
-                    <p class="subheading">Embed your surveys into your own website by copying and pasting the embed code</p>
-
-                    <pre class="code-sample"><span class="tag">&lt;iframe&gt;</span> <span class="class-tag">id</span>=<span class="label-tag">"survey-frame"</span> <span class="class-tag">src</span>=<span class="label-tag">"/sign-up#end" </span><span class="class-tag">width</span>=<span class="label-tag">"100%" </span><span class="class-tag">height</span>=<span class="label-tag">"90%"</span><span class="class-tag"> frameborder</span>=<span class="label-tag">"0"</span> <span class="class-tag">overflow:visible;<span><span class="tag">&lt;/iframe&gt;</span></pre>
-
-                </div>
-                <div class="col-md-8 col-md-offset-2 feature-info">
-                    <!--<img src="{% static 'images/IntegrationsGraphic@1x.svg' %}" alt="" class="img-responsive">-->
-                </div>
-
-
-            <div class="container feature-desc">
-                <div class="row">
-                    <div class="col-md-5 col-md-push-7 feature-info">
-                    </div>
-                </div> <!-- end row -->
-            </div> <!-- end container -->
-        </section>
 
 
 
