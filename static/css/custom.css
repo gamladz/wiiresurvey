@@ -518,4 +518,36 @@ h3 {
 
 }
 
+.window-meta{
+  color: white;
+  text-align:left;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 20px;
+}
+
+.filled-circle {
+  padding: 2px 11px;
+  margin: 0px 5px 0px 0px;
+  border-radius: 100%;
+  background-color: #00ca56;
+  border: 1px solid #14ae46;
+}
+
+.chat-window-heading{
+  font-weight:300;
+  font-size:13px;
+}
+
+.chat-window-subheading{
+  opacity:0.7;
+
+}
+
+.chat-window-status{
+  opacity: 0.7;
+
+}
+
+
 

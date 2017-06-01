@@ -210,7 +210,7 @@ def show_survey(request, survey_id):
 
     first_question_url = reverse('surveys:question', kwargs=first_question_ids)
 
-    welcome = 'Hello and thank you for taking the %s survey' % survey.name
+    welcome = 'Thanks for contacting the Mental Health Services, to get started we need to ask two questions:'
     if request.is_sms:
         twiml_response = MessagingResponse()
         twiml_response.message(welcome)
