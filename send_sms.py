@@ -11,6 +11,6 @@ client = Client(account_sid, auth_token)
 
 client.messages.create(
     to=dotenv.get('MY_PHONE_NUMBER'),
-    from_="+441938880001",
-    body="Hi Gam, its that time of the week for you to fill in your GAD-7, is now a good time?"
+    from_="+447400344583",
+    body="Hi Gam, its that time of the week for you to fill in your questionnaire, is now a good time?"
 )
