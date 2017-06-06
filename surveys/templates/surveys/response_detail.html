@@ -38,43 +38,63 @@
 
   </div>
 
+  <!-- RHS -->
 
-  <div class="nine wide column" style="height:100vh;background:white">
-    {{response.answer}}
 
-    <h1>PHQ-2:</h1>
-      <div class="ui massive orange label">Score
-      <div class="detail">4</div>
-</div>
+      <div class="nine wide column" style="height:100vh;background:white">
+        {{response.answer}}
+           <h1>Completed Questionnaires</h1>
 
-    <div class="ui divided selection list">
-      <a class="item">
-        <div class="ui grey circular label">1</div>
-        (1/2) Over the past 2 weeks, how often have you had little interest in doing things?
-      </a>
-      <a class="item">
-        <div class="ui red circular label">4</div>
-        (2/2) Over the past 2 weeks how often have you been Feeling down, depressed or hopeless?
-      </a>
-    </div>
-    <hbr>
-    <div>Key:
-      <div class="ui small grey label">Not at all
-      <div class="detail">1</div>
+          <div class="column">
+
+          <div class="ui raised fluid card">
+
+
+            <div class="content">
+              <div class="header">Overall score: 5</div>
+              <div class="meta">
+                <span class="category">Patient Health Questionnaire</span>
+              </div>
+                <div class="ui divided selection list">
+
+                  {% for answer in answer_list %}
+                    <a class="item">
+                    <div class="ui small grey label">{{ answer.body }}
+                      <div class="detail">1</div>
+                    </div>
+                     {{ answer.question }}
+                    </a>
+                  {% endfor %}
+                  </div>
+              <div class="description">
+                <p></p>
+              </div>
+            </div>
+            <div class="extra content">
+            <div class="right floated author">
+              Responded on: {{response.date_created}}
+            </div>
+
+            </div>
+          </div>
+
+                  <div>Key:
+                    <div class="ui small grey label">Not at all
+                    <div class="detail">1</div>
+                    </div>
+                    <div class="ui small yellow label">Several Days
+                    <div class="detail">2</div>
+                    </div>
+                    <div class="ui small orange label">More than half the Days
+                    <div class="detail">3</div>
+                    </div>
+                      <div class="ui small red label">Nearly Every Day
+                    <div class="detail">4</div>
+                    </div>
+                  </div>
+
+
       </div>
-      <div class="ui small yellow label">Several Days
-      <div class="detail">2</div>
-      </div>
-      <div class="ui small orange label">More than half the Days
-      <div class="detail">3</div>
-      </div>
-        <div class="ui small red label">Nearly Every Day
-      <div class="detail">4</div>
-      </div>
-    </div>
-
-
-  </div>
 </div>
 
 

@@ -125,9 +125,17 @@ class ResponseDetailView(DetailView):
     model = Response
     pk_url_kwarg = 'response_pk'
 
+
     def get_context_data(self, **kwargs):
         context = super(ResponseDetailView, self).get_context_data(**kwargs)
+
+        response_pk = self.get_object().pk
+        response = Response.objects.get(pk=response_pk)
+
+        context['answer_list'] = response.answers.all()
+
         return context
+
 
 class ResponseListView(ListView):
 

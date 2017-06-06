@@ -145,6 +145,7 @@ class Question(models.Model):
 class Choice(models.Model):
 
     text = models.CharField(max_length=200, blank=True, null=True)
+    weighting = models.IntegerField(blank=True, null=True)
     question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name="choices")
 
     def __str__(self):
@@ -153,13 +154,6 @@ class Choice(models.Model):
     """
 
     Class Report(models.Model)
-
-    survey = models.ForeignKey(Survey, on_delete=models.CASCADE, related_name="responses")
-    questions = models.ForeignKey(Survey, on_delete=models.CASCADE, related_name="responses")
-    OverallSentiment = models.ForeignKey(Survey, on_delete=models.CASCADE, related_name="responses")
-    OverallVotes = models.ForeignKey(Survey, on_delete=models.CASCADE, related_name="responses")
-    proportion of answers with a value over some arbitraty marker
-
 
     This provides a way to get an overview of questions, choices and answers
 
@@ -202,8 +196,6 @@ class Answer(models.Model):
     call_sid = models.CharField(max_length=255, null=True)
     phone_number = models.CharField(max_length=255, null=True)
 
-    # Some answers has a sentiment rating, dependent on the body text assuming the associated question is of type free text, can be nullable
-    # counter =
 
 
     def __str__(self):
