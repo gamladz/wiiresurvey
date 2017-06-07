@@ -35,7 +35,6 @@
       </div>
     </div>
 
-
   </div>
 
   <!-- RHS -->
@@ -49,8 +48,42 @@
 
           <div class="ui raised fluid card">
 
+          <div class="content">
+              <div class="header">Overall score: 5</div>
+              <div class="meta">
+                <span class="category">Patient Health Questionnaire</span>
+              </div>
+                <div class="ui divided selection list">
 
-            <div class="content">
+
+                    <a class="item">
+                    <div class="ui small grey label">Not at all
+                      <div class="detail">1</div>
+                    </div>
+                     (1/2) Over the past 2 weeks, how often have you had little interest in doing things?
+                    </a>
+
+
+                    <a class="item">
+                    <div class="ui small red label">Nearly Every Day
+                      <div class="detail">4</div>
+                    </div>
+                     ((2/2) Over the past 2 weeks how often have you been Feeling down, depressed or hopeless?
+                    </a>
+                  </div>
+              <div class="description">
+                <p></p>
+              </div>
+            </div>
+            <div class="extra content">
+            <div class="right floated author">
+              Responded on: {{response.date_created}}
+            </div>
+
+
+
+
+            <!--<div class="content">
               <div class="header">Overall score: 5</div>
               <div class="meta">
                 <span class="category">Patient Health Questionnaire</span>
@@ -63,6 +96,7 @@
                       <div class="detail">1</div>
                     </div>
                      {{ answer.question }}
+                     {{ answer.question.type }}
                     </a>
                   {% endfor %}
                   </div>
@@ -73,10 +107,14 @@
             <div class="extra content">
             <div class="right floated author">
               Responded on: {{response.date_created}}
-            </div>
+            </div>-->
 
             </div>
+
+
           </div>
+
+
 
                   <div>Key:
                     <div class="ui small grey label">Not at all

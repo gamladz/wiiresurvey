@@ -145,23 +145,11 @@ class Question(models.Model):
 class Choice(models.Model):
 
     text = models.CharField(max_length=200, blank=True, null=True)
-    weighting = models.IntegerField(blank=True, null=True)
     question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name="choices")
 
     def __str__(self):
         return self.text
 
-    """
-
-    Class Report(models.Model)
-
-    This provides a way to get an overview of questions, choices and answers
-
-    The form should post to the Report Model - A class based view
-    And overall responses
-
-    click on the survey has an associated report view.
-    """
 
 
 class Response(models.Model):

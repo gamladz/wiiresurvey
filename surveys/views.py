@@ -134,6 +134,8 @@ class ResponseDetailView(DetailView):
 
         context['answer_list'] = response.answers.all()
 
+
+
         return context
 
 
