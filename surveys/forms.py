@@ -77,3 +77,7 @@ class SurveyForm(forms.Form):
                 response=response
             )
 
+class TextMessageForm(forms.Form):
+    patient_number = forms.IntegerField(label='patient number')
+    message = forms.CharField(widget=forms.Textarea)
+

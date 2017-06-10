@@ -30,6 +30,26 @@
       </div>
       <div class="title">
         <i class="dropdown icon"></i>
+        <i class="comment icon"></i>
+            Send as a text to patient
+      </div>
+      <div class="content">
+        <p class="transition hidden"><div class="ui fluid action input">
+
+        <!-- TEXT MESSAGE FORM -->
+        <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit" />
+
+
+        </form>
+
+
+     </div></p>
+      </div>
+      <div class="title">
+        <i class="dropdown icon"></i>
         <i class="code outline icon"></i>
             Embed code
       </div>
@@ -39,33 +59,6 @@
     </div>
 
 
-    <!--<h4 class="ui horizontal header">
-         <i class="comment icon"></i>
-            Send Assesment via SMS
-     </h4>
-     <div class="ui fluid action input">
-       <input type="text" placeholder="+44...">
-       <div class="ui button">Send</div>
-     </div>
-     <div class="ui divider"></div>
-
-    <h4 class="ui horizontal header">
-         <i class="linkify icon"></i>
-            Send Assesment via Link
-     </h4>
-     <div class="field">
-         <label>link: <a href="http://www.wiireapp.com/survey/{{survey.id}}">www.wiireapp.com/survey/{{survey.id}}#end</a></label>
-     </div>
-
-    <div class="ui divider"></div>
-         <h4 class="ui horizontal header">
-         <i class="code outline icon"></i>
-            Embed code
-     </h4>-->
-
-         <!--<div>
-           <pre class="code-sample"><span class="tag">&lt;iframe&gt;</span> <span class="class-tag">id</span>=<span class="label-tag">"survey-frame"</span> <span class="class-tag">src</span>=<span class="label-tag">"www.wiireapp.com/survey/{{survey.id}}#end" </span><span class="class-tag">width</span>=<span class="label-tag">"100%" </span><span class="class-tag">height</span>=<span class="label-tag">"90%"</span><span class="class-tag"> frameborder</span>=<span class="label-tag">"0"</span> <span class="class-tag">overflow:visible;<span><span class="tag">&lt;/iframe&gt;</span></pre>
-         </div>-->
          <p></p>
 
 

@@ -1,10 +1,11 @@
 import uuid
 
+
 from django.views.generic import TemplateView
 from django.views import View
 from django.views.generic.edit import FormView
 from django.views.generic.list import ListView
-from django.views.generic.detail import DetailView
+from django.views.generic.detail import DetailView, SingleObjectMixin
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.mail import send_mail
@@ -18,7 +19,8 @@ from twilio.twiml.voice_response import VoiceResponse
 from twilio.twiml.messaging_response import MessagingResponse
 
 from surveys.forms import SignUpForm
-from .forms import ContactForm, SurveyForm
+from surveys.middleware import MessageClient
+from .forms import ContactForm, SurveyForm, TextMessageForm
 from .models import Survey, Question, Answer, Response
 
 
@@ -51,12 +53,6 @@ class SuccessView(TemplateView):
 class ThanksView(TemplateView):
     template_name = "surveys/thanks.html"
 
-
-class SurveyDetailView(DetailView):
-    model = Survey
-
-# def survey(request, survey_id):
-#     return render(request, 'surveys/signup.html', {})
 
 
 class SurveyView(View):
@@ -102,6 +98,8 @@ class SurveyView(View):
                }
             return render(request, 'surveys/survey.html', context)
 
+
+
 class SurveyListView(ListView):
 
     model = Survey
@@ -111,14 +109,28 @@ class SurveyListView(ListView):
         context = super(SurveyListView, self).get_context_data(**kwargs)
         return context
 
+
+
 class SurveyDetailView(DetailView):
 
     model = Survey
     pk_url_kwarg = 'survey_pk'
+    form_class = TextMessageForm
+
+    def post(self, request, *args, **kwargs):
+         form = self.form_class(request.POST)
+         if form.is_valid():
+            patient_number = form.cleaned_data['patient_number']
+            message = form.cleaned_data['message']
+            MessageClient.send_message(MessageClient(),message,patient_number)
+
+            return redirect('surveys:home')
 
     def get_context_data(self, **kwargs):
         context = super(SurveyDetailView, self).get_context_data(**kwargs)
+        context['form'] = TextMessageForm
         return context
+
 
 class ResponseDetailView(DetailView):
 

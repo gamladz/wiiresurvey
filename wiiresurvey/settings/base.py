@@ -156,3 +156,8 @@ EMAIL_USE_TLS = True
 
 # Python Django settings for email
 LOGIN_REDIRECT_URL = '/admin/surveys/survey/'
+
+
+# Set up Twilio
+account_sid = dotenv.get('TWILIO_ACCOUNT_SID')
+auth_token = dotenv.get('TWILIO_AUTH_TOKEN')
