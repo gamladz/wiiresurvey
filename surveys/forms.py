@@ -36,13 +36,14 @@ class SurveyForm(forms.Form):
                                              required=question.required,
                                              widget=forms.Textarea(attrs={'rows':4}))
             elif question.type == question.SELECT_ONE:
-                choices = [(choice.text, choice.text) for choice in question.choices.all()]
+                choices = [(choice.weighting, choice.text) for choice in question.choices.all()]
                 field_type = forms.ChoiceField(label=question.text,
                                                required=question.required,
                                                choices=choices,
                                                widget=forms.RadioSelect)
             elif question.type == question.SELECT_MULTIPLE:
-                choices = [(choice.text, choice.text) for choice in question.choices.all()]
+                choices = [(choice.weighting, choice.text) for choice in question.choices.all()]
+
                 field_type = forms.MultipleChoiceField(label=question.text,
                                                        required=question.required,
                                                        choices=choices,

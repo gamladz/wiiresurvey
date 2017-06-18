@@ -145,6 +145,7 @@ class Question(models.Model):
 class Choice(models.Model):
 
     text = models.CharField(max_length=200, blank=True, null=True)
+    weighting = models.PositiveIntegerField(null=True, blank=True)
     question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name="choices")
 
     def __str__(self):

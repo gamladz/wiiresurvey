@@ -84,6 +84,7 @@ class SurveyView(View):
 
         if survey_form.is_valid():
             try:
+                import pdb; pdb.set_trace()
                 survey_form.save(survey, responder_id)
                 # redirect to the response page
                 return HttpResponseRedirect(reverse('surveys:success'))

@@ -2,7 +2,7 @@
 {% load staticfiles %}
 {% block content %}
 
-<script type="text/javascript" src="https://conversational-form-0iznjsw.stackpathdns.com/conversational-form.min.js" crossorigin></script>
+{# <script type="text/javascript" src="https://conversational-form-0iznjsw.stackpathdns.com/conversational-form.min.js" crossorigin></script> #}
 
 <style>
 
@@ -45,7 +45,7 @@
     <h5>{{ survey.description }}</h5>
     <form action="{%  url "surveys:survey" survey.id %}" method="POST" cf-form>
         {% csrf_token %}
-        <!--<label for="{{ form.name.id_for_label }}">Hi, I'm Jenny!, one of the staff at the hospital. I'll be helping you today! What's your name?</label>-->
+
         <input type="text" cf-questions="Hey, I'm Jenny :) one of the Mental Health Staff. I'll be helping you today! What's your name?">
 
         <select class="selectpicker" cf-questions="Nice to meet you {previous-answer} I need to you answer a few questions so we can provide the best care, try and answer honestly, okay?">
@@ -56,14 +56,11 @@
 
         {% for field in survey_form %}
             <div class="form-group">
-                <label for="{{ field.id_for_label }}">{# {{ field.html_name }} #}. {{ field.label }}{# {% if field.field.required %} *{% endif %} #}</label>
+                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
                 {{ field }}
             </div>
         {% endfor %}
-        <!--<div class="form-group">
-            <label for="responder_id">{{ survey.questions.count|add:"1" }}. What's your Nickname?</label>
-            <input type="text" id="responder_id" name="responder_id" placeholder="Nickname">
-        </div>-->
+
 
         <input type="text" cf-questions="Thanks for filling that out Jessie {previous-answer} - whats the best phone number to get you on so we can take next steps?">
 
