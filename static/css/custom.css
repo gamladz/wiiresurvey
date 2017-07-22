@@ -4,7 +4,7 @@ p{
 }
 
 h1.white-color{
-  margin-top: 35%;
+  margin-top: 20%;
   font-size: 2.15em;
   text-align:left;
 
@@ -13,6 +13,20 @@ h1.white-color{
 h5{
   opacity:0.8;
   text-align: left;
+
+}
+
+a{
+
+  color:white;
+  opacity:1.0;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s;
+
+}
+
+a:hover{
+  color: #ecf0f1;
 
 }
 

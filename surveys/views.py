@@ -53,6 +53,9 @@ class SuccessView(TemplateView):
 class ThanksView(TemplateView):
     template_name = "surveys/thanks.html"
 
+class ContactView(TemplateView):
+    template_name = "surveys/contact.html"
+
 
 
 class SurveyView(View):

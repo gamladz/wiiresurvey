@@ -10,7 +10,7 @@ class SignUpForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ('username', 'first_name', 'last_name', 'email', 'password1', 'password2', )
+        fields = ('username','first_name', 'last_name', 'email', 'password1', 'password2', )
 
 
 class ContactForm(forms.Form):
@@ -18,14 +18,12 @@ class ContactForm(forms.Form):
     name = forms.CharField(label='what is the message?', widget=forms.Textarea)
     from_email = forms.EmailField(label='Who is it from?')
 
-"""class SurveyForm(forms.Form)
-    question =
-"""
 
 class SurveyForm(forms.Form):
 
     def __init__(self, *args, **kwargs):
         survey = kwargs.pop('survey')
+
         super(SurveyForm, self).__init__(*args, **kwargs)
 
         for question in survey.questions.all():
@@ -36,7 +34,7 @@ class SurveyForm(forms.Form):
                                              required=question.required,
                                              widget=forms.Textarea(attrs={'rows':4}))
             elif question.type == question.SELECT_ONE:
-                choices = [(choice.text, choice.text) for choice in question.choices.all()]
+                choices = [(choice.id, choice.text) for choice in question.choices.all()]
                 field_type = forms.ChoiceField(label=question.text,
                                                required=question.required,
                                                choices=choices,
@@ -55,12 +53,6 @@ class SurveyForm(forms.Form):
 
     def save(self, survey, responder_id):
 
-        """
-        save survey response in the Answer and Response model
-        :param survey: survey object
-        :param responder_id: nickname submitted with the form
-        :return:
-        """
 
         # create response
         response = Response.objects.create(
@@ -68,14 +60,17 @@ class SurveyForm(forms.Form):
             survey=survey
         )
 
+
         # save the answers for each question
         for question in survey.questions.all():
             answer = self.cleaned_data.get(str(question.id))
+            import pdb; pdb.set_trace()
             Answer.objects.create(
                 body=answer,
                 question=question,
                 response=response
             )
+
 
 class TextMessageForm(forms.Form):
     patient_number = forms.IntegerField(label='patient number')

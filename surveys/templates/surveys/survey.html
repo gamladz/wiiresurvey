@@ -2,9 +2,9 @@
 {% load staticfiles %}
 {% block content %}
 
-<script type="text/javascript" src="https://conversational-form-0iznjsw.stackpathdns.com/conversational-form.min.js" crossorigin></script>
+{# <script type="text/javascript" src="https://conversational-form-0iznjsw.stackpathdns.com/conversational-form.min.js" crossorigin></script> #}
 
-<style>
+<!--<style>
 
     .user.show>thumb{
         background-image: url(http://www.cdu.edu.au/sites/default/files/newsroom/images/Fran_Rosamond-3%20300x250.jpg)
@@ -34,7 +34,7 @@
 
 
 }
-</style>
+</style>-->
 
 
     <ol class="breadcrumb">
@@ -45,7 +45,6 @@
     <h5>{{ survey.description }}</h5>
     <form action="{%  url "surveys:survey" survey.id %}" method="POST" cf-form>
         {% csrf_token %}
-        <!--<label for="{{ form.name.id_for_label }}">Hi, I'm Jenny!, one of the staff at the hospital. I'll be helping you today! What's your name?</label>-->
         <input type="text" cf-questions="Hey, I'm Jenny :) one of the Mental Health Staff. I'll be helping you today! What's your name?">
 
         <select class="selectpicker" cf-questions="Nice to meet you {previous-answer} I need to you answer a few questions so we can provide the best care, try and answer honestly, okay?">

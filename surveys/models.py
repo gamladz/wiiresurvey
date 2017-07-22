@@ -146,6 +146,7 @@ class Choice(models.Model):
 
     text = models.CharField(max_length=200, blank=True, null=True)
     question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name="choices")
+    weighting = models.PositiveIntegerField(null=True, blank=True)
 
     def __str__(self):
         return self.text
@@ -183,6 +184,7 @@ class Answer(models.Model):
     response = models.ForeignKey(Response, on_delete=models.CASCADE, null=True,  related_name="answers")
     call_sid = models.CharField(max_length=255, null=True)
     phone_number = models.CharField(max_length=255, null=True)
+    selected_choice = models.ForeignKey(Choice, null=True, on_delete=models.CASCADE, related_name="answers")
 
 
 
@@ -197,5 +199,3 @@ class Answer(models.Model):
                 'call_sid': self.call_sid,
                 'phone_number': self.phone_number,
                 }
-
-

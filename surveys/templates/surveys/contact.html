@@ -1,3 +1,9 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -5,10 +11,22 @@
     /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
-        <div id="mc_embed_signup" class="col-md-8 com-md-offset-2">
+        <header class="header page-title" >
+            <div class="container">
+                <!-- For centering the content vertically -->
+                <div class="outer">
+                    <div class="inner text-center">
+
+                        <h1 class="">You caught us before we're ready!</h1>
+
+                    </div> <!-- end inner -->
+                </div> <!-- end outer -->
+            </div> <!-- end container -->
+        </header>
+        <div id="mc_embed_signup" class="col-md-12">
             <form action="//Sponsorbird.us14.list-manage.com/subscribe/post?u=32c8a31fb7454b526a451334a&amp;id=c0a166d5a8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
-                <h2>Subscribe to our mailing list</h2>
+                <h2>Sign up to get free early access</h2>
             <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
             <div class="mc-field-group">
                 <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
@@ -34,3 +52,5 @@
         </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
+
+{% endblock content %}
