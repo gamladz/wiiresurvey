@@ -235,7 +235,7 @@ def show_survey(request, survey_id):
 
     first_question_url = reverse('surveys:question', kwargs=first_question_ids)
 
-    welcome = 'Thanks for contacting the Mental Health Services, to get started we need to ask two questions:'
+    welcome = 'Great, text reminders will help you take your medication properly so you can feel better'
     if request.is_sms:
         twiml_response = MessagingResponse()
         twiml_response.message(welcome)
@@ -258,19 +258,40 @@ def show_question(request, survey_id, question_id):
     request.session['answering_question_id'] = question.id
     return HttpResponse(twiml, content_type='application/xml')
 
+
+def map_choices_dict(question):
+    choices_dict = {}
+    choices = question.choices.all()
+    count = 1
+    for choice in choices:
+        choices_dict[count] = (choice.id, choice.text,)
+        count += 1
+
+    return choices_dict
+
+
+def render_select_one_choices(question):
+    # '1 - Not at all\n2 - Several days\n3- More than half the days\n4 - Nearly every day',
+    choices_dict = map_choices_dict(question)
+    choices_string = ''
+    for key, value in choices_dict.iteritems():
+        choices_string += '{key} - {value}\n'.format(key=key, value=value[1])
+    return choices_string
+
+
 def sms_question(question):
+
+    sms_instructions = {
+        Question.TEXT: 'Please type your answer',
+        Question.SELECT_ONE: render_select_one_choices(question),
+        Question.INTEGER: 'enter integer'
+    }
     twiml_response = MessagingResponse()
 
     twiml_response.message(question.text)
-    twiml_response.message(SMS_INSTRUCTIONS[question.type])
+    twiml_response.message(sms_instructions[question.type])
 
     return twiml_response
-
-SMS_INSTRUCTIONS = {
-    Question.TEXT: 'Please type your answer',
-    Question.SELECT_ONE: 'type \'Not at all\', \'Several days\', More than half the days or \'Nearly every day',
-    Question.INTEGER: '1 - Not at all\n2 - Several days\n3- More than half the days\n4 - Nearly every day'
-}
 
 def voice_question(question):
     twiml_response = VoiceResponse()
@@ -335,6 +356,7 @@ def save_response_from_request(request, question):
 
     answer = Answer.objects.filter(question_id=question.id,
                                                call_sid=session_id).first()
+    import pdb; pdb.set_trace()
 
     if not answer:
         Answer(call_sid=session_id,

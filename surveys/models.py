@@ -55,47 +55,6 @@ class Survey(models.Model):
         """
         return reverse('surveys:survey-detail', args=[str(self.id)])
 
-
-
-
-    """
-    QRcode = models.ImageField(upload_to='QRcode', blank=True, null=True)
-    def get_absolute_url(self):
-        return reverse('surveys:survey', args=[str(self.id)])
-    def save(self):
-        self.generate_qrcode()
-        force_update = False
-        # If the instance already has been saved, it has an id and we set
-        # force_update to True
-        if self.id:
-            force_update = True
-        # Force an UPDATE SQL query if we're editing the image to avoid integrity exception
-        super(Survey, self).save(force_update=force_update)
-    def generate_qrcode(self):
-        qr = qrcode.QRCode(
-            version=1,
-            error_correction=qrcode.constants.ERROR_CORRECT_L,
-            box_size=6,
-            border=0,
-        )
-        qr.add_data(self.get_absolute_url())
-        qr.make(fit=True)
-        image = qr.make_image()
-        temp_handle = StringIO.StringIO()
-        image.save(temp_handle, 'png')
-        temp_handle.seek(0)
-        # Save image to a SimpleUploadedFile which can be saved into
-        # ImageField
-        suf = SimpleUploadedFile(os.path.split(self.QRcode.name)[-1],
-                temp_handle.read(), content_type='image/png')
-        # Save SimpleUploadedFile into QR code field field
-        self.QRcode.save(
-            '%s_QRcode.%s' % (os.path.splitext(suf.name)[0], 'png'),
-            suf,
-            save=False
-        )
-    """
-
     def __str__(self):
         return self.name
 
@@ -109,12 +68,10 @@ class Question(models.Model):
 
     TEXT = 'TEXT'
     SELECT_ONE = 'SELECT ONE'
-    SELECT_MULTIPLE = 'SELECT MULTIPLE'
     INTEGER = 'INTEGER'
     QUESTION_TYPE_CHOICES = (
         (TEXT, 'Text'),
         (SELECT_ONE, 'Select one'),
-        (SELECT_MULTIPLE, 'Select multiple'),
         (INTEGER, 'Integer'),
     )
     type = models.CharField(
@@ -184,12 +141,12 @@ class Answer(models.Model):
     response = models.ForeignKey(Response, on_delete=models.CASCADE, null=True,  related_name="answers")
     call_sid = models.CharField(max_length=255, null=True)
     phone_number = models.CharField(max_length=255, null=True)
-    selected_choice = models.ForeignKey(Choice, null=True, on_delete=models.CASCADE, related_name="answers")
+    selected_choice = models.ForeignKey(Choice, null=True, blank=True, on_delete=models.CASCADE, related_name="answers")
 
 
 
     def __str__(self):
-        return self.body
+        return self.body or self.selected_choice.text
 
     def as_dict(self):
         return {

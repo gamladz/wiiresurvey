@@ -33,14 +33,6 @@ class MessageClient(object):
         self.twilio_client = Client(twilio_account_sid,
                                               twilio_auth_token)
 
-        # self.twilio_client.messages.create(
-        #     to='+447753314014',
-        #     from_='+447400344583',
-        #     body="Hi Gam, it's that time of the week for you to fill in your questionnaire, is now a good time?"
-        # )
-
-        # print 'this ran'
-
     def send_message(self, message, patient_number):
         self.twilio_client.messages.create(body=message, to=patient_number,
                                            from_='+447400344583',

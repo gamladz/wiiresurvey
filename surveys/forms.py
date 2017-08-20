@@ -39,12 +39,6 @@ class SurveyForm(forms.Form):
                                                required=question.required,
                                                choices=choices,
                                                widget=forms.RadioSelect)
-            elif question.type == question.SELECT_MULTIPLE:
-                choices = [(choice.text, choice.text) for choice in question.choices.all()]
-                field_type = forms.MultipleChoiceField(label=question.text,
-                                                       required=question.required,
-                                                       choices=choices,
-                                                       widget=forms.CheckboxSelectMultiple)
             elif question.type == question.INTEGER:
                 field_type = forms.IntegerField(label=question.text,
                     required=question.required)
@@ -52,7 +46,6 @@ class SurveyForm(forms.Form):
             self.fields.update({field_name: field_type})
 
     def save(self, survey, responder_id):
-
 
         # create response
         response = Response.objects.create(
@@ -63,13 +56,21 @@ class SurveyForm(forms.Form):
 
         # save the answers for each question
         for question in survey.questions.all():
-            answer = self.cleaned_data.get(str(question.id))
-            import pdb; pdb.set_trace()
-            Answer.objects.create(
-                body=answer,
-                question=question,
-                response=response
-            )
+            if question.type in [question.TEXT, question.INTEGER]:
+                answer = self.cleaned_data.get(str(question.id))
+                Answer.objects.create(
+                    body=answer,
+                    question=question,
+                    response=response
+                )
+            elif question.type == question.SELECT_ONE:
+                choice_id = self.cleaned_data.get(str(question.id))
+                choice = question.choices.get(id=choice_id)
+                Answer.objects.create(
+                    selected_choice=choice,
+                    question=question,
+                    response=response
+                )
 
 
 class TextMessageForm(forms.Form):
