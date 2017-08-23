@@ -219,7 +219,7 @@ def redirects_twilio_request_to_proper_endpoint(request):
         question = Question.objects.get(id=answering_question)
         redirect_url = reverse('surveys:save_response',
                                kwargs={'survey_id': question.survey.id,
-                                       'question_id': question.pk})
+                                       'question_id': question.id})
     return HttpResponseRedirect(redirect_url)
 
 
@@ -315,23 +315,21 @@ def voice_question(question):
 
 @require_POST
 def save_response(request, survey_id, question_id):
-    import pdb; pdb.set_trace()
     survey = Survey.objects.get(id=survey_id)
-    question = Question.objects.get(id=question_id)
-    session_id = request.POST['MessageSid' if request.is_sms else 'CallSid']
-
     response = Response.objects.create(
-        responder_id=session_id,
+        responder_id=responder_id,
         survey=survey
     )
 
-    save_response_from_request(request, question, response)
+    question = Question.objects.get(id=question_id)
+
+    save_response_from_request(request, question)
 
     next_question = question.next()
     if not next_question:
         return goodbye(request)
     else:
-        return next_question_redirect(next_question.pk, survey_id)
+        return next_question_redirect(next_question.id, survey_id)
 
 
 def next_question_redirect(question_id, survey_id):
@@ -357,30 +355,25 @@ def goodbye(request):
     return HttpResponse(response)
 
 
-def save_response_from_request(request, question, response):
+def save_response_from_request(request, question):
+    session_id = request.POST['MessageSid' if request.is_sms else 'CallSid']
     request_body = _extract_request_body(request, question.type)
     phone_number = request.POST['From']
-    session_id = request.POST['MessageSid' if request.is_sms else 'CallSid']
+
+    choices_dict = map_choices_dict(question)
+    choice_id = choices_dict[int(request_body)][0]
+    choice = question.choices.get(id=choice_id)
+
 
     answer = Answer.objects.filter(question_id=question.id,
                                                call_sid=session_id).first()
-
-    if question.type == question.SELECT_ONE:
-        choices_dict = map_choices_dict(question)
-        choice_id = choices_dict[int(request_body)][0]
-        choice = question.choices.get(id=choice_id)
-        Answer.objects.create(
-                    selected_choice=choice,
-                    question=question,
-                    response = response
-                )
 
     if not answer:
         Answer(call_sid=session_id,
                          phone_number=phone_number,
                          body=request_body,
-                         question=question,
-                         response=response).save()
+                         selected_choice = choice,
+                         question=question).save()
     else:
         answer.body = request_body
         answer.save()
