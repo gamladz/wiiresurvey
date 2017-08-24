@@ -315,15 +315,19 @@ def voice_question(question):
 
 @require_POST
 def save_response(request, survey_id, question_id):
+
+    responder_id = request.COOKIES['sessionid']
     survey = Survey.objects.get(id=survey_id)
-    response = Response.objects.create(
-        responder_id=responder_id,
-        survey=survey
-    )
+
+    response = Response.objects.get(responder_id=responder_id,
+                                    survey=survey)
+    if not response:
+        response = Response.objects.create(responder_id=responder_id,
+                                           survey=survey).save()
 
     question = Question.objects.get(id=question_id)
 
-    save_response_from_request(request, question)
+    save_response_from_request(request, question, response)
 
     next_question = question.next()
     if not next_question:
@@ -355,8 +359,9 @@ def goodbye(request):
     return HttpResponse(response)
 
 
-def save_response_from_request(request, question):
-    session_id = request.POST['MessageSid' if request.is_sms else 'CallSid']
+def save_response_from_request(request, question, response):
+    # session_id = request.POST['MessageSid' if request.is_sms else 'CallSid']
+
     request_body = _extract_request_body(request, question.type)
     phone_number = request.POST['From']
 
@@ -364,19 +369,27 @@ def save_response_from_request(request, question):
     choice_id = choices_dict[int(request_body)][0]
     choice = question.choices.get(id=choice_id)
 
-
-    answer = Answer.objects.filter(question_id=question.id,
-                                               call_sid=session_id).first()
-
-    if not answer:
-        Answer(call_sid=session_id,
+    Answer.objects.create(selected_choice=choice,
                          phone_number=phone_number,
                          body=request_body,
-                         selected_choice = choice,
-                         question=question).save()
-    else:
-        answer.body = request_body
-        answer.save()
+                         question=question,
+                         response=response).save()
+
+
+    # answer = Answer.objects.create(question_id=question.id,
+    #                                            response=response).first()
+
+    # if not answer:
+    #     Answer.objects.create(call_sid=session_id,
+    #                     selected_choice=choice,
+    #                      phone_number=phone_number,
+    #                      body=request_body,
+    #                      question=question,
+    #                      response=response).save()
+    #     import pdb; pdb.set_trace()
+    # else:
+    #     answer.body = request_body
+    #     answer.save()
 
 
 def _extract_request_body(request, question_kind):
