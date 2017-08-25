@@ -27,47 +27,81 @@
           </div>
         </div>
       </nav><!-- /.navbar-collapse -->
-
-      <div id="main" class="main main-2">
-        <div class="hero-2">
+      <div id="main" class="main">
+        <div class="hero">
           <div class="container">
             <div class="row">
-              <div class="col-md-5 col-sm-6">
+              <div class="col-sm-12 col-md-12">
                 <div class="intro">
-                  <h1 class="wow fadeInDown" data-wow-delay="0.1s"><span><img class="img-responsive" src="{% static 'assets/images/Wiireapp-logo.png' %}" alt="Feature" style="height: 40px;"></span>Send Mental Health Questionnaires Via Text</h1>
-                  <p class="wow fadeInDown" data-wow-delay="0.2s">Carry out initial screening exam for depression over text message, reach further.</p>
-                  <a href="#" class="btn btn-action btn-fb wow fadeInDown" data-wow-delay="0.3s"><span>Buy Now</span></a>
+                  <h1 class="wow fadeInDown" data-wow-delay="0.1s"><span>Send </span>Mental Health Questionnaires Via Text</h1>
+                  <p class="wow fadeInDown" data-wow-delay="0.2s">Try sending a questionnaire for free, The PHQ-2 helps screen for Anxiety</p>
+                  <div id="specs" class="features-boxed">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 wow fadeInDown">
+                <div class="box-inner">
+                  <div class="box-info">
+                    <h2><a href="https://www.nice.org.uk/guidance/cg123/chapter/1-guidance">Inline with NICE guidelines </a>
+                    </h2>
+                    <p>Enter your phone number below, and enter your email address so we know where to send the results.</p>
+                        <!-- Actual Form -->
+                        <div class="form-inline subform wow fadeInDown" data-wow-delay="0.3s">
+                          <form action="" class="formee" method="post">
+                            {% csrf_token %}
+                            <div class="col-md-3">
+                              <div class="row">
+                                <p>From</p>
+                              </div>
+                              <div class="row">
+                                <div class="form-group">
+                                    {{ form.sender_number.errors }}
+                                    {{ form.sender_name }}
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-md-3">
+                              <div class="row">
+                                <p><br></p>
+                              </div>
+                              <div class="row">
+                                <div class="form-group">
+                                    {{ form.from_email.errors }}
+                                    {{ form.from_email }}
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                              <div class="row">
+                                <p> To: </p>
+                              </div>
+                              <div class="row">
+                                <div class="form-group">
+                                    {{ form.patient_number.errors }}
+                                    {{ form.patient_number }}
+                                    <input class="right inputnew" type="submit" value="Send" />
+                                    <a href="#" class="btn btn-action btn-gplus wow fadeInDown" data-wow-delay="0.3s"><span><i class="ion-android-playstore"></i></span> <span>Send</span></a>
+                                </div>
+                              </div>
+                            </div>
+
+                          </form>
+                        </div>
+                        <div id="response"></div>
+                      </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-7 col-sm-6">
-
-
-                <div class="half light">
-                    <div class="iphone-container">
-                        <div class="phone-shape small">
-                            <span class="button-one buttons"></span>
-                            <span class="button-two buttons"></span>
-                            <span class="button-three buttons"></span>
-                            <span class="button-four button last"></span>
-                            <div class="top-details">
-                                <span class="camera"></span>
-                                <span class="circle"></span>
-                                <span class="speaker"></span>
-                            </div>
-                            <div class="phone-screen" height="100%">
-                              <img src="{% static 'assets/images/jonny_mockup.gif' %}" height="100%" width="100%" />
-                            </div>
-                            <div class="circle-button"></div>
-                        </div>
-                    </div>
+            </div>
+          </div>
+        </div>
                 </div>
-                <!--<img class="img-responsive" src="assets/images/product.png" alt="Feature">-->
               </div>
             </div>
           </div>
         </div><!-- Pi-Hero -->
-
-
 
         <div id="specs" class="features-boxed">
           <div class="container">
@@ -81,26 +115,53 @@
               <div class="col-md-12 col-sm-12 wow fadeInDown">
                 <div class="box-inner">
                   <div class="box-info">
-                    <h2><a href="https://www.nice.org.uk/guidance/cg123/chapter/1-guidance">Inline with NICE Guidelines </a>
+                    <h2><a href="https://www.nice.org.uk/guidance/cg123/chapter/1-guidance">Inline with NICE guidelines </a>
                     </h2>
-                    <p>Enter your phone number below, and enter your email address so we know where to send the results.</p>
-                      <div class="form-inline subform wow fadeInDown" data-wow-delay="0.3s">
-                        <form id="signup" class="formee" action="{% static 'assets/php/subscribe.php' %}" method="post">
-                          <div class="form-group">
-                            <input name="Phone_number" id="Phone_number" type="text" placeholder="Phone Number">
-                          </div>
-                          <div class="form-group">
-                            <input name="Email Address" id="Questionnaire" type="text" placeholder="Email Address"/>
-                          </div>
-                          <div class="form-group">
-                            <input name="Your Name" id="name" type="text" placeholder="Your Name"/><input class="right inputnew" type="submit" title="Send" value="Subscribe" />
-                          </div>
-                        </form>
+                    <h2>Enter your phone number below, and enter your email address so we know where to send the results.</h2>
                         <!-- Actual Form -->
-                        <form action="" method="post">{% csrf_token %}
-                            {{ form.as_p }}
-                            <input class="right inputnew" type="submit" value="Send message" />
-                        </form>
+                        <div class="form-inline subform wow fadeInDown" data-wow-delay="0.3s">
+                          <form action="" class="formee" method="post">
+                            {% csrf_token %}
+
+
+                            <div class="col-md-3">
+                              <div class="row">
+                                <p>From</p>
+                              </div>
+                              <div class="row">
+                                <div class="form-group left">
+                                    {{ form.sender_number.errors }}
+                                    {{ form.sender_name }}
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-md-3">
+                              <div class="row">
+                                <p><br></p>
+                              </div>
+                              <div class="row">
+                                <div class="form-group right">
+                                    {{ form.from_email.errors }}
+                                    {{ form.from_email }}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="row">
+                                <p> To: </p>
+                              </div>
+                              <div class="row">
+                                <div class="form-group left">
+                                    {{ form.patient_number.errors }}
+                                    {{ form.patient_number }}
+                                    <input class="right inputnew" type="submit" value="Send" />
+                                </div>
+                              </div>
+                            </div>
+
+                          </form>
+                        </div>
 
 
                         <div id="response"></div>
