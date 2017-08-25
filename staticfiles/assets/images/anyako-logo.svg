@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300px" height="81px" viewBox="0 0 300 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>anyako logo copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="38.2294324%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F85032" offset="0%"></stop>
+            <stop stop-color="#E73827" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="27" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="26" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-2" fill="black"></use>
+        </mask>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FECE10" offset="0%"></stop>
+            <stop stop-color="#8CC86C" offset="0%"></stop>
+            <stop stop-color="#F2C94C" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="35" y="9" width="8" height="8" rx="1"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="34" y="8" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-5" fill="black"></use>
+        </mask>
+        <rect id="path-7" x="18" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="17" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-7" fill="black"></use>
+        </mask>
+        <rect id="path-9" x="9" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="8" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-9" fill="black"></use>
+        </mask>
+        <rect id="path-11" x="17" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="16" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-11" fill="black"></use>
+        </mask>
+        <rect id="path-13" x="26" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="25" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-13" fill="black"></use>
+        </mask>
+        <rect id="path-15" x="8" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-16" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="7" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-15" fill="black"></use>
+        </mask>
+        <rect id="path-17" x="35" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-18" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="34" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-17" fill="black"></use>
+        </mask>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-19">
+            <stop stop-color="#7EC558" offset="0%"></stop>
+            <stop stop-color="#8CC86C" offset="0%"></stop>
+            <stop stop-color="#A8E063" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-20" x="17" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-21" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="16" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-20" fill="black"></use>
+        </mask>
+        <rect id="path-22" x="8" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-23" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="7" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-22" fill="black"></use>
+        </mask>
+        <rect id="path-24" x="0" y="27" width="8" height="8" rx="1"></rect>
+        <mask id="mask-25" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="-1" y="26" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-24" fill="black"></use>
+        </mask>
+        <rect id="path-26" x="26" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-27" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="25" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-26" fill="black"></use>
+        </mask>
+        <rect id="path-28" x="35" y="27" width="8" height="8" rx="1"></rect>
+        <mask id="mask-29" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="34" y="26" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-28" fill="black"></use>
+        </mask>
+        <rect id="path-30" x="35" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-31" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="34" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-30" fill="black"></use>
+        </mask>
+        <rect id="path-32" x="27" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-33" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="26" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-32" fill="black"></use>
+        </mask>
+        <rect id="path-34" x="35" y="9" width="8" height="8" rx="1"></rect>
+        <mask id="mask-35" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="34" y="8" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-34" fill="black"></use>
+        </mask>
+        <rect id="path-36" x="18" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-37" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="17" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-36" fill="black"></use>
+        </mask>
+        <rect id="path-38" x="9" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-39" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="8" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-38" fill="black"></use>
+        </mask>
+        <rect id="path-40" x="0" y="9" width="8" height="8" rx="1"></rect>
+        <mask id="mask-41" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="-1" y="8" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-40" fill="black"></use>
+        </mask>
+        <rect id="path-42" x="0" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-43" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="-1" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-42" fill="black"></use>
+        </mask>
+        <rect id="path-44" x="35" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-45" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="34" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-44" fill="black"></use>
+        </mask>
+        <rect id="path-46" x="17" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-47" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="16" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-46" fill="black"></use>
+        </mask>
+        <rect id="path-48" x="8" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-49" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="7" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-48" fill="black"></use>
+        </mask>
+        <rect id="path-50" x="0" y="27" width="8" height="8" rx="1"></rect>
+        <mask id="mask-51" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="-1" y="26" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-50" fill="black"></use>
+        </mask>
+        <rect id="path-52" x="26" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-53" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="25" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-52" fill="black"></use>
+        </mask>
+        <rect id="path-54" x="35" y="27" width="8" height="8" rx="1"></rect>
+        <mask id="mask-55" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="34" y="26" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-54" fill="black"></use>
+        </mask>
+        <rect id="path-56" x="27" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-57" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="26" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-56" fill="black"></use>
+        </mask>
+        <rect id="path-58" x="36" y="9" width="8" height="8" rx="1"></rect>
+        <mask id="mask-59" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="35" y="8" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-58" fill="black"></use>
+        </mask>
+        <rect id="path-60" x="18" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-61" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="17" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-60" fill="black"></use>
+        </mask>
+        <rect id="path-62" x="9" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-63" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="8" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-62" fill="black"></use>
+        </mask>
+        <rect id="path-64" x="18" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-65" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="17" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-64" fill="black"></use>
+        </mask>
+        <rect id="path-66" x="27" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-67" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="26" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-66" fill="black"></use>
+        </mask>
+        <rect id="path-68" x="9" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-69" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="8" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-68" fill="black"></use>
+        </mask>
+        <rect id="path-70" x="36" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-71" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="35" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-70" fill="black"></use>
+        </mask>
+        <rect id="path-72" x="18" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-73" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="17" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-72" fill="black"></use>
+        </mask>
+        <rect id="path-74" x="9" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-75" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="8" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-74" fill="black"></use>
+        </mask>
+        <rect id="path-76" x="0" y="27" width="8" height="8" rx="1"></rect>
+        <mask id="mask-77" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="-1" y="26" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-76" fill="black"></use>
+        </mask>
+        <rect id="path-78" x="27" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-79" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="26" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-78" fill="black"></use>
+        </mask>
+        <rect id="path-80" x="36" y="27" width="8" height="8" rx="1"></rect>
+        <mask id="mask-81" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="35" y="26" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-80" fill="black"></use>
+        </mask>
+        <rect id="path-82" x="36" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-83" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="35" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-82" fill="black"></use>
+        </mask>
+        <rect id="path-84" x="54" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-85" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="53" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-84" fill="black"></use>
+        </mask>
+        <rect id="path-86" x="72" y="27" width="8" height="8" rx="1"></rect>
+        <mask id="mask-87" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="71" y="26" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-86" fill="black"></use>
+        </mask>
+        <rect id="path-88" x="54" y="9" width="8" height="8" rx="1"></rect>
+        <mask id="mask-89" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="53" y="8" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-88" fill="black"></use>
+        </mask>
+        <rect id="path-90" x="54" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-91" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="53" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-90" fill="black"></use>
+        </mask>
+        <rect id="path-92" x="80" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-93" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="79" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-92" fill="black"></use>
+        </mask>
+        <rect id="path-94" x="27" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-95" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="26" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-94" fill="black"></use>
+        </mask>
+        <rect id="path-96" x="36" y="9" width="8" height="8" rx="1"></rect>
+        <mask id="mask-97" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="35" y="8" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-96" fill="black"></use>
+        </mask>
+        <rect id="path-98" x="18" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-99" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="17" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-98" fill="black"></use>
+        </mask>
+        <rect id="path-100" x="9" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-101" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="8" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-100" fill="black"></use>
+        </mask>
+        <rect id="path-102" x="18" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-103" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="17" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-102" fill="black"></use>
+        </mask>
+        <rect id="path-104" x="27" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-105" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="26" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-104" fill="black"></use>
+        </mask>
+        <rect id="path-106" x="9" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-107" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="8" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-106" fill="black"></use>
+        </mask>
+        <rect id="path-108" x="36" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-109" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="35" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-108" fill="black"></use>
+        </mask>
+        <rect id="path-110" x="18" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-111" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="17" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-110" fill="black"></use>
+        </mask>
+        <rect id="path-112" x="9" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-113" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="8" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-112" fill="black"></use>
+        </mask>
+        <rect id="path-114" x="0" y="27" width="8" height="8" rx="1"></rect>
+        <mask id="mask-115" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="-1" y="26" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-114" fill="black"></use>
+        </mask>
+        <rect id="path-116" x="27" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-117" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="26" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-116" fill="black"></use>
+        </mask>
+        <rect id="path-118" x="36" y="27" width="8" height="8" rx="1"></rect>
+        <mask id="mask-119" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="35" y="26" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-118" fill="black"></use>
+        </mask>
+        <rect id="path-120" x="36" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-121" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="35" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-120" fill="black"></use>
+        </mask>
+        <rect id="path-122" x="54" y="27" width="8" height="8" rx="1"></rect>
+        <mask id="mask-123" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="53" y="26" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-122" fill="black"></use>
+        </mask>
+        <rect id="path-124" x="63" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-125" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="62" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-124" fill="black"></use>
+        </mask>
+        <rect id="path-126" x="54" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-127" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="53" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-126" fill="black"></use>
+        </mask>
+        <rect id="path-128" x="72" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-129" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="71" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-128" fill="black"></use>
+        </mask>
+        <rect id="path-130" x="81" y="45" width="8" height="8" rx="1"></rect>
+        <mask id="mask-131" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="80" y="44" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-130" fill="black"></use>
+        </mask>
+        <rect id="path-132" x="54" y="54" width="8" height="8" rx="1"></rect>
+        <mask id="mask-133" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="53" y="53" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-132" fill="black"></use>
+        </mask>
+        <rect id="path-134" x="54" y="45" width="8" height="8" rx="1"></rect>
+        <mask id="mask-135" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="53" y="44" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-134" fill="black"></use>
+        </mask>
+        <rect id="path-136" x="90" y="54" width="8" height="8" rx="1"></rect>
+        <mask id="mask-137" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="89" y="53" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-136" fill="black"></use>
+        </mask>
+        <rect id="path-138" x="18" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-139" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="17" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-138" fill="black"></use>
+        </mask>
+        <rect id="path-140" x="27" y="9" width="8" height="8" rx="1"></rect>
+        <mask id="mask-141" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="26" y="8" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-140" fill="black"></use>
+        </mask>
+        <rect id="path-142" x="9" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-143" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="8" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-142" fill="black"></use>
+        </mask>
+        <rect id="path-144" x="0" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-145" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="-1" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-144" fill="black"></use>
+        </mask>
+        <rect id="path-146" x="0" y="9" width="8" height="8" rx="1"></rect>
+        <mask id="mask-147" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="-1" y="8" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-146" fill="black"></use>
+        </mask>
+        <rect id="path-148" x="0" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-149" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="-1" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-148" fill="black"></use>
+        </mask>
+        <rect id="path-150" x="27" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-151" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="26" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-150" fill="black"></use>
+        </mask>
+        <rect id="path-152" x="0" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-153" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="-1" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-152" fill="black"></use>
+        </mask>
+        <rect id="path-154" x="0" y="27" width="8" height="8" rx="1"></rect>
+        <mask id="mask-155" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="-1" y="26" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-154" fill="black"></use>
+        </mask>
+        <rect id="path-156" x="27" y="27" width="8" height="8" rx="1"></rect>
+        <mask id="mask-157" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="26" y="26" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-156" fill="black"></use>
+        </mask>
+        <rect id="path-158" x="27" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-159" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="26" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-158" fill="black"></use>
+        </mask>
+        <rect id="path-160" x="35" y="1" width="8" height="8" rx="1"></rect>
+        <mask id="mask-161" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="34" y="0" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-160" fill="black"></use>
+        </mask>
+        <rect id="path-162" x="35" y="10" width="8" height="8" rx="1"></rect>
+        <mask id="mask-163" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="34" y="9" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-162" fill="black"></use>
+        </mask>
+        <rect id="path-164" x="1" y="0" width="8" height="8" rx="1"></rect>
+        <mask id="mask-165" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="0" y="-1" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-164" fill="black"></use>
+        </mask>
+        <rect id="path-166" x="1" y="9" width="8" height="8" rx="1"></rect>
+        <mask id="mask-167" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="0" y="8" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-166" fill="black"></use>
+        </mask>
+        <rect id="path-168" x="1" y="18" width="8" height="8" rx="1"></rect>
+        <mask id="mask-169" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="0" y="17" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-168" fill="black"></use>
+        </mask>
+        <rect id="path-170" x="35" y="19" width="8" height="8" rx="1"></rect>
+        <mask id="mask-171" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="34" y="18" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-170" fill="black"></use>
+        </mask>
+        <rect id="path-172" x="17" y="36" width="8" height="8" rx="1"></rect>
+        <mask id="mask-173" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="16" y="35" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-172" fill="black"></use>
+        </mask>
+        <rect id="path-174" x="8" y="44" width="8" height="8" rx="1"></rect>
+        <mask id="mask-175" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="7" y="43" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-174" fill="black"></use>
+        </mask>
+        <rect id="path-176" x="0" y="53" width="8" height="8" rx="1"></rect>
+        <mask id="mask-177" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="-1" y="52" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-176" fill="black"></use>
+        </mask>
+        <rect id="path-178" x="0" y="53" width="8" height="8" rx="1"></rect>
+        <mask id="mask-179" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="-1" y="52" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-178" fill="black"></use>
+        </mask>
+        <rect id="path-180" x="8" y="28" width="8" height="8" rx="1"></rect>
+        <mask id="mask-181" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="7" y="27" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-180" fill="black"></use>
+        </mask>
+        <rect id="path-182" x="26" y="28" width="8" height="8" rx="1"></rect>
+        <mask id="mask-183" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="10" height="10">
+            <rect x="25" y="27" width="10" height="10" fill="white"></rect>
+            <use xlink:href="#path-182" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-536.000000, -160.000000)">
+            <g id="anyako-logo-copy" transform="translate(537.000000, 161.000000)">
+                <g id="0" transform="translate(0.000000, 18.000000)">
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-3)" stroke-width="2" xlink:href="#path-2"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-6)" stroke-width="2" xlink:href="#path-5"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-8)" stroke-width="2" xlink:href="#path-7"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-9"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-10)" stroke-width="2" xlink:href="#path-9"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-11"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-12)" stroke-width="2" xlink:href="#path-11"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-13"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-14)" stroke-width="2" xlink:href="#path-13"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-15"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-16)" stroke-width="2" xlink:href="#path-15"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-17"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-18)" stroke-width="2" xlink:href="#path-17"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-20"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-21)" stroke-width="2" xlink:href="#path-20"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-22"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-23)" stroke-width="2" xlink:href="#path-22"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-24"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-25)" stroke-width="2" xlink:href="#path-24"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-26"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-27)" stroke-width="2" xlink:href="#path-26"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-28"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-29)" stroke-width="2" xlink:href="#path-28"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-30"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-31)" stroke-width="2" xlink:href="#path-30"></use>
+                    </g>
+                </g>
+                <g id="a" transform="translate(255.000000, 18.000000)">
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-32"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-33)" stroke-width="2" xlink:href="#path-32"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-34"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-35)" stroke-width="2" xlink:href="#path-34"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-36"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-37)" stroke-width="2" xlink:href="#path-36"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-38"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-39)" stroke-width="2" xlink:href="#path-38"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-40"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-41)" stroke-width="2" xlink:href="#path-40"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-42"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-43)" stroke-width="2" xlink:href="#path-42"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-44"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-45)" stroke-width="2" xlink:href="#path-44"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-46"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-47)" stroke-width="2" xlink:href="#path-46"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-48"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-49)" stroke-width="2" xlink:href="#path-48"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-50"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-51)" stroke-width="2" xlink:href="#path-50"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-52"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-53)" stroke-width="2" xlink:href="#path-52"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-54"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-55)" stroke-width="2" xlink:href="#path-54"></use>
+                    </g>
+                </g>
+                <g id="second-a" transform="translate(150.000000, 18.000000)">
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-56"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-57)" stroke-width="2" xlink:href="#path-56"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-58"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-59)" stroke-width="2" xlink:href="#path-58"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-60"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-61)" stroke-width="2" xlink:href="#path-60"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-62"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-63)" stroke-width="2" xlink:href="#path-62"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-64"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-65)" stroke-width="2" xlink:href="#path-64"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-66"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-67)" stroke-width="2" xlink:href="#path-66"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-68"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-69)" stroke-width="2" xlink:href="#path-68"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-70"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-71)" stroke-width="2" xlink:href="#path-70"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-72"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-73)" stroke-width="2" xlink:href="#path-72"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-74"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-75)" stroke-width="2" xlink:href="#path-74"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-76"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-77)" stroke-width="2" xlink:href="#path-76"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-78"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-79)" stroke-width="2" xlink:href="#path-78"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-80"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-81)" stroke-width="2" xlink:href="#path-80"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-82"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-83)" stroke-width="2" xlink:href="#path-82"></use>
+                    </g>
+                </g>
+                <g id="k" transform="translate(150.000000, 0.000000)">
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-84"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-85)" stroke-width="2" xlink:href="#path-84"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-86"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-87)" stroke-width="2" xlink:href="#path-86"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-88"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-89)" stroke-width="2" xlink:href="#path-88"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-90"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-91)" stroke-width="2" xlink:href="#path-90"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-92"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-93)" stroke-width="2" xlink:href="#path-92"></use>
+                    </g>
+                    <g id="a-copy" transform="translate(0.000000, 18.000000)">
+                        <g id="Rectangle">
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-94"></use>
+                            <use stroke="#FFFFFF" mask="url(#mask-95)" stroke-width="2" xlink:href="#path-94"></use>
+                        </g>
+                        <g id="Rectangle">
+                            <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-96"></use>
+                            <use stroke="#FFFFFF" mask="url(#mask-97)" stroke-width="2" xlink:href="#path-96"></use>
+                        </g>
+                        <g id="Rectangle">
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-98"></use>
+                            <use stroke="#FFFFFF" mask="url(#mask-99)" stroke-width="2" xlink:href="#path-98"></use>
+                        </g>
+                        <g id="Rectangle">
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-100"></use>
+                            <use stroke="#FFFFFF" mask="url(#mask-101)" stroke-width="2" xlink:href="#path-100"></use>
+                        </g>
+                        <g id="Rectangle">
+                            <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-102"></use>
+                            <use stroke="#FFFFFF" mask="url(#mask-103)" stroke-width="2" xlink:href="#path-102"></use>
+                        </g>
+                        <g id="Rectangle">
+                            <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-104"></use>
+                            <use stroke="#FFFFFF" mask="url(#mask-105)" stroke-width="2" xlink:href="#path-104"></use>
+                        </g>
+                        <g id="Rectangle">
+                            <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-106"></use>
+                            <use stroke="#FFFFFF" mask="url(#mask-107)" stroke-width="2" xlink:href="#path-106"></use>
+                        </g>
+                        <g id="Rectangle">
+                            <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-108"></use>
+                            <use stroke="#FFFFFF" mask="url(#mask-109)" stroke-width="2" xlink:href="#path-108"></use>
+                        </g>
+                        <g id="Rectangle">
+                            <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-110"></use>
+                            <use stroke="#FFFFFF" mask="url(#mask-111)" stroke-width="2" xlink:href="#path-110"></use>
+                        </g>
+                        <g id="Rectangle">
+                            <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-112"></use>
+                            <use stroke="#FFFFFF" mask="url(#mask-113)" stroke-width="2" xlink:href="#path-112"></use>
+                        </g>
+                        <g id="Rectangle">
+                            <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-114"></use>
+                            <use stroke="#FFFFFF" mask="url(#mask-115)" stroke-width="2" xlink:href="#path-114"></use>
+                        </g>
+                        <g id="Rectangle">
+                            <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-116"></use>
+                            <use stroke="#FFFFFF" mask="url(#mask-117)" stroke-width="2" xlink:href="#path-116"></use>
+                        </g>
+                        <g id="Rectangle">
+                            <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-118"></use>
+                            <use stroke="#FFFFFF" mask="url(#mask-119)" stroke-width="2" xlink:href="#path-118"></use>
+                        </g>
+                        <g id="Rectangle">
+                            <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-120"></use>
+                            <use stroke="#FFFFFF" mask="url(#mask-121)" stroke-width="2" xlink:href="#path-120"></use>
+                        </g>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-122"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-123)" stroke-width="2" xlink:href="#path-122"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-124"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-125)" stroke-width="2" xlink:href="#path-124"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-126"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-127)" stroke-width="2" xlink:href="#path-126"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-128"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-129)" stroke-width="2" xlink:href="#path-128"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-130"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-131)" stroke-width="2" xlink:href="#path-130"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-132"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-133)" stroke-width="2" xlink:href="#path-132"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-134"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-135)" stroke-width="2" xlink:href="#path-134"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-136"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-137)" stroke-width="2" xlink:href="#path-136"></use>
+                    </g>
+                </g>
+                <g id="n" transform="translate(53.000000, 18.000000)">
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-138"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-139)" stroke-width="2" xlink:href="#path-138"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-140"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-141)" stroke-width="2" xlink:href="#path-140"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-142"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-143)" stroke-width="2" xlink:href="#path-142"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-144"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-145)" stroke-width="2" xlink:href="#path-144"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-146"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-147)" stroke-width="2" xlink:href="#path-146"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-148"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-149)" stroke-width="2" xlink:href="#path-148"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-150"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-151)" stroke-width="2" xlink:href="#path-150"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-152"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-153)" stroke-width="2" xlink:href="#path-152"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-154"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-155)" stroke-width="2" xlink:href="#path-154"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-156"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-157)" stroke-width="2" xlink:href="#path-156"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-158"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-159)" stroke-width="2" xlink:href="#path-158"></use>
+                    </g>
+                </g>
+                <g id="y" transform="translate(97.000000, 18.000000)">
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-160"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-161)" stroke-width="2" xlink:href="#path-160"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-162"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-163)" stroke-width="2" xlink:href="#path-162"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-164"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-165)" stroke-width="2" xlink:href="#path-164"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-166"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-167)" stroke-width="2" xlink:href="#path-166"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-168"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-169)" stroke-width="2" xlink:href="#path-168"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-170"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-171)" stroke-width="2" xlink:href="#path-170"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-172"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-173)" stroke-width="2" xlink:href="#path-172"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-174"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-175)" stroke-width="2" xlink:href="#path-174"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-176"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-177)" stroke-width="2" xlink:href="#path-176"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-178"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-179)" stroke-width="2" xlink:href="#path-178"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-180"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-181)" stroke-width="2" xlink:href="#path-180"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="url(#linearGradient-19)" fill-rule="evenodd" xlink:href="#path-182"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-183)" stroke-width="2" xlink:href="#path-182"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

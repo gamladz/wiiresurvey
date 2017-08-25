@@ -1,0 +1,227 @@
+{% extends 'base_landing.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Wiire | Monitor Mental Health Via Text</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Root Multipurpose Landing Page Template">
+    <meta name="keywords" content="Root HTML Template, Root Landing Page, Landing Page Template">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700%7CRoboto:300,400,500%7CMuli:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}"><!-- Resource style -->
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/ionicons.min.css' %}"><!-- Resource style -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/iphone_style.css' %}">
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img class="img-responsive" src="assets/images/brand.png" alt="Feature"></a>
+          </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a class="page-scroll" href="#main">Home</a></li>
+                <li><a class="page-scroll" href="#specs">Specs</a></li>
+                <li><a class="page-scroll" href="#features">Features</a></li>
+                <li><a class="page-scroll" href="#reviews">Reviews</a></li>
+                <li><a class="page-scroll" href="#buy">Pricing</a></li>
+                <a href="#buy" class="btn btn-nav page-scroll wow fadeInDown" data-wow-delay="0.3s"><span>Try it</span></a>
+            </ul>
+          </div>
+        </div>
+      </nav><!-- /.navbar-collapse -->
+
+      <div id="main" class="main main-2">
+        <div class="hero-2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5 col-sm-6">
+                <div class="intro">
+                  <h1 class="wow fadeInDown" data-wow-delay="0.1s"><span><img class="img-responsive" src="assets/images/Wiireapp-logo.png" alt="Feature" style="height: 40px;"></span>Send Mental Health Questionnaires Via Text</h1>
+                  <p class="wow fadeInDown" data-wow-delay="0.2s">Carry out initial screening exam for depression over text message, reach further.</p>
+                  <a href="#" class="btn btn-action btn-fb wow fadeInDown" data-wow-delay="0.3s"><span>Buy Now</span></a>
+                </div>
+              </div>
+              <div class="col-md-7 col-sm-6">
+
+
+                <div class="half light">
+                    <div class="iphone-container">
+                        <div class="phone-shape small">
+                            <span class="button-one buttons"></span>
+                            <span class="button-two buttons"></span>
+                            <span class="button-three buttons"></span>
+                            <span class="button-four button last"></span>
+                            <div class="top-details">
+                                <span class="camera"></span>
+                                <span class="circle"></span>
+                                <span class="speaker"></span>
+                            </div>
+                            <div class="phone-screen" height="100%">
+                              <img src="assets/images/jonny_mockup.gif" height="100%" width="100%" />
+                            </div>
+                            <div class="circle-button"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--<img class="img-responsive" src="assets/images/product.png" alt="Feature">-->
+              </div>
+            </div>
+          </div>
+        </div><!-- Pi-Hero -->
+
+
+
+        <div id="specs" class="features-boxed">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="boxed-intro text-center wow fadeInDown">
+                  <h1>Try it for free</h1>
+                  <p>Try sending a questionnaire to a phone number</p>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12 wow fadeInDown">
+                <div class="box-inner">
+                  <div class="box-info">
+                    <h2><a href="https://www.nice.org.uk/guidance/cg123/chapter/1-guidance">Inline with NICE Guidelines </a>
+                    </h2>
+                    <p>Enter your phone number below, and enter your email address so we know where to send the results.</p>
+                      <div class="form-inline subform wow fadeInDown" data-wow-delay="0.3s">
+                        <form id="signup" class="formee" action="assets/php/subscribe.php" method="post">
+                          <div class="form-group">
+                            <input name="Phone_number" id="Phone_number" type="text" placeholder="Phone Number">
+                          </div>
+                          <div class="form-group">
+                            <input name="Email Address" id="Questionnaire" type="text" placeholder="Email Address"/>
+                          </div>
+                          <div class="form-group">
+                            <input name="Your Name" id="name" type="text" placeholder="Your Name"/><input class="right inputnew" type="submit" title="Send" value="Subscribe" />
+                          </div>
+                        </form>
+                        <div id="response"></div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="features" class="features">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="features-text wow fadeInDown">
+                  <h2>Get Data Report In Email</h2>
+                    <p>As soon as the respondee finishes the survey we'll calcuate the scores and send a report straight to your email.
+                    </p>
+                    <button class="btn btn-primary btn-action" type="button"><span>Buy Now</span></button>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="features-image wow fadeInRight">
+                  <img class="img-responsive" src="assets/images/oculus.png" alt="Image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="pitch-2">
+        <div class="container">
+          <div class="pitch-inner wow fadeInRight">
+            <h4>White-label Solutions for enterprise</h4>
+            <h1>What If You Could Gauge The Mental Health Of Your Entire Workforce?</h1>
+            <p>The World Health Organisation estimates that by , depression and anxiety disoreders will cost the global economy £651 billion, 12 Billion working days, or 50 Million years of work. </p>
+            <button class="btn btn-primary btn-action" type="button"><span>Buy Now</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div id="subscribe" class="cta-2">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+              <div class="cta-2-inner">
+                <h1 class="wow fadeInDown" data-wow-delay="0.1s">Let's Improve Mental Health Together</h1>
+                <p class="wow fadeInDown" data-wow-delay="0.2s">Whether your a doctor, charity, business or just a curious mind, we'd love you to join our mailing list so we can keep you updated.</p>
+                <div class="subform wow fadeInDown" data-wow-delay="0.3s">
+                  <form id="signup" class="formee" action="assets/php/subscribe.php" method="post">
+                    <input name="email" id="email" type="text" /><input class="right inputnew" type="submit" title="Send" value="Send" />
+                  </form>
+                  <div id="response"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="ft-left">
+                <div class="footer-img">
+                   <img src="assets/images/brand.png" width="30" alt="Logo">
+                </div>
+                <p>Cu qui probo malorum saperet. Ne admodum apeirian iracundia usu, eam cu agam ludus,
+                  eum munere accusam molestie ut. Alienum percipitur ne est, pri quando iriure ad. </p>
+                <p>&copy; 2017 Wiire by Anyako Design</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-sm-offset-3">
+              <div class="ft-right">
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Product Details</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="#">User Agreement</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      </div> <!-- Main -->
+    </div><!-- Wrapper -->
+
+
+    <!-- Jquery and Js Plugins -->
+    <script type="text/javascript" src="{% static 'assets/js/jquery-2.1.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/plugins.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/validator.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/custom.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/iphone_script.js' %}"></script>
+  </body>
+</html>

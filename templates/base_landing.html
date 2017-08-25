@@ -1,0 +1,35 @@
+{% load staticfiles %}
+
+<html>
+   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Wiire | Monitor Mental Health Via Text</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Root Multipurpose Landing Page Template">
+    <meta name="keywords" content="Root HTML Template, Root Landing Page, Landing Page Template">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700%7CRoboto:300,400,500%7CMuli:300,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}"><!-- Resource style -->
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/ionicons.min.css' %}"><!-- Resource style -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/iphone_style.css' %}">
+  </head>
+
+  <body>
+    {% block content %}
+    {% endblock content %}
+    <script type="text/javascript" src="{% static 'assets/js/jquery-2.1.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/plugins.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/validator.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/custom.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/iphone_scripts.js' %}"></script>
+   </body>
+</html>

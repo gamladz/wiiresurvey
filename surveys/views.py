@@ -30,6 +30,10 @@ class HomeView(TemplateView):
     template_name = "surveys/home.html"
 
 
+class LandingView(TemplateView):
+    template_name = "surveys/landing.html"
+
+
 class BlogView(TemplateView):
     template_name = "surveys/blog.html"
 

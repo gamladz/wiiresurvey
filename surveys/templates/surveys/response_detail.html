@@ -15,10 +15,6 @@
     </div>
 
     <div class="ui card">
-      <div class="image">
-        <img src="{% static 'images/kristy.png' %}" >
-
-      </div>
       <div class="content">
         <a class="header">Jessie</a>
         <div class="meta">
@@ -41,7 +37,7 @@
 
 
       <div class="nine wide column" style="height:100vh;background:white">
-        {{response.answer}}
+        {{response.answer_list}}
            <h1>Completed Questionnaires</h1>
 
           <div class="column">
@@ -50,6 +46,7 @@
 
           <div class="content">
               <div class="header">Overall score: 6</div>
+              {{response.answer}}
               <div class="meta">
                 <span class="category">Patient Health Questionnaire</span>
               </div>

@@ -9,6 +9,7 @@ import views
 app_name = 'surveys'
 urlpatterns = [
     url(r'^$',  views.HomeView.as_view(), name='home'),
+    url(r'^landing/$',  views.LandingView.as_view(), name='landing'),
     url(r'^about/$',  views.AboutView.as_view(), name='about'),
     url(r'^blog/$',  views.BlogView.as_view(), name='blog'),
     url(r'^privacy-policy/$',  views.PrivacyView.as_view(), name='privacypolicy'),
