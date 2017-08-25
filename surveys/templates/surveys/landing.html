@@ -96,6 +96,13 @@
                             <input name="Your Name" id="name" type="text" placeholder="Your Name"/><input class="right inputnew" type="submit" title="Send" value="Subscribe" />
                           </div>
                         </form>
+                        <!-- Actual Form -->
+                        <form action="" method="post">{% csrf_token %}
+                            {{ form.as_p }}
+                            <input class="right inputnew" type="submit" value="Send message" />
+                        </form>
+
+
                         <div id="response"></div>
                       </div>
                   </div>

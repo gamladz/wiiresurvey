@@ -25,7 +25,7 @@ urlpatterns = [
     url(r'^contact/', views.ContactView.as_view(), name='response-detail'),
     url(r'^login/$', auth_views.login, name='login'),
     url(r'^logout/$', auth_views.logout, name='logout'),
-    url(r'^signup/$', views.signup, name='signup'),
+    # url(r'^signup/$', views.signup, name='signup'),
     url(r'^first-survey/$',
         csrf_exempt(views.redirects_twilio_request_to_proper_endpoint),
         name='first_survey'),

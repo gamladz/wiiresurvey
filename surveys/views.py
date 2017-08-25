@@ -9,16 +9,14 @@ from django.views.generic.detail import DetailView, SingleObjectMixin
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.mail import send_mail
+from django.core.exceptions import ObjectDoesNotExist
 from django.urls import reverse
 from django.db import IntegrityError
 from django.contrib.auth import login, authenticate
 from django.views.decorators.http import require_POST, require_GET
 from django.views.decorators.csrf import csrf_exempt
-
 from twilio.twiml.voice_response import VoiceResponse
 from twilio.twiml.messaging_response import MessagingResponse
-
-from surveys.forms import SignUpForm
 from surveys.middleware import MessageClient
 from .forms import ContactForm, SurveyForm, TextMessageForm
 from .models import Survey, Question, Answer, Response
@@ -171,45 +169,33 @@ class ResponseListView(ListView):
 class DemochatView(FormView):
     form_class = ContactForm
     initial = {'key': 'value'}
-    template_name = "surveys/demochat.html"
+    template_name = "surveys/landing.html"
 
     def get(self, request, *args, **kwargs):
         form = self.form_class(initial=self.initial)
         return render(request, self.template_name, {'form': form})
 
+
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
         if form.is_valid():
 
-            organisation = form.cleaned_data['organisation']
-            name = form.cleaned_data['name']
-            subject = 'Hey ' + name + ', Get Started with Wiire'
-            message = 'Hi ' + name + ', thanks for stopping by. I  personally reach out to everyone who visits our website. I\'ll send you an email to get started in the next day or so to get Wiire up and running with ' + organisation + '. Thanks for your interest!\n\nBe in touch soon,\n\nGam'
-
+            # Send Email to new user
+            name = form.cleaned_data['sender_name']
+            patient_number = form.cleaned_data['patient_number']
             from_email = form.cleaned_data['from_email']
-
             recipients = ['gameli.ladzekpo@gmail.com']
-            recipients.append(from_email)
+            subject = 'Success ' + name + ', your questionnaire was sent with Wiire'
+            message = 'Hi ' + name + ', You just sent a questionnaire with Wiire. \n\n As soon as the recipeint has completed it, you will be sent another email with a link for you to view the results. We do not ask the recipeint for any personal inforomation. Thanks for stopping by \n\n Thanks for using Wiire\n\nGam'
 
+            recipients.append(from_email)
             send_mail(subject, message, from_email, recipients)
+
+            MessageClient.send_message(MessageClient(), name, patient_number)
 
             return HttpResponseRedirect(reverse('surveys:success'))
 
         return render(request, self.template_name, {'form': form})
-
-def signup(request):
-    if request.method == 'POST':
-        form = SignUpForm(request.POST)
-        if form.is_valid():
-            form.save()
-            username = form.cleaned_data.get('username')
-            raw_password = form.cleaned_data.get('password1')
-            user = authenticate(username=username, password=raw_password)
-            login(request, user)
-            return redirect('surveys:home')
-    else:
-        form = SignUpForm()
-    return render(request, 'surveys/signup.html', {'form': form})
 
 @require_POST
 def redirects_twilio_request_to_proper_endpoint(request):
@@ -323,11 +309,18 @@ def save_response(request, survey_id, question_id):
     responder_id = request.COOKIES['sessionid']
     survey = Survey.objects.get(id=survey_id)
 
-    response = Response.objects.get(responder_id=responder_id,
+    try:
+        response = Response.objects.get(responder_id=responder_id,
                                     survey=survey)
-    if not response:
+    except ObjectDoesNotExist:
         response = Response.objects.create(responder_id=responder_id,
-                                           survey=survey).save()
+                                    survey=survey)
+
+    # response = Response.objects.get(responder_id=responder_id,
+    #                                 survey=survey)
+    # if not response:
+    #     response = Response.objects.create(responder_id=responder_id,
+    #                                        survey=survey).save()
 
     question = Question.objects.get(id=question_id)
 
@@ -378,23 +371,6 @@ def save_response_from_request(request, question, response):
                          body=request_body,
                          question=question,
                          response=response).save()
-
-
-    # answer = Answer.objects.create(question_id=question.id,
-    #                                            response=response).first()
-
-    # if not answer:
-    #     Answer.objects.create(call_sid=session_id,
-    #                     selected_choice=choice,
-    #                      phone_number=phone_number,
-    #                      body=request_body,
-    #                      question=question,
-    #                      response=response).save()
-    #     import pdb; pdb.set_trace()
-    # else:
-    #     answer.body = request_body
-    #     answer.save()
-
 
 def _extract_request_body(request, question_kind):
     Question.validate_kind(question_kind)

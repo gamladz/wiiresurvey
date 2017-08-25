@@ -5,9 +5,9 @@ from surveys.models import Survey, Question, Choice, Response, Answer
 
 
 class ContactForm(forms.Form):
-    organisation = forms.CharField(label='', max_length=100)
-    name = forms.CharField(label='what is the message?', widget=forms.Textarea)
-    from_email = forms.EmailField(label='Who is it from?')
+    patient_number = forms.IntegerField(label='Patient Number', widget=forms.NumberInput(attrs={'placeholder': 'Recipent Phone Number'}))
+    sender_name = forms.CharField(label='Sender Name', widget=forms.TextInput(attrs={'placeholder': 'Your Name'}))
+    from_email = forms.EmailField(label='Your Email Address', widget=forms.EmailInput(attrs={'placeholder': 'Email address'}))
 
 
 class SurveyForm(forms.Form):
