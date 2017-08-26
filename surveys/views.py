@@ -186,11 +186,11 @@ class DemochatView(FormView):
             from_email = form.cleaned_data['from_email']
             recipients = ['gameli.ladzekpo@gmail.com']
             subject = 'Success: ' + name + ', your questionnaire was sent with Wiire'
-            message = 'Hi ' + name + ', You just sent a to' + str(patient_number) + ' questionnaire with Wiire. \n\n As soon as the recipeint has completed it, you will be sent another email with a link for you to view the results. We do not ask the recipeint for any personal inforomation. Thanks for stopping by \n\n Thanks for using Wiire\n\nGam'
+            message = 'Hi ' + name + ', You just sent a to ' + str(patient_number) + ' questionnaire with Wiire. \n\n As soon as the recipeint has completed it, you will be sent another email with a link for you to view the results. We do not ask the recipeint for any personal inforomation. Thanks for stopping by \n\n Thanks for using Wiire\n\nGam'
 
             recipients.append(from_email)
             send_mail(subject, message, from_email, recipients)
-            # Create Response object here with email ownership, phone_number
+            # Create Response object here with email and phone number
 
             MessageClient.send_message(MessageClient(), name, patient_number)
 
@@ -226,7 +226,7 @@ def show_survey(request, survey_id):
 
     first_question_url = reverse('surveys:question', kwargs=first_question_ids)
 
-    welcome = 'Great, text reminders will help you take your medication properly so you can feel better'
+    welcome = 'Your taking the ' + survey.name
     if request.is_sms:
         twiml_response = MessagingResponse()
         twiml_response.message(welcome)
@@ -309,6 +309,7 @@ def save_response(request, survey_id, question_id):
 
     responder_id = request.COOKIES['sessionid']
     survey = Survey.objects.get(id=survey_id)
+    # Find Response object which is the new email, and phone number. Save that as the querey set. Cr
 
     try:
         response = Response.objects.get(responder_id=responder_id,

@@ -12,7 +12,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img class="img-responsive" src="{% static 'assets/images/brand.png' %}" alt="Feature"></a>
+        <a class="navbar-brand" href="#"><img class="img-responsive" src="{% static 'assets/images/brand-light.png' %}" alt="Feature"></a>
           </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -22,7 +22,6 @@
                 <li><a class="page-scroll" href="#features">Features</a></li>
                 <li><a class="page-scroll" href="#reviews">Reviews</a></li>
                 <li><a class="page-scroll" href="#buy">Pricing</a></li>
-                <a href="#buy" class="btn btn-nav page-scroll wow fadeInDown" data-wow-delay="0.3s"><span>Try it</span></a>
             </ul>
           </div>
         </div>
@@ -33,18 +32,9 @@
             <div class="row">
               <div class="col-sm-12 col-md-12">
                 <div class="intro">
-                  <h1 class="wow fadeInDown" data-wow-delay="0.1s">Send Mental Health Questionnaires Via Text</h1>
-                  <p class="wow fadeInDown" data-wow-delay="0.2s">Try sending a questionnaire for free, The PHQ-2 helps screen for Anxiety</p>
+                  <h1 class="wow fadeInDown" data-wow-delay="0.1s">Send Health Questionnaires To Mobiles</h1>
                   <div id="specs" class="features-boxed features-boxed-hero">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 col-sm-12 wow fadeInDown">
-                <div class="box-inner">
-                  <div class="box-info">
-                    <h2><a href="https://www.nice.org.uk/guidance/cg123/chapter/1-guidance">*Inline with NICE guidelines </a>
-                    </h2>
-                        <!-- Actual Form -->
-                        <div class="form-inline wow fadeInDown" data-wow-delay="0.3s">
+            <div class="form-inline wow fadeInDown" data-wow-delay="0.3s">
                           <form action="" class="formee" method="post">
                             {% csrf_token %}
                             <div class="col-md-3">
@@ -52,7 +42,7 @@
                                 <p>From</p>
                               </div>
                               <div class="row">
-                                <div class="form-group">
+                                <div class="form-group" data-toggle="tooltip" title="Hooray!">
                                     {{ form.sender_number.errors }}
                                     {{ form.sender_name }}
                                 </div>
@@ -64,7 +54,7 @@
                                 <p><br></p>
                               </div>
                               <div class="row">
-                                <div class="left form-group">
+                                <div class="left form-group" data-toggle="tooltip" title="Hooray!">
                                     {{ form.from_email.errors }}
                                     {{ form.from_email }}
                                 </div>
@@ -78,7 +68,7 @@
                                 <div class="left form-group">
                                     {{ form.patient_number.errors }}
                                     {{ form.patient_number }}
-                                    <input class="right inputnew tn btn-action btn-gplus wow fadeInDown" type="submit" value="Send" />
+                                    <input class="right inputnew btn btn-action btn-gplus wow fadeInDown" type="submit" value="Send" />
                                 </div>
                               </div>
                             </div>
@@ -88,10 +78,6 @@
                         <div id="response"></div>
 
                       </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
                 </div>
@@ -111,7 +97,7 @@
                   <h2>Get Data Report In Email</h2>
                     <p>As soon as the respondee finishes the survey we'll calcuate the scores and send a report straight to your email.
                     </p>
-                    <button class="btn btn-primary btn-action" type="button"><span>Buy Now</span></button>
+                    <button class="btn btn-primary btn-action" type="button"><span>Find out More</span></button>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -129,7 +115,7 @@
           <div class="pitch-inner wow fadeInRight">
             <h4>White-label Solutions for enterprise</h4>
             <h1>What If You Could Gauge The Mental Health Of Your Entire Workforce?</h1>
-            <p>The World Health Organisation estimates that by , depression and anxiety disoreders will cost the global economy £651 billion, 12 Billion working days, or 50 Million years of work. </p>
+            <p>The World Health Organisation estimates that by 2030, depression and anxiety disoreders will cost the global economy £651 billion in time-off for sickness.</p>
             <button class="btn btn-primary btn-action" type="button"><span>Buy Now</span></button>
           </div>
         </div>

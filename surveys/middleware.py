@@ -34,7 +34,7 @@ class MessageClient(object):
                                               twilio_auth_token)
 
     def send_message(self, sender_name, patient_number):
-        message = ', has just requested you fill in this mental health questionnaire. Please reply okay to start'
+        message = ', has just requested you complete a health questionnaire. Please reply okay to start'
         self.twilio_client.messages.create(body=sender_name + message, to=patient_number,
                                            from_='+447400344583',
                                            )
