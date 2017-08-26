@@ -185,8 +185,8 @@ class DemochatView(FormView):
             patient_number = form.cleaned_data['patient_number']
             from_email = form.cleaned_data['from_email']
             recipients = ['gameli.ladzekpo@gmail.com']
-            subject = 'Success ' + name + ', your questionnaire was sent with Wiire'
-            message = 'Hi ' + name + ', You just sent a questionnaire with Wiire. \n\n As soon as the recipeint has completed it, you will be sent another email with a link for you to view the results. We do not ask the recipeint for any personal inforomation. Thanks for stopping by \n\n Thanks for using Wiire\n\nGam'
+            subject = 'Success: ' + name + ', your questionnaire was sent with Wiire'
+            message = 'Hi ' + name + ', You just sent a to' + patient_number + ' questionnaire with Wiire. \n\n As soon as the recipeint has completed it, you will be sent another email with a link for you to view the results. We do not ask the recipeint for any personal inforomation. Thanks for stopping by \n\n Thanks for using Wiire\n\nGam'
 
             recipients.append(from_email)
             send_mail(subject, message, from_email, recipients)
