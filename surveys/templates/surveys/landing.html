@@ -33,19 +33,18 @@
             <div class="row">
               <div class="col-sm-12 col-md-12">
                 <div class="intro">
-                  <h1 class="wow fadeInDown" data-wow-delay="0.1s"><span>Send </span>Mental Health Questionnaires Via Text</h1>
+                  <h1 class="wow fadeInDown" data-wow-delay="0.1s">Send Mental Health Questionnaires Via Text</h1>
                   <p class="wow fadeInDown" data-wow-delay="0.2s">Try sending a questionnaire for free, The PHQ-2 helps screen for Anxiety</p>
-                  <div id="specs" class="features-boxed">
+                  <div id="specs" class="features-boxed features-boxed-hero">
           <div class="container">
             <div class="row">
               <div class="col-md-12 col-sm-12 wow fadeInDown">
                 <div class="box-inner">
                   <div class="box-info">
-                    <h2><a href="https://www.nice.org.uk/guidance/cg123/chapter/1-guidance">Inline with NICE guidelines </a>
+                    <h2><a href="https://www.nice.org.uk/guidance/cg123/chapter/1-guidance">*Inline with NICE guidelines </a>
                     </h2>
-                    <p>Enter your phone number below, and enter your email address so we know where to send the results.</p>
                         <!-- Actual Form -->
-                        <div class="form-inline subform wow fadeInDown" data-wow-delay="0.3s">
+                        <div class="form-inline wow fadeInDown" data-wow-delay="0.3s">
                           <form action="" class="formee" method="post">
                             {% csrf_token %}
                             <div class="col-md-3">
@@ -65,24 +64,21 @@
                                 <p><br></p>
                               </div>
                               <div class="row">
-                                <div class="form-group">
+                                <div class="left form-group">
                                     {{ form.from_email.errors }}
                                     {{ form.from_email }}
                                 </div>
                               </div>
                             </div>
-
-
                             <div class="col-md-6">
                               <div class="row">
                                 <p> To: </p>
                               </div>
                               <div class="row">
-                                <div class="form-group">
+                                <div class="left form-group">
                                     {{ form.patient_number.errors }}
                                     {{ form.patient_number }}
-                                    <input class="right inputnew" type="submit" value="Send" />
-                                    <a href="#" class="btn btn-action btn-gplus wow fadeInDown" data-wow-delay="0.3s"><span><i class="ion-android-playstore"></i></span> <span>Send</span></a>
+                                    <input class="right inputnew tn btn-action btn-gplus wow fadeInDown" type="submit" value="Send" />
                                 </div>
                               </div>
                             </div>
@@ -90,6 +86,7 @@
                           </form>
                         </div>
                         <div id="response"></div>
+
                       </div>
                   </div>
                 </div>
@@ -103,75 +100,7 @@
           </div>
         </div><!-- Pi-Hero -->
 
-        <div id="specs" class="features-boxed">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="boxed-intro text-center wow fadeInDown">
-                  <h1>Try it for free</h1>
-                  <p>Try sending a questionnaire to a phone number</p>
-                </div>
-              </div>
-              <div class="col-md-12 col-sm-12 wow fadeInDown">
-                <div class="box-inner">
-                  <div class="box-info">
-                    <h2><a href="https://www.nice.org.uk/guidance/cg123/chapter/1-guidance">Inline with NICE guidelines </a>
-                    </h2>
-                    <h2>Enter your phone number below, and enter your email address so we know where to send the results.</h2>
-                        <!-- Actual Form -->
-                        <div class="form-inline subform wow fadeInDown" data-wow-delay="0.3s">
-                          <form action="" class="formee" method="post">
-                            {% csrf_token %}
 
-
-                            <div class="col-md-3">
-                              <div class="row">
-                                <p>From</p>
-                              </div>
-                              <div class="row">
-                                <div class="form-group left">
-                                    {{ form.sender_number.errors }}
-                                    {{ form.sender_name }}
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="col-md-3">
-                              <div class="row">
-                                <p><br></p>
-                              </div>
-                              <div class="row">
-                                <div class="form-group right">
-                                    {{ form.from_email.errors }}
-                                    {{ form.from_email }}
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="row">
-                                <p> To: </p>
-                              </div>
-                              <div class="row">
-                                <div class="form-group left">
-                                    {{ form.patient_number.errors }}
-                                    {{ form.patient_number }}
-                                    <input class="right inputnew" type="submit" value="Send" />
-                                </div>
-                              </div>
-                            </div>
-
-                          </form>
-                        </div>
-
-
-                        <div id="response"></div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
 
         <div id="features" class="features">

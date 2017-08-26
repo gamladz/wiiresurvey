@@ -1,0 +1,22 @@
+body{
+    background: linear-gradient(to bottom,#F8F8F9, #EFF0F1);
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: 100;
+}
+
+h1{
+    opacity: 0.8;
+}
+
+.ui.attached.header{
+    border: none;
+}
+
+.survey-heading{
+    color: white;
+    background: linear-gradient(to right,#4776e6, #78d1ee);
+
+
+}

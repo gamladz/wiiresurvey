@@ -227,7 +227,7 @@ body {
 	font-size: 15px;
   font-weight: 700;
   text-transform: capitalize;
-  color: #b3b3b3;
+  color: white;
   -webkit-transition: all 0.5s;
 	-moz-transition: all 0.5;
   transition: all 0.5s;
@@ -471,8 +471,11 @@ body {
 	padding: 100px 0 50px 0;
 	/*background: linear-gradient(to right bottom,#3b1f5d,#633c84,#a25fa7,#b672ba);
 	background: #7B4EFF;
-	*/background: url(../images/1.jpg) no-repeat center center;
-	background-size: cover;
+
+	*/
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../images/cta.jpg) no-repeat center center;
+/*    background: url(../images/LondonCommunity.jpg) no-repeat center center;
+*/	background-size: cover;
 }
 
 .hero img {
@@ -489,7 +492,7 @@ body {
 	font-weight: 400;
 	line-height: 1.1;
 	letter-spacing: 0;
-	color: #09102B;
+	color: #fff;
 }
 
 .hero .intro h1 span {
@@ -505,7 +508,7 @@ body {
 	font-weight: 400;
 	line-height: 1.4;
 	letter-spacing: 1px;
-	color: #53586B;
+	color: white;
 	max-width: 700px;
 	margin: 0 auto;
 	margin-top: 25px;
@@ -764,7 +767,12 @@ body {
 
 .features-boxed {
 	padding: 50px 0 100px 0;
-	background: #F3F3F3;
+	background: #e1e1e1;
+}
+
+.features-boxed-hero {
+    padding: 50px 0px 100px 0px;
+    background: transparent;
 }
 
 .features-boxed .boxed-intro {
@@ -801,8 +809,8 @@ body {
 	padding: 30px 30px 30px 30px;
 	margin-bottom: 30px;
 	background: #FFFFFF;
-	min-height: 300px;
-	border-radius: 2px;
+	min-height: 220px;
+	border-radius: 0.7rem;
 	-webkit-transition: box-shadow .3s ease-in-out;
 	-moz-transition:box-shadow .3s ease-in-out;
 	-ms-transition:box-shadow .3s ease-in-out;
@@ -1469,7 +1477,7 @@ body {
   border-color: #F2F2F2;
 	background-color: #F3F3F3;
   outline: none;
-  padding: 0 100px 0 20px;
+  padding: 0 90px 0 20px;
 }
 
 .formee input:focus {

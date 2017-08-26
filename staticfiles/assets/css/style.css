@@ -764,7 +764,13 @@ body {
 
 .features-boxed {
 	padding: 50px 0 100px 0;
-	background: #F3F3F3;
+	background: transparent;
+}
+
+
+.features-boxed-hero {
+    padding: 0;
+    background: transparent;
 }
 
 .features-boxed .boxed-intro {
