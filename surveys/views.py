@@ -186,10 +186,11 @@ class DemochatView(FormView):
             from_email = form.cleaned_data['from_email']
             recipients = ['gameli.ladzekpo@gmail.com']
             subject = 'Success: ' + name + ', your questionnaire was sent with Wiire'
-            message = 'Hi ' + name + ', You just sent a to' + patient_number + ' questionnaire with Wiire. \n\n As soon as the recipeint has completed it, you will be sent another email with a link for you to view the results. We do not ask the recipeint for any personal inforomation. Thanks for stopping by \n\n Thanks for using Wiire\n\nGam'
+            message = 'Hi ' + name + ', You just sent a to' + str(patient_number) + ' questionnaire with Wiire. \n\n As soon as the recipeint has completed it, you will be sent another email with a link for you to view the results. We do not ask the recipeint for any personal inforomation. Thanks for stopping by \n\n Thanks for using Wiire\n\nGam'
 
             recipients.append(from_email)
             send_mail(subject, message, from_email, recipients)
+            # Create Response object here with email ownership, phone_number
 
             MessageClient.send_message(MessageClient(), name, patient_number)
 
@@ -316,12 +317,6 @@ def save_response(request, survey_id, question_id):
         response = Response.objects.create(responder_id=responder_id,
                                     survey=survey)
 
-    # response = Response.objects.get(responder_id=responder_id,
-    #                                 survey=survey)
-    # if not response:
-    #     response = Response.objects.create(responder_id=responder_id,
-    #                                        survey=survey).save()
-
     question = Question.objects.get(id=question_id)
 
     save_response_from_request(request, question, response)
@@ -343,6 +338,7 @@ def next_question_redirect(question_id, survey_id):
 
 
 def goodbye(request):
+    # Send email to email adress with link to response saying 'New Response: Your response is viewable here'
     goodbye_messages = ['That was the last question',
                         'your answers will be used to provide you with the best care']
     if request.is_sms:
