@@ -12,8 +12,10 @@ jQuery(function($) {
     if (stop > mainbottom) {
         $('.navbar').addClass('past-main');
         $('.navbar').addClass('effect-main')
+        $('.brand-logo').attr("src", '/static/assets/images/brand-light.png' );
     } else {
         $('.navbar').removeClass('past-main');
+        $('.brand-logo').attr("src", '/static/assets/images/brand.png' );
       }
     });
 

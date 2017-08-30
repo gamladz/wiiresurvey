@@ -473,7 +473,7 @@ body {
 	background: #7B4EFF;
 
 	*/
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.66)), url(../images/placeit.jpg) no-repeat center center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.64)), url(../images/placeit.jpg) no-repeat center center;
 /*    background: url(../images/LondonCommunity.jpg) no-repeat center center;
 */	background-size: cover;
 }

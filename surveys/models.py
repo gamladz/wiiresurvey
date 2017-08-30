@@ -12,7 +12,7 @@ from django.utils.translation import ugettext_lazy as _
 from django.core.exceptions import ValidationError
 from django.utils.text import slugify
 
-
+# USER Class
 
 
 class Survey(models.Model):

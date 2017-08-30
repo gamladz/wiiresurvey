@@ -24,6 +24,8 @@ from .models import Survey, Question, Answer, Response
 
 # Create your views here.
 
+# Sender_model --> Check ig registered, with email unique and a name, survey as a foreeign key...
+
 class HomeView(TemplateView):
     template_name = "surveys/home.html"
 
@@ -200,6 +202,7 @@ class DemochatView(FormView):
 
 @require_POST
 def redirects_twilio_request_to_proper_endpoint(request):
+
     answering_question = request.session.get('answering_question_id')
     if not answering_question:
         first_survey = Survey.objects.first()
