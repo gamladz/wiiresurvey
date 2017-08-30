@@ -1,57 +1,89 @@
-
-{% extends 'base.html' %}
+{% extends 'base_landing.html' %}
 {% load staticfiles %}
 {% block content %}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="{% static 'js/circle-progress.min.js' %}"></script>
-<style type="text/css">
-.navbar{
-    display:none;
-}
-footer{
-    display:none;
-}
-.se-section {
-    padding: 15px 0;
-}
-</style>
+    <div class="wrapper">
+      <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img class="img-responsive brand-logo" src="{% static 'assets/images/brand-light.png' %}" alt="Feature"></a>
+          </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class=" navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a class="page-scroll" href="#main"></a></li>
+                <li><a class="page-scroll" href="#specs"></a></li>
+                <li><a class="page-scroll" href="#features"></a></li>
+                <li><a class="page-scroll" href="#reviews"></a></li>
+                <li><a class="page-scroll" href="#buy">Enterprise Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav><!-- /.navbar-collapse -->
+      <div id="main" class="main"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- Pi-Hero -->
+
+        <div id="features" class="features">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="features-text wow fadeInDown">
+                  <h2>Success!</h2>
+                    <p>Your questionnaire has been sent, Once your respondent fills out the questionnaire we'll email you a link where you can view their response.<br>
+                    Thanks for using Wiire.
+                    </p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="features-image wow fadeInRight">
+                  <img class="img-responsive" src="{% static 'assets/images/oculus.png' %}" %}alt="Image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="ft-left">
+                <div class="footer-img">
+                   <img src="{% static 'assets/images/brand.png' %}" width="30" alt="Logo">
+                </div>
+                <p>Made with Love in London </p>
+                <p>&copy; 2017 Wiire by Anyako Design</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-sm-offset-3">
+              <div class="ft-right">
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Product Details</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="#">User Agreement</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-        <!-- ========== FEATURE INTRO ========== -->
-        <section class="se-section">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-6">
-
-                            <h1>Questionnaire Complete!</h1>
-                            <h6>Results will be used to help provide you with effective care</h6>
-
-                    </div> <!-- end col-md-8 -->
-
-
-
-
-
-
-                </div> <!-- end row -->
-            </div> <!-- end container -->
-        </section>
-
-
-        <script>
-          $('#circle').circleProgress({
-            value: 0.33,
-            size: 220,
-          fill: { gradient: ["#4FD7ED"]}
-          }).on('circle-animation-progress', function(event, progress) {
-            $(this).find('p').html( '<i></i>');
-          });
-        </script>
-
-
-
-
+      </div> <!-- Main -->
+    </div><!-- Wrapper -->
 {% endblock content %}
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help

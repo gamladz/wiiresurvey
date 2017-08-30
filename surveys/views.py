@@ -51,7 +51,7 @@ class PrivacyView(TemplateView):
 
 
 class SuccessView(TemplateView):
-    template_name = "surveys/survey_list.html"
+    template_name = "surveys/success.html"
 
 
 class ThanksView(TemplateView):
