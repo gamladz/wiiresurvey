@@ -1,0 +1,285 @@
+{% extends 'base_landing.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div class="wrapper">
+      <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img class="img-responsive brand-logo" src="{% static 'assets/images/brand.png' %}" alt="Feature"></a>
+          </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class=" navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <!--<li><a class="page-scroll" href="/Pharmacists">MedText</a></li>-->
+                <!--<li><a class="page-scroll active" href="/Enterprise">MindCheck</a></li>-->
+                <li><a class="page-scroll " href="{% url 'surveys:contact' %}">Get Started</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </nav><!-- /.navbar-collapse -->
+      <div id="main" class="main">
+        <div class="hero mindcheck-bg">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-sm-12 col-md-12">
+                <div class="intro">
+                  <h1 class="wow fadeInDown" data-wow-delay="0.1s"><span> <br></span>How are your people doing?</h1>
+                  <p class="wow fadeInDown" data-wow-delay="0.2s">Better Staff Mental Health, Better Productivity</p>
+                  <a href="{% url 'surveys:contact' %}" class="btn btn-action btn-fb wow fadeInDown" data-wow-delay="0.3s"><span>Get Started</span></a>
+                </div>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- Pi-Hero -->
+
+        <div id="features" class="features">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-sm-6">
+                <div class="features-text wow fadeInDown">
+                  <h2>Mobile mental health questionnaires</h2>
+                    <p>Monitor levels of Anxiety and Depression at scale with validated questionnaires
+                    </p>
+                    <button class="btn btn-primary btn-action" type="button" href="{% url 'surveys:contact' %}"><span>Get Started</span></button>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="features-image wow fadeInRight">
+                  <img class="img-responsive" src="{% static 'assets/images/iphone6s.svg' %}" %}alt="Image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="specs" class="features-boxed">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="boxed-intro text-center wow fadeInDown">
+                  <h1>Try it for free</h1>
+                  <p>Sending Mental Health Questionnaire to a mobile</p>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12 wow fadeInDown">
+                <div class="box-inner">
+                  <div class="box-info">
+                    <h2><a href="https://www.nice.org.uk/guidance/cg123/chapter/1-guidance">Inline with NICE Guidelines </a>
+                    </h2>
+                    <p>Enter your phone number below, and enter your email address so we know where to send the results.</p>
+                    <br>
+                    <br>
+                      <div class="form-inline wow fadeInDown" data-wow-delay="0.3s">
+                          <form action="" class="formee" method="post">
+                            {% csrf_token %}
+                            <div class="col-md-3">
+                              <div class="row">
+                                <p>From</p>
+                              </div>
+                              <div class="row">
+                                <div class="form-group" data-toggle="tooltip" title="Hooray!">
+                                    {{ form.sender_number.errors }}
+                                    {{ form.sender_name }}
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-md-3">
+                              <div class="row">
+                                <p><br></p>
+                              </div>
+                              <div class="row">
+                                <div class="left form-group" data-toggle="tooltip" title="Hooray!">
+                                    {{ form.from_email.errors }}
+                                    {{ form.from_email }}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="row">
+                                <p> To: </p>
+                              </div>
+                              <div class="row">
+                                <div class="left form-group">
+                                    {{ form.patient_number.errors }}
+                                    {{ form.patient_number }}
+                                    <input class="right inputnew btn btn-action btn-gplus wow fadeInDown" type="submit" value="Send" />
+                                </div>
+                              </div>
+                            </div>
+
+                          </form>
+                        </div>
+                        <div id="response"></div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div><!-- Pi-Hero -->
+        <div id="features" class="features">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="features-text wow fadeInDown">
+                 <h2>Beautiful Reporting</h2>
+                  <p>A snapshot of your People's Mental Health to help you make data-driven decisions.</p>
+                  <button class="btn btn-primary btn-action" type="button" href="{% url 'surveys:contact' %}"><span>Get Started</span></button>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="features-image wow fadeInRight">
+                  <img class="img-responsive" src="{% static 'assets/images/macbook-data.png' %}" %}alt="Image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="pricing" class="pricing-v2">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="intro wow fadeInDown" data-wow-delay="0.1s">
+                  <h4>Pricing</h4>
+                  <h1>Pricing plans for big and small companies</h1>
+                  <p>
+                  </p>
+                  <p>Charity or NGO? <a href="#">Contact us</a></p>
+                </div>
+              </div>
+              <div class="col-sm-4 text-center">
+                <div class="table-left wow fadeInDown" data-wow-delay="0.2s">
+                  <div class="pricing-details">
+                    <h2>Startups</h2>
+                      <span >£5/<small style="font-size: 15px;">Questionnaire</small></span>
+                        <ul>
+                          <li>> 100 Respondents</li>
+                          <li>Mental Health Survey</li>
+                          <li>Standard Report</li>
+                       </ul>
+                    <button class="btn btn-primary btn-action btn-edge" type="button"><span>Get Plan</span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 text-center">
+                <div class="table-right wow fadeInDown" data-wow-delay="0.4s">
+                  <div class="pricing-details">
+                    <h2>Enterprise</h2>
+                    <span>Let's Talk</span>
+                    <ul>
+                      <li>100+ Respondents</li>
+                      <li>Custom Surveys</li>
+                      <li>Custom Reporting</li>
+                    </ul>
+                    <button class="btn btn-primary btn-action" type="button"><span>Buy Now</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        </div><!-- Pi-Hero -->
+
+      <div class="pitch-2 mindcheck-pitch">
+        <div class="container">
+          <div class="pitch-inner pitch-inner-mindcheck wow fadeInRight">
+            <h1>Better Mental health improves your productivity</h1>
+            <p>Anxiety at work costs the global economy £651 billion in time-off every year.</p>
+            <button class="btn btn-primary btn-action" type="button"><span>Learn More</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div id="subscribe" class="cta-2">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+              <div class="cta-2-inner">
+                <h1 class="wow fadeInDown" data-wow-delay="0.1s">Let's Improve Mental Health Together</h1>
+                <p class="wow fadeInDown" data-wow-delay="0.2s">Whether your a doctor, charity, business or just a curious mind, we'd love you to join our mailing list so we can keep you updated.</p>
+                <div class="subform wow fadeInDown" data-wow-delay="0.3s">
+                  <!-- Begin MailChimp Signup Form -->
+                  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+                  <style type="text/css">
+                    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+                    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                  </style>
+                    <div id="mc_embed_signup">
+                    <form class="formee" action="https://wiireapp.us14.list-manage.com/subscribe/post?u=32c8a31fb7454b526a451334a&amp;id=b3bab969aa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                      <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="email address" required>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_32c8a31fb7454b526a451334a_b3bab969aa" tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="right inputnew"></div>
+                        </div>
+                    </form>
+                    </div>
+
+<!--End mc_embed_signup-->
+
+                  <!--End mc_embed_signup-->
+
+<!--End mc_embed_signup-->
+
+
+                  <div id="response"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="ft-left">
+                <div class="footer-img">
+                   <img src="{% static 'assets/images/brand.png' %}" width="30" alt="Logo">
+                </div>
+                <p>Made with Love in London </p>
+                <p>&copy; 2017 Wiire by Anyako Design</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-sm-offset-3">
+              <div class="ft-right">
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Product Details</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="#">User Agreement</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      </div> <!-- Main -->
+    </div><!-- Wrapper -->
+{% endblock content %}

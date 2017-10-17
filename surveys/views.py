@@ -60,6 +60,13 @@ class ThanksView(TemplateView):
 class ContactView(TemplateView):
     template_name = "surveys/contact.html"
 
+class MedtextView(TemplateView):
+    template_name = "surveys/medtext.html"
+
+
+class PharmacistsView(TemplateView):
+    template_name = "surveys/Pharmacists.html"
+
 
 
 class SurveyView(View):
@@ -168,10 +175,10 @@ class ResponseListView(ListView):
         return context
 
 
-class DemochatView(FormView):
+class MindcheckView(FormView):
     form_class = ContactForm
     initial = {'key': 'value'}
-    template_name = "surveys/landing.html"
+    template_name = "surveys/mindcheck.html"
 
     def get(self, request, *args, **kwargs):
         form = self.form_class(initial=self.initial)

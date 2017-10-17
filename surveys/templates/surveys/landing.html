@@ -17,8 +17,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
           <div class=" navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a class="page-scroll" href="#buy">For Healthcare</a></li>
-                <li><a class="page-scroll" href="#buy">For Enterprise</a></li>
+                <li><a class="page-scroll" href="/pharmacists">MedText</a></li>
+                <li><a class="page-scroll" href="/enterprise">MindCheck</a></li>
+                <li><a class="page-scroll" href="/contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -29,54 +30,13 @@
             <div class="row">
               <div class="col-sm-12 col-md-12">
                 <div class="intro">
-                  <h1 class="wow fadeInDown" data-wow-delay="0.1s">Send Mental Health Questionnaires To Mobiles</h1>
+                  <h1 class="wow fadeInDown" data-wow-delay="0.1s">We use AI to build simple messaging apps for healthcare</h1>
+                  <a href="#features" class="btn btn-action wow fadeInDown" data-wow-delay="0.3s"><span>View Solutions</span></a>
                   <div id="specs" class="features-boxed features-boxed-hero">
             <div class="form-inline wow fadeInDown" data-wow-delay="0.3s">
-                          <form action="" class="formee" method="post">
-                            {% csrf_token %}
-                            <div class="col-md-3">
-                              <div class="row">
-                                <p>From</p>
-                              </div>
-                              <div class="row">
-                                <div class="form-group" data-toggle="tooltip" title="Hooray!">
-                                    {{ form.sender_number.errors }}
-                                    {{ form.sender_name }}
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="col-md-3">
-                              <div class="row">
-                                <p><br></p>
-                              </div>
-                              <div class="row">
-                                <div class="left form-group" data-toggle="tooltip" title="Hooray!">
-                                    {{ form.from_email.errors }}
-                                    {{ form.from_email }}
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="row">
-                                <p> To: </p>
-                              </div>
-                              <div class="row">
-                                <div class="left form-group">
-                                    {{ form.patient_number.errors }}
-                                    {{ form.patient_number }}
-                                    <input class="right inputnew btn btn-action btn-gplus wow fadeInDown" type="submit" value="Send" />
-                                </div>
-                              </div>
-                            </div>
-
-                          </form>
-                        </div>
-                        <div id="response"></div>
-
                       </div>
-          </div>
-        </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -84,28 +44,93 @@
         </div><!-- Pi-Hero -->
 
 
-
-
-        <div id="features" class="features">
+        <div id="specs" class="features-boxed">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6">
-                <div class="features-text wow fadeInDown">
-                  <h2>Get Data Report In Email</h2>
-                    <p>As soon as the respondee finishes the survey we'll calcuate the scores and send a report straight to your email.
-                    </p>
-                    <button class="btn btn-primary btn-action" type="button"><span>Find out More</span></button>
+              <div class="col-sm-12">
+                <div class="boxed-intro text-center wow fadeInDown">
+                  <h1>Our Products</h1>
+                  <p>From development to the delivery of performance we don't compromise <br> at any level to make your
+                     products the best</p>
                 </div>
               </div>
-              <div class="col-sm-6">
-                <div class="features-image wow fadeInRight">
-                  <img class="img-responsive" src="{% static 'assets/images/oculus.png' %}" %}alt="Image">
+              <div class="col-md-6 col-sm-4 wow fadeInDown">
+                <div class="box-inner">
+                  <div class="box-icon">
+                    <h1 class="wow fadeInDown" data-wow-delay="0.1s">😌</h1>
+                  </div>
+                  <div class="box-info">
+                    <h1>MindCheck</h1>
+                    <p>helps organisations conduct mental health surveys across there staff to boost productivity</p>
+                  </div>
+                 <a href="#" class="btn btn-action wow fadeInDown" data-wow-delay="0.3s"><span>Learn More</span></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-4 wow fadeInDown">
+                <div class="box-inner">
+                  <div class="box-icon">
+                    <h1 class="wow fadeInDown" data-wow-delay="0.1s">💊</h1>
+                  </div>
+                  <div class="box-info">
+                    <h1>MedText</h1>
+                    <p>Uses A.I to help pharmacists improve medication adherence with timely text reminders.</p>
+                  </div>
+                  <a href="#" class="btn btn-action wow fadeInDown" data-wow-delay="0.3s"><span>Learn More</span></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
+
+        <div id="services" class="pi-points">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-sm-8 col-sm-offset-2">
+                <div class="points-intro text-center">
+                 <h1 class="wow fadeInDown">Digital Health Solutions To Improve Your Mobile Communication Systems</h1>
+                </div>
+              </div>
+              <div class="col-sm-5 col-sm-offset-1 wow fadeInDown" data-wow-delay="0.2s">
+                <div class="point-icon">
+                  <img src="{% static 'assets/icons/5.png' %}"  width="45" alt="Feature">
+                </div>
+                <div class="point-text">
+                  <h1>Secure Cloud</h1>
+                  <p>Applications hosted on secure cloud-server so you can get up and running super quic</p>
+                </div>
+              </div>
+              <div class="col-sm-5 wow fadeInDown" data-wow-delay="0.3s">
+                <div class="point-icon">
+                  <img src="{% static 'assets/icons/3.png' %}" width="45" alt="Feature">
+                </div>
+                <div class="point-text">
+                  <h1>Works on any Phone</h1>
+                  <p>Our applications are built with accessibility in mind. We use text messaging so you can get started without downloading apps.</p>
+                </div>
+              </div>
+              <div class="col-sm-5 col-sm-offset-1 wow fadeInDown" data-wow-delay="0.3s">
+                <div class="point-icon">
+                  <img src="{% static 'assets/icons/3.png' %}" width="45" alt="Feature">
+                </div>
+                <div class="point-text">
+                  <h1>Messaging Interface</h1>
+                  <p>Our applications run on SMS, Facebook and others so everyone can use them. No messaging interface and you can move quick</p>
+                </div>
+              </div>
+              <div class="col-sm-5 wow fadeInDown" data-wow-delay="0.3s">
+                <div class="point-icon">
+                  <img src="{% static 'assets/icons/6.png' %}" width="45" alt="Feature">
+                </div>
+                <div class="point-text">
+                  <h1>Tailored to requirements</h1>
+                  <p>We can tailor our ready-made solutions to suit your specific needs. Get in touch and let us know your requirements</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       <div class="pitch-2">
         <div class="container">
@@ -123,7 +148,7 @@
           <div class="row text-center">
             <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
               <div class="cta-2-inner">
-                <h1 class="wow fadeInDown" data-wow-delay="0.1s">Let's Improve Mental Health Together</h1>
+                <h1 class="wow fadeInDown" data-wow-delay="0.1s">Get started with Innovative Digital Health Solutions</h1>
                 <p class="wow fadeInDown" data-wow-delay="0.2s">Whether your a doctor, charity, business or just a curious mind, we'd love you to join our mailing list so we can keep you updated.</p>
                 <div class="subform wow fadeInDown" data-wow-delay="0.3s">
                   <form id="signup" class="formee" action="assets/php/subscribe.php" method="post">

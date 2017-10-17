@@ -1,0 +1,242 @@
+{% extends 'base_landing.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div class="wrapper">
+      <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img class="img-responsive brand-logo" src="{% static 'assets/images/brand.png' %}" alt="Feature"></a>
+          </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class=" navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a class="page-scroll active" href="{% url surveys:medtext">MedText</a></li>
+                <li><a class="page-scroll " href="{% url surveys:mindcheck">MindCheck</a></li>
+                <li><a class="page-scroll " href="/contact">Contact</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </nav><!-- /.navbar-collapse -->
+      <div id="main" class="main">
+        <div class="hero">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-sm-7 col-md-5">
+                <div class="intro">
+                  <h1 class="wow fadeInDown" data-wow-delay="0.1s"><span>MedText</span><br>Medication Reminders by Text</h1>
+                  <p class="wow fadeInDown" data-wow-delay="0.2s">Your AI friend that helps you take your meds.
+Sign up for free, it takes less than 2 minutes.</p>
+                  <a href="#" class="btn btn-action btn-fb wow fadeInDown" data-wow-delay="0.3s"><span>Get Started</span></a>
+                </div>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- Pi-Hero -->
+
+        <div id="features" class="features">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-sm-6">
+                <div class="features-text wow fadeInDown">
+                  <h2>Get reminders daily</h2>
+                    <p>We'll drop you a text when it's time for you to take your medication so you don't forget'
+                    </p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="features-image wow fadeInRight">
+                  <img class="img-responsive" src="{% static 'assets/images/oculus.png' %}" %}alt="Image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="pricing" class="pricing-v2">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="features-text wow fadeInDown" data-wow-delay="0.1s">
+                  <h2>Pick the right pricing plan for your needs</h2>
+                </div>
+                <div class="table-left wow fadeInDown" data-wow-delay="0.2s">
+                  <div class="pricing-details">
+                    <h2>Personal</h2>
+                      <span >Free</span>
+                        <ul>
+                          <li>Text Reminders</li>
+                          <li>3 medications</li>
+                          <li>No Stress</li>
+                       </ul>
+                    <button class="btn btn-primary btn-action btn-edge" type="button"><span>Get Plan</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="specs" class="features-boxed">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="boxed-intro text-center wow fadeInDown">
+                  <h1>Get Started</h1>
+                  <p>Set up your text reminders</p>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12 wow fadeInDown">
+                <div class="box-inner">
+                  <div class="box-info">
+                    <h2><a href="https://www.nice.org.uk/guidance/cg123/chapter/1-guidance">Inline with NICE Guidelines </a>
+                    </h2>
+                    <p>Enter your phone number below, and enter your email address so we know where to send the results.</p>
+                    <br>
+                    <br>
+                      <div class="form-inline wow fadeInDown" data-wow-delay="0.3s">
+                          <form action="" class="formee" method="post">
+                            {% csrf_token %}
+                            <div class="col-md-3">
+                              <div class="row">
+                                <p>From</p>
+                              </div>
+                              <div class="row">
+                                <div class="form-group" data-toggle="tooltip" title="Hooray!">
+                                    {{ form.sender_number.errors }}
+                                    {{ form.sender_name }}
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-md-3">
+                              <div class="row">
+                                <p><br></p>
+                              </div>
+                              <div class="row">
+                                <div class="left form-group" data-toggle="tooltip" title="Hooray!">
+                                    {{ form.from_email.errors }}
+                                    {{ form.from_email }}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="row">
+                                <p> To: </p>
+                              </div>
+                              <div class="row">
+                                <div class="left form-group">
+                                    {{ form.patient_number.errors }}
+                                    {{ form.patient_number }}
+                                    <input class="right inputnew btn btn-action btn-gplus wow fadeInDown" type="submit" value="Send" />
+                                </div>
+                              </div>
+                            </div>
+
+                          </form>
+                        </div>
+                        <div id="response"></div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div><!-- Pi-Hero -->
+        <div id="features" class="features">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="features-text wow fadeInDown">
+                 <h4>White-label Solutions for enterprise to boost productivity</h4>
+                  <h1>Anxiety at work costs organisations in the UK £70 Billion Every Year</h1>
+                  <p>Use institutional suveys to help you get an organisational snapshot of your workforce's Mental Health for data-driven decision-making and monitor progress.</p>
+                    <button class="btn btn-primary btn-action" type="button"><span>Book A Demo</span></button>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="features-image wow fadeInRight">
+                  <img class="img-responsive" src="{% static 'assets/images/oculus.png' %}" %}alt="Image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="pitch-2">
+        <div class="container">
+          <div class="pitch-inner wow fadeInRight">
+            <h4>White-label Solutions for enterprise</h4>
+            <h1>Insitutional Mental Health Surveys Via Text Message</h1>
+            <p>The World Health Organisation estimates that by 2030, depression and anxiety disoreders will cost the global economy £651 billion in time-off for sickness.</p>
+            <button class="btn btn-primary btn-action" type="button"><span>Learn More</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div id="subscribe" class="cta-2">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+              <div class="cta-2-inner">
+                <h1 class="wow fadeInDown" data-wow-delay="0.1s">Let's Improve Mental Health Together</h1>
+                <p class="wow fadeInDown" data-wow-delay="0.2s">Whether your a doctor, charity, business or just a curious mind, we'd love you to join our mailing list so we can keep you updated.</p>
+                <div class="subform wow fadeInDown" data-wow-delay="0.3s">
+                  <form id="signup" class="formee" action="assets/php/subscribe.php" method="post">
+                    <input name="email" id="email" type="text" /><input class="right inputnew" type="submit" title="Send" value="Send" />
+                  </form>
+                  <div id="response"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="ft-left">
+                <div class="footer-img">
+                   <img src="{% static 'assets/images/brand.png' %}" width="30" alt="Logo">
+                </div>
+                <p>Made with Love in London </p>
+                <p>&copy; 2017 Wiire by Anyako Design</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-sm-offset-3">
+              <div class="ft-right">
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Product Details</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="#">User Agreement</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      </div> <!-- Main -->
+    </div><!-- Wrapper -->
+{% endblock content %}
